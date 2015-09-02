@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tiles</title>
+	<link rel="stylesheet" type="text/css" href="metrojs.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="metrojs.js"></script>
+	<script type="text/javascript">
+				function tileAction()
+				{
+					othis = this;
+					
+				}
+				var obj = new tileAction();
+	</script>
+</head>
+<body>
+		<h1>Slide Mode Simple</h1>
+		<div class="red">
+		    <div id="tile1" class="live-tile">
+		        <span class="tile-title">tile title</span>
+		        <!-- adding the 'full' class to an 'img' or 'a' tag causes it to fill the entire tile -->
+		        <div><a class="full" href="#">front</a></div>
+		        <div><p>the front face slides vertically by default to reveal the back.</p></div>
+		    </div>
+		    <div id="tile2" class="live-tile blue" data-direction="horizontal">       
+		   <span class="tile-title">tile title</span>
+		        <div>front</div>
+		        <div><p>the front tile slides horizontally to reveal the back because data-direction is set to 'horizontal'</p></div>
+		    </div>
+		</div>
+		<div class="clear">
+	    	<h2>Notes</h2>
+	    	<p>Adding the 'full' class to an 'img' or 'a' tag causes it to fill the entire tile<br/>
+	            You can use the data-stack property to move the the tiles in unison (like the 
+	            <a href="http://www.drewgreenwell.com" target="_blank">home page</a>)
+	    </div>
+	    <button onclick="obj.addTile()">Add Tile</button>
+	    <script type="text/javascript">
+				//slide mode simple
+		//using data attributes
+		$(".live-tile").liveTile();
+
+		//without data-attributes
+		//$("#tile1").liveTile();
+		//$("#tile2").liveTile({ direction:'horizontal' });
+	</script>
+</body>
+</html>
