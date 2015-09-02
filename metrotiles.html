@@ -11,14 +11,14 @@
 
 		function init()
 		{
-		document.body.style.backgroundImage = "url('images/bg1.png')";
-		ta = document.getElementById("editor");
-		ta.style.position = "absolute";
-		ta.style.frameborder="0";
-		ta.width = window.innerWidth/2+"px";
-		
-		//Start creating tiles	
-		var obj = new TileAction();
+			document.body.style.backgroundImage = "url('images/bg1.png')";
+			ta = document.getElementById("editor");
+			ta.style.position = "absolute";
+			ta.style.frameborder="0";
+			ta.width = window.innerWidth/2+"px";
+			
+			//Start creating tiles	
+			var obj = new TileAction();
 		}
 		function getRandomInt(min, max)
 		{
@@ -47,86 +47,86 @@
 			//Function to create a single tile. Takes the tile count and the content to be displayed in it.
 			function addTile(i,content)
 			{
-			othis.div = document.createElement("div");
-			othis.div.id = "tile"+count;
-			randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-			othis.div.setAttribute("class",attrList[i]+" "+randColor);
-			
-			//create the outer div		
-			othis.div.setAttribute("data-mode","carousel");
-			othis.div.setAttribute("data-direction","horizontal");
-			//Set random delay
-			othis.div.setAttribute("data-initdelay",getRandomInt(5000,10000)+"");
-			
+				othis.div = document.createElement("div");
+				othis.div.id = "tile"+count;
+				randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
+				othis.div.setAttribute("class",attrList[i]+" "+randColor);
+				
+				//create the outer div		
+				othis.div.setAttribute("data-mode","carousel");
+				othis.div.setAttribute("data-direction","horizontal");
+				//Set random delay
+				othis.div.setAttribute("data-initdelay",getRandomInt(5000,10000)+"");
+				
 
-			//create the front div
-			othis.fdiv = document.createElement("div");
-			var p = document.createElement("p");
-			var a = document.createElement("a");
-			a.setAttribute("class","metroLarger");
-			a.href = "#";
-			a.innerHTML = "Initial content";
-			span = document.createElement("span");
-			span.setAttribute("class","tile-title");
-			span.innerHTML = "tile"+count;
-			p.appendChild(a);
-			othis.fdiv.appendChild(p);
-			othis.fdiv.appendChild(span);
-
-			othis.div.appendChild(othis.fdiv);
-
-			for(j=0;j<content.length;j++)
-			{
-				othis.bdiv = document.createElement("div");
+				//create the front div
+				othis.fdiv = document.createElement("div");
 				var p = document.createElement("p");
 				var a = document.createElement("a");
 				a.setAttribute("class","metroLarger");
 				a.href = "#";
-				a.innerHTML = content[j];
+				a.innerHTML = "Initial content";
 				span = document.createElement("span");
 				span.setAttribute("class","tile-title");
-				span.innerHTML = othis.div.id;
+				span.innerHTML = "tile"+count;
 				p.appendChild(a);
-				othis.bdiv.appendChild(p);
-				othis.bdiv.appendChild(span);
+				othis.fdiv.appendChild(p);
+				othis.fdiv.appendChild(span);
 
-				othis.div.appendChild(othis.bdiv);
-			}
+				othis.div.appendChild(othis.fdiv);
 
-			//Old code for back div
-			//create the back div
-			// othis.bdiv = document.createElement("div");
-			// var p = document.createElement("p");
-			// var a = document.createElement("a");
-			// a.setAttribute("class","metroLarger");
-			// a.href = "#";
-			// a.innerHTML = "back "+othis.count;
-			// span = document.createElement("span");
-			// span.setAttribute("class","tile-title");
-			// span.innerHTML = othis.div.id;
-			// p.appendChild(a);
-			// othis.bdiv.appendChild(p);
-			// othis.bdiv.appendChild(span);
-			
-			othis.div.appendChild(othis.fdiv);
-			// othis.div.appendChild(othis.bdiv);
-			
-			if(count==10)
-			{
-				//Replace tile
-				tile1 = document.getElementById("tile1");
-				othis.tilediv.replaceChild(othis.div,tile1);
-				othis.tilediv.appendChild(tile1);
-				count++;
-			}
-			else
-			{
-				//Append tile
-				othis.tilediv.appendChild(othis.div);
-				count++;
-			}
-			//call animate
-			animate();
+				for(j=0;j<content.length;j++)
+				{
+					othis.bdiv = document.createElement("div");
+					var p = document.createElement("p");
+					var a = document.createElement("a");
+					a.setAttribute("class","metroLarger");
+					a.href = "#";
+					a.innerHTML = content[j];
+					span = document.createElement("span");
+					span.setAttribute("class","tile-title");
+					span.innerHTML = othis.div.id;
+					p.appendChild(a);
+					othis.bdiv.appendChild(p);
+					othis.bdiv.appendChild(span);
+
+					othis.div.appendChild(othis.bdiv);
+				}
+
+				//Old code for back div
+				//create the back div
+				// othis.bdiv = document.createElement("div");
+				// var p = document.createElement("p");
+				// var a = document.createElement("a");
+				// a.setAttribute("class","metroLarger");
+				// a.href = "#";
+				// a.innerHTML = "back "+othis.count;
+				// span = document.createElement("span");
+				// span.setAttribute("class","tile-title");
+				// span.innerHTML = othis.div.id;
+				// p.appendChild(a);
+				// othis.bdiv.appendChild(p);
+				// othis.bdiv.appendChild(span);
+				
+				othis.div.appendChild(othis.fdiv);
+				// othis.div.appendChild(othis.bdiv);
+				
+				if(count==10)
+				{
+					//Replace tile
+					tile1 = document.getElementById("tile1");
+					othis.tilediv.replaceChild(othis.div,tile1);
+					othis.tilediv.appendChild(tile1);
+					count++;
+				}
+				else
+				{
+					//Append tile
+					othis.tilediv.appendChild(othis.div);
+					count++;
+				}
+				//call animate
+				animate();
 			};
 
 			function animate(){
@@ -153,7 +153,7 @@
 	</style>
 </head>
 <body onload="init()">
-	<iframe id="editor" src="quill\examples\index.html" width="100%" height="100%" allowtransparency="true" style="background: #FFFFFF;border: none">
+	<iframe id="editor" src="quill/examples/index.html" width="100%" height="100%" allowtransparency="true" style="background: #FFFFFF;border: none">
 	</iframe>
 
 	<!-- <div id="p">

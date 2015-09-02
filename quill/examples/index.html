@@ -3,6 +3,7 @@
   <head>
     <title>Quill Editor Demo</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../quill.snow.css">
     <meta charset="utf-8">
   </head>
   <body>
@@ -20,40 +21,47 @@
             <option value="18px">Large</option>
             <option value="32px">Huge</option>
           </select>
+          <span title="Bold" class="ql-format-button ql-bold"></span>
+          <span class="ql-format-separator"></span>
+          <span title="Italic" class="ql-format-button ql-italic"></span>
+          <span class="ql-format-separator"></span>
+          <span title="Underline" class="ql-format-button ql-underline"></span>
+          <span class="ql-format-separator"></span>
+          <span title="Strikethrough" class="ql-format-button ql-strike"></span>
+          <span class="ql-format-separator"></span>
           <select title="Text Color" class="ql-color">
-            <option value="rgb(255, 255, 255)">White</option>
-            <option value="rgb(0, 0, 0)" selected>Black</option>
-            <option value="rgb(255, 0, 0)">Red</option>
-            <option value="rgb(0, 0, 255)">Blue</option>
-            <option value="rgb(0, 255, 0)">Lime</option>
-            <option value="rgb(0, 128, 128)">Teal</option>
-            <option value="rgb(255, 0, 255)">Magenta</option>
-            <option value="rgb(255, 255, 0)">Yellow</option>
+            <option value="rgb(255, 255, 255)"></option>
+            <option value="rgb(0, 0, 0)" selected></option>
+            <option value="rgb(255, 0, 0)"></option>
+            <option value="rgb(0, 0, 255)"></option>
+            <option value="rgb(0, 255, 0)"></option>
+            <option value="rgb(0, 128, 128)"></option>
+            <option value="rgb(255, 0, 255)"></option>
+            <option value="rgb(255, 255, 0)"></option>
           </select>
           <select title="Background Color" class="ql-background">
-            <option value="rgb(255, 255, 255)" selected>White</option>
-            <option value="rgb(0, 0, 0)">Black</option>
-            <option value="rgb(255, 0, 0)">Red</option>
-            <option value="rgb(0, 0, 255)">Blue</option>
-            <option value="rgb(0, 255, 0)">Lime</option>
-            <option value="rgb(0, 128, 128)">Teal</option>
-            <option value="rgb(255, 0, 255)">Magenta</option>
-            <option value="rgb(255, 255, 0)">Yellow</option>
+            <option value="rgb(255, 255, 255)" selected></option>
+            <option value="rgb(0, 0, 0)"></option>
+            <option value="rgb(255, 0, 0)"></option>
+            <option value="rgb(0, 0, 255)"></option>
+            <option value="rgb(0, 255, 0)"></option>
+            <option value="rgb(0, 128, 128)"></option>
+            <option value="rgb(255, 0, 255)"></option>
+            <option value="rgb(255, 255, 0)"></option>
           </select>
           <select title="Text Alignment" class="ql-align">
-            <option value="left" selected>Left</option>
-            <option value="center">Center</option>
-            <option value="right">Right</option>
-            <option value="justify">Justify</option>
+            <option value="left" selected></option>
+            <option value="center"></option>
+            <option value="right"></option>
+            <option value="justify"></option>
           </select>
-          <button title="Bold" class="ql-format-button ql-bold">Bold</button>
-          <button title="Italic" class="ql-format-button ql-italic">Italic</button>
-          <button title="Underline" class="ql-format-button ql-underline">Under</button>
-          <button title="Strikethrough" class="ql-format-button ql-strike">Strike</button>
-          <button title="Link" class="ql-format-button ql-link">Link</button>
-          <button title="Image" class="ql-format-button ql-image">Image</button>
-          <button title="Bullet" class="ql-format-button ql-bullet">Bullet</button>
-          <button title="List" class="ql-format-button ql-list">List</button>
+          <span title="Link" class="ql-format-button ql-link"></span>
+          <span class="ql-format-separator"></span>
+          <span title="Image" class="ql-format-button ql-image"></span>
+          <span class="ql-format-separator"></span>
+          <span title="Bullet" class="ql-format-button ql-bullet"></span>
+          <span class="ql-format-separator"></span>
+          <span title="List" class=" ql-format-button ql-list"></span>
         </div>
         <div id="editor-container"></div>
       </div>
@@ -65,7 +73,8 @@
           'toolbar': { container: '#formatting-container' },
           'link-tooltip': true,
           'image-tooltip': true
-        }
+        },
+        theme: 'snow'
       });
       editor.on('selection-change', function(range) {
         console.log('selection-change', range)
