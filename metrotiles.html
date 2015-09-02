@@ -17,13 +17,32 @@
 			ta.style.frameborder="0";
 			ta.width = window.innerWidth/2+"px";
 			
+			//get editor
+			editor = iframeRef(document.getElementById("editor"));
+
 			//Start creating tiles	
 			var obj = new TileAction();
+
+			getContents();
 		}
+
+		function iframeRef(frameRef) 
+		{
+    		return frameRef.contentWindow; //? frameRef.contentWindow.document : frameRef.contentDocument
+		}
+
 		function getRandomInt(min, max)
 		{
     		return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
+
+		function getContents()
+		{
+			
+			content = editor.fun();
+			setTimeout(getContents,10000);
+		}
+
 		function TileAction()
 		{
 			//Setup the page
