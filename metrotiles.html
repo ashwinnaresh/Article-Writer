@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="js/MetroJs.js"></script>
 	
 	<script type="text/javascript">
-
+		xhr=new XMLHttpRequest();
 		function init()
 		{
 			document.body.style.backgroundImage = "url('images/bg1.png')";
@@ -23,7 +23,7 @@
 			//Start creating tiles	
 			var obj = new TileAction();
 
-			getContents();
+			setTimeout(getContents,10000);
 		}
 
 		function iframeRef(frameRef) 
@@ -40,8 +40,17 @@
 		{
 			
 			content = editor.fun();
-			alert(content.split("\n").length-1);
+			xhr.onreadystatechange=getResults;
+			xhr.open("GET", "http://localhost/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
+		    xhr.send();
+
 			setTimeout(getContents,10000);
+		}
+		function getResults()
+		{
+			if(xhr.readyState==4 && xhr.status==200){
+				alert(xhr.responseText);
+			}
 		}
 
 		function TileAction()

@@ -1,0 +1,19 @@
+{
+    "name": "alchemyai/alchemyapi_php",
+    "type": "sdk",
+    "description": "A software development kit (sdk) for AlchemyAPI using PHP",
+    "keywords": ["alchemyapi","alchemyai","php","ai","sdk"],
+    "homepage": "http://www.alchemyapi.com/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "AlchemyAPI",
+            "email": "support@alchemyapi.com",
+            "homepage": "http://www.alchemyapi.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "classmap": ["alchemyapi.php"]
+     }
+}

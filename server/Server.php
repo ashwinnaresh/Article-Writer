@@ -3,30 +3,30 @@ require_once 'alchemyapi.php';
 $alchemyapi = new AlchemyAPI();
 
 // Keyword extraction
-$demo_text = "Now you can use the alchemyapi object to access any of AlchemyAPI's text analysis functions, just like the example.php file does. For example, to calculate the document sentiment for a simple sentence, try:";
-$response = $alchemyapi->keywords('text',$demo_text, array('sentiment'=>1));
+extract($_GET);
+$response = $alchemyapi->keywords('text',rawurldecode($demo_text), array('maxRetrieve'=>5));
 if ($response['status'] == 'OK') 
 {
-	echo '## Keywords ##', "<br>";
+	$words='';
 	foreach ($response['keywords'] as $keyword) 
 	{
-		echo 'keyword: ', $keyword['text'], "<br>";
-		echo 'relevance: ', $keyword['relevance'], "<br>";
+		$words=$words.';'.$keyword['text'].':'.$keyword['relevance'];
 	}
+	echo $words;
 } 
 else 
 {
 	echo 'Error in the keyword extraction call: ', $response['statusInfo'];
 }
 
-$response = $alchemyapi->concepts('text',$demo_text, null);
+$response = $alchemyapi->concepts('text',rawurldecode($demo_text), null);
 if ($response['status'] == 'OK') 
 {
-	echo '## Concepts ##', "<br>";
+	$con='';
 	foreach ($response['concepts'] as $concept) {
-		echo 'concept: ', $concept['text'], "<br>";
-		echo 'relevance: ', $concept['relevance'], "<br>";
+		$con=$con.';'.$concept['text'].':'.$concept['relevance'];
 	}
+	echo $con;
 } 
 else 
 {
