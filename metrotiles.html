@@ -9,6 +9,7 @@
 	
 	<script type="text/javascript">
 		xhr=new XMLHttpRequest();
+		content_array=[""];
 		function init()
 		{
 			document.body.style.backgroundImage = "url('images/bg1.png')";
@@ -21,7 +22,7 @@
 			editor = iframeRef(document.getElementById("editor"));
 
 			//Start creating tiles	
-			var obj = new TileAction();
+			obj = new TileAction();
 
 			setTimeout(getContents,10000);
 		}
@@ -41,17 +42,43 @@
 			
 			content = editor.fun();
 			xhr.onreadystatechange=getResults;
-			xhr.open("GET", "http://localhost/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
+			xhr.open("GET", "http://localhost:8088/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
 		    xhr.send();
 
-			setTimeout(getContents,10000);
+			setTimeout(getContents,20000);
 		}
 		function getResults()
 		{
-			if(xhr.readyState==4 && xhr.status==200){
-				alert(xhr.responseText);
+			if(xhr.readyState==4 && xhr.status==200)
+			{
+				res = xhr.responseText.split("\n");
+				s = [];
+
+				t1 = res[1].split("=")[1].split(";");
+				for(i=0;i<t1.length;i++)
+				{
+					s.push(t1[i]);
+				}
+
+				t2 = res[2].split("=")[1].split(";");
+				for(i=0;i<t2.length;i++)
+				{
+					s.push(t2[i]);
+				}
+				for(i=1;i<=count;i++)
+				{
+
+					updateContent(i,s);
+				}			
 			}
 		}
+
+		function updateContent(tile_id,content)
+		{
+			tile = document.getElementById("tile"+tile_id);
+			tile.firstChild.style.overflowY="auto";
+			tile.firstChild.innerHTML = content;
+		};
 
 		function TileAction()
 		{
@@ -65,12 +92,13 @@
 
 			var tilecolors = ["amber","blue","brown","cobalt","crimson","cyan","emerald","green","indigo","lime","magenta","mango","mauve","orange","olive","pink","purple","violet","red","sienna","steel","teal","yellow","black"]
 			
-			var attrList = ["live-tile","live-tile","live-tile two-wide","live-tile two-wide two-tall","live-tile","live-tile","live-tile","live-tile","live-tile two-wide","live-tile","live-tile"];
+			attrList = ["live-tile","live-tile","live-tile two-wide","live-tile two-wide two-tall","live-tile","live-tile","live-tile","live-tile","live-tile two-wide","live-tile","live-tile"];
 
+			
 			//Create tiles for each item in the list
 			for(i=0;i<attrList.length;i++)
 			{
-				addTile(i,["New content1","New content2","New content3","New content4"]);
+				addTile(i,content_array);
 			}
 
 			//Function to create a single tile. Takes the tile count and the content to be displayed in it.
@@ -84,8 +112,10 @@
 				//create the outer div		
 				othis.div.setAttribute("data-mode","carousel");
 				othis.div.setAttribute("data-direction","horizontal");
+				othis.div.setAttribute("data-delay","10000");
+
 				//Set random delay
-				othis.div.setAttribute("data-initdelay",getRandomInt(5000,10000)+"");
+				// othis.div.setAttribute("data-initdelay",getRandomInt(5000,10000)+"");
 				
 
 				//create the front div
@@ -102,7 +132,7 @@
 				othis.fdiv.appendChild(p);
 				othis.fdiv.appendChild(span);
 
-				othis.div.appendChild(othis.fdiv);
+				// othis.div.appendChild(othis.fdiv);
 
 				for(j=0;j<content.length;j++)
 				{
@@ -157,6 +187,7 @@
 				//call animate
 				animate();
 			};
+
 
 			function animate(){
 				$(".live-tile").liveTile();
