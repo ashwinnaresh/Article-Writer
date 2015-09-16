@@ -8,8 +8,9 @@
 	<script type="text/javascript" src="js/MetroJs.js"></script>
 	
 	<script type="text/javascript">
-		xhr=new XMLHttpRequest();
-		content_array=[""];
+		xhr = new XMLHttpRequest();
+		content_array = [""];
+		
 		function init()
 		{
 			document.body.style.backgroundImage = "url('images/bg1.png')";
@@ -41,8 +42,8 @@
 		{
 			
 			content = editor.fun();
-			xhr.onreadystatechange=getResults;
-			xhr.open("GET", "http://localhost:8088/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
+			xhr.onreadystatechange = getResults;
+			xhr.open("GET", "http://localhost/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
 		    xhr.send();
 
 			setTimeout(getContents,20000);
@@ -53,7 +54,7 @@
 			{
 				res = xhr.responseText.split("\n");
 				s = [];
-
+				console.log("Results - " + res);
 				t1 = res[1].split("=")[1].split(";");
 				for(i=0;i<t1.length;i++)
 				{
@@ -213,6 +214,9 @@
 	</style>
 </head>
 <body onload="init()">
+	<!-- <div class="input-control text"> -->
+    <!-- <input type="text" placeholder="Enter Title"> -->
+<!-- </div> -->
 	<iframe id="editor" src="quill/examples/index.html" width="100%" height="100%" allowtransparency="true" style="background: #FFFFFF;border: none">
 	</iframe>
 

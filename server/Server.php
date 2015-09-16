@@ -4,16 +4,24 @@ $alchemyapi = new AlchemyAPI();
 
 // Keyword extraction
 extract($_GET);
-$demo_text = "The 20 newsgroups dataset is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. We will use the Mahout CBayes classifier to create a model that would classify a new document into one of the 20 newsgroups.";
+$threshold = 0.65;
+$keywords = array();
+$concepts = array();
+//$demo_text = "The 20 newsgroups dataset is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. The 20 newsgroups collection has become a popular data set for experiments in text applications of machine learning techniques, such as text classification and text clustering. We will use the Mahout CBayes classifier to create a model that would classify a new document into one of the 20 newsgroups.";
 $response = $alchemyapi->keywords('text',rawurldecode($demo_text), array('maxRetrieve'=>5));
 if ($response['status'] == 'OK') 
 {
-	$words='';
+	$words = '';
 	foreach ($response['keywords'] as $keyword) 
 	{
-		$words=$words.';'.$keyword['text'].':'.$keyword['relevance'];
+		//$words = $words . ';' . $keyword['text'] . ':' . $keyword['relevance'];
+		if($keyword['relevance'] >= $threshold)
+		{
+			$words = $words . ';' . $keyword['text'] . ':' . $keyword['relevance'];
+			array_push($keywords, $keyword['text']);
+		}
 	}
-	echo "KEYWORDS=".$words."\n";
+	echo "KEYWORDS = " . $words . "\n";
 } 
 else 
 {
@@ -23,11 +31,17 @@ else
 $response = $alchemyapi->concepts('text',rawurldecode($demo_text), null);
 if ($response['status'] == 'OK') 
 {
-	$con='';
-	foreach ($response['concepts'] as $concept) {
-		$con=$con.';'.$concept['text'].':'.$concept['relevance'];
+	$con = '';
+	foreach ($response['concepts'] as $concept) 
+	{
+		// $con=$con . ';' . $concept['text'] . ':' . $concept['relevance'];
+		if($concept['relevance'] >= $threshold)
+		{
+			array_push($concepts, $concept['text']);
+			$con = $con . ';' . $concept['text'] . ':' . $concept['relevance'];
+		}
 	}
-	echo "CONCEPT=".$con;
+	echo "CONCEPT = " . $con;
 } 
 else 
 {
