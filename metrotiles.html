@@ -41,7 +41,7 @@
 		function getContents()
 		{
 			
-			content = editor.fun();
+			content = editor.getContent();
 			xhr.onreadystatechange = getResults;
 			xhr.open("GET", "http://localhost/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
 		    xhr.send();
@@ -50,27 +50,31 @@
 		}
 		function getResults()
 		{
-			if(xhr.readyState==4 && xhr.status==200)
+			if(xhr.readyState == 4 && xhr.status == 200)
 			{
-				res = xhr.responseText.split("\n");
-				s = [];
-				console.log("Results - " + res);
-				t1 = res[1].split("=")[1].split(";");
-				for(i=0;i<t1.length;i++)
-				{
-					s.push(t1[i]);
-				}
+				// res = xhr.responseText.split("\n");
+				// s = [];
+				// console.log("Results - " + res);
+				// t1 = res[1].split("=")[1].split(";");
+				// for(i=0;i<t1.length;i++)
+				// {
+				// 	s.push(t1[i]);
+				// }
 
-				t2 = res[2].split("=")[1].split(";");
-				for(i=0;i<t2.length;i++)
-				{
-					s.push(t2[i]);
-				}
-				for(i=1;i<=count;i++)
-				{
+				// t2 = res[2].split("=")[1].split(";");
+				// for(i=0;i<t2.length;i++)
+				// {
+				// 	s.push(t2[i]);
+				// }
+				// for(i=1;i<=count;i++)
+				// {
 
-					updateContent(i,s);
-				}			
+				// 	updateContent(i,s);
+				// }
+
+				res = xhr.responseText;			
+				// alert(res);
+				console.log(typeof(res));
 			}
 		}
 
@@ -194,6 +198,7 @@
 				$(".live-tile").liveTile();
 			// jQuery UI 
 			// http://jqueryui.com/sortable/#display-grid
+			// import jquery-ui cdn to use this
 				$( ".tiles" ).sortable();
 				$( ".tiles" ).disableSelection();
 			};
