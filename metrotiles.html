@@ -72,11 +72,13 @@
 				// 	updateContent(i,s);
 				// }
 
+				//alert(xhr.responseText);
+				
 				res = JSON.parse(xhr.responseText);			
-				// alert(res);
 				// console.log(res);
 				for(i=1;i<=count;i++)
 				{
+					//alert(res.d.results[i]['url'])
 					console.log(typeof(res.d.results[i]['Description']));
 					updateContent(i,res.d.results[i]['Description']);
 				}

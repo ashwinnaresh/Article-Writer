@@ -1,4 +1,5 @@
 <?php
+require_once 'C:\wamp\www\Article-Writer\unirest-php\src\Unirest.php';
 require_once 'alchemyapi.php';
 $alchemyapi = new AlchemyAPI();
 
@@ -78,8 +79,28 @@ if($count <= 50)
 	$context = stream_context_create($data);
 	// Get the response from Bing.
 	$response = file_get_contents($requestUri, 0, $context);
+	/*$res=json_decode($response,true);
+	echo $res['d']['results'][1]['Description'];
+	$ch = curl_init("http://api.smmry.com/&SM_API_KEY=6232BCC290&SM_LENGTH=5&SM_URL=".$res['d']['results'][1]['Url']);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,20);
+	curl_setopt($ch, CURLOPT_TIMEOUT,20);
+	$return = json_decode(curl_exec($ch), true);//You're summary is now stored in $return['sm_api_content'].
+	echo $return['sm_api_content'];
+	curl_close($ch);*/
+	$response = Unirest\Request::post("https://textanalysis-text-summarization.p.mashape.com/text-summarizer",
+  array(
+    "X-Mashape-Key" => "3iMgVTFKtsmshtMCfYW5c865D3KKp1WVRpxjsnAizNDz1d23CV",
+    "Content-Type" => "application/json",
+    "Accept" => "application/json"
+  ),
+  "{\"url\":\"http://en.wikipedia.org/wiki/Automatic_summarization\",\"text\":\"\",\"sentnum\":8}"
+);
 	// Send the response back to the browser.
-	echo $response;
+	//$response=(array)json_encode($response);
+	echo $response->raw_body;
+	//echo $response;
 	// echo "" . $keywords[0];
 }
 else
