@@ -32,7 +32,7 @@ function getContents()
 {
 	content = editor.getContent();
 	xhr.onreadystatechange = getResults;
-	xhr.open("GET", "http://localhost:8088/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
+	xhr.open("GET", "http://localhost/Article-Writer/server/Server.php?demo_text=" + encodeURI(content), true);
 	xhr.send();
 
 	setTimeout(getContents,20000);
@@ -42,10 +42,7 @@ function getResults()
 {
 	if(xhr.readyState == 4 && xhr.status == 200)
 	{
-		res = JSON.parse(xhr.responseText);			
-		// alert(res);
-		// console.log(res);
-		alert(count);
+		res = JSON.parse(xhr.responseText);
 		for(i=1;i<=count;i++)
 		{
 			updateContent(i,res.d.results[i]['Description'],res.d.results[i]['Url']);
@@ -58,7 +55,7 @@ function updateContent(tile_id,content,url)
 {
 	tile = document.getElementById("tile"+tile_id);
 
-	tile.addEventListener("click",openNewTab(url));
+	//tile.addEventListener("click",openNewTab(url));
 
 	tile.firstChild.style.overflowY="auto";
 	tile.firstChild.innerHTML = content;
@@ -66,8 +63,8 @@ function updateContent(tile_id,content,url)
 
 function openNewTab(url)
 {
-	var newtab = window.open(url, '_blank'); 
-	newtab.focus();
+	//var newtab = window.open(url, '_blank'); 
+	//newtab.focus();
 }
 
 function TileAction()
