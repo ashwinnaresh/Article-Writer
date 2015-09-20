@@ -55,16 +55,13 @@ function updateContent(tile_id,content,url)
 {
 	tile = document.getElementById("tile"+tile_id);
 
-	//tile.addEventListener("click",openNewTab(url));
+	tile.addEventListener("click",function(){
+		var newtab = window.open(url, '_blank'); 
+		newtab.focus();
+	},false);
 
-	tile.firstChild.style.overflowY="auto";
+	tile.firstChild.style.overflowY = "auto";
 	tile.firstChild.innerHTML = content;
-};
-
-function openNewTab(url)
-{
-	//var newtab = window.open(url, '_blank'); 
-	//newtab.focus();
 }
 
 function TileAction()
