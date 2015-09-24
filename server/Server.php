@@ -79,32 +79,23 @@ if($count <= 50)
 	$context = stream_context_create($data);
 	// Get the response from Bing.
 	$response = file_get_contents($requestUri, 0, $context);
-	//echo "hi";
-	echo $response;
-	/*$res=json_decode($response,true);
-	echo $res['d']['results'][1]['Description'];
-	$ch = curl_init("http://api.smmry.com/&SM_API_KEY=6232BCC290&SM_LENGTH=5&SM_URL=".$res['d']['results'][1]['Url']);
-	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,20);
-	curl_setopt($ch, CURLOPT_TIMEOUT,20);
-	$return = json_decode(curl_exec($ch), true);//You're summary is now stored in $return['sm_api_content'].
-	echo $return['sm_api_content'];
-	curl_close($ch);*/
-	/*$response = Unirest\Request::post("https://textanalysis-text-summarization.p.mashape.com/text-summarizer",
-  array(
-    "X-Mashape-Key" => "3iMgVTFKtsmshtMCfYW5c865D3KKp1WVRpxjsnAizNDz1d23CV",
-    "Content-Type" => "application/json",
-    "Accept" => "application/json"
-  ),
-  "{\"url\":\"http://en.wikipedia.org/wiki/Automatic_summarization\",\"text\":\"\",\"sentnum\":8}"
-);
-	// Send the response back to the browser.
-	//$response=(array)json_encode($response);
-	echo $response->raw_body;
-	//echo $response;
-	// echo "" . $keywords[0];*/
+	//echo gettype($response);
+	$arr=json_decode($response,true);
+	$res_arr=array();
+	$search_res = $arr['d']['results'];//['Description'];
+	for($i=0;$i<5;$i++) {
+		foreach ($search_res[$i] as $inner => $v) {
+			if($inner == 'Url'){ 
+				//echo $inner.' '.$v;
+				 $text_data = $alchemyapi->text('url',$v,null);
+				 //echo $text_data['text'];
+     			$res_arr[] = array('Description' => $text_data['text'],'Url' => $v );
+    		}	
+		}
+	}
+	echo json_encode($res_arr);//$res_arr;
 }
+
 else
 {
 	//both keywords + concepts search

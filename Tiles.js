@@ -43,9 +43,10 @@ function getResults()
 	if(xhr.readyState == 4 && xhr.status == 200)
 	{
 		res = JSON.parse(xhr.responseText);
+		alert(res[0]);
 		for(i=1;i<=count;i++)
 		{
-			updateContent(i,res.d.results[i]['Description'],res.d.results[i]['Url']);
+			updateContent(i,res[i]['Description'],res[i]['Url']);
 		}
 	}
 }
