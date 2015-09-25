@@ -43,7 +43,7 @@ function getResults()
 	if(xhr.readyState == 4 && xhr.status == 200)
 	{
 		res = JSON.parse(xhr.responseText);
-		alert(res[0]);
+		//alert(res[0]);
 		for(i=1;i<=count;i++)
 		{
 			updateContent(i,res[i]['Description'],res[i]['Url']);

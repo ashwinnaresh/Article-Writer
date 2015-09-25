@@ -1,8 +1,9 @@
 <?php
 //require_once 'C:\wamp\www\Article-Writer\unirest-php\src\Unirest.php';
 require_once 'alchemyapi.php';
+require_once("aylien_textapi_php/src/AYLIEN/TextAPI.php");
 $alchemyapi = new AlchemyAPI();
-
+$textapi = new AYLIEN\TextAPI("a6379b0a", "6f2cf6012da38962a60079bb4b7cea9c",false);
 // Keyword extraction
 extract($_GET);
 $threshold = 0.65;
@@ -86,10 +87,17 @@ if($count <= 50)
 	for($i=0;$i<5;$i++) {
 		foreach ($search_res[$i] as $inner => $v) {
 			if($inner == 'Url'){ 
-				//echo $inner.' '.$v;
-				 $text_data = $alchemyapi->text('url',$v,null);
-				 //echo $text_data['text'];
-     			$res_arr[] = array('Description' => $text_data['text'],'Url' => $v );
+				// //echo $inner.' '.$v;
+				//  $text_data = $alchemyapi->text('url',$v,null);
+				//  //echo $text_data['text'];
+				$text_data='';
+				$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
+				foreach ($summary->sentences as $sentece) {
+    					$text_data=$text_data.' '.$sentece;
+    				}
+
+     			$res_arr[] = array('Description' => $text_data,'Url' => $v );
+
     		}	
 		}
 	}
