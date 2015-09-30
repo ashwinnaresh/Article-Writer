@@ -1,7 +1,7 @@
 <?php
 //require_once 'C:\wamp\www\Article-Writer\unirest-php\src\Unirest.php';
 require_once 'alchemyapi.php';
-require_once("aylien_textapi_php-master/src/AYLIEN/TextAPI.php");
+require_once("aylien_textapi_php/src/AYLIEN/TextAPI.php");
 $alchemyapi = new AlchemyAPI();
 $textapi = new AYLIEN\TextAPI("a6379b0a", "6f2cf6012da38962a60079bb4b7cea9c",false);
 // Keyword extraction
