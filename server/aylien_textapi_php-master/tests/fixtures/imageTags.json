@@ -1,0 +1,121 @@
+{
+  "tests": [
+  {
+    "input": "https://developer.aylien.com/images/logo-small.png",
+    "input_type": "url",
+    "output": {
+      "image": "https://developer.aylien.com/images/logo-small.png",
+      "tags": [
+          {
+              "confidence": 25.475968964265753,
+              "tag": "symbol"
+          },
+          {
+              "confidence": 24.585431500858927,
+              "tag": "icon"
+          },
+          {
+              "confidence": 18.446091843072377,
+              "tag": "web"
+          },
+          {
+              "confidence": 17.96093759327204,
+              "tag": "sign"
+          },
+          {
+              "confidence": 17.65312634161578,
+              "tag": "set"
+          },
+          {
+              "confidence": 16.68505677250935,
+              "tag": "button"
+          },
+          {
+              "confidence": 15.632162803071614,
+              "tag": "design"
+          },
+          {
+              "confidence": 15.298389402777323,
+              "tag": "internet"
+          },
+          {
+              "confidence": 15.075469050766499,
+              "tag": "graphic"
+          },
+          {
+              "confidence": 14.324030953468982,
+              "tag": "icons"
+          },
+          {
+              "confidence": 13.575715419600323,
+              "tag": "3d"
+          },
+          {
+              "confidence": 13.445621191198112,
+              "tag": "business"
+          },
+          {
+              "confidence": 13.229135397239837,
+              "tag": "bob"
+          },
+          {
+              "confidence": 12.078231997333143,
+              "tag": "alphabet"
+          },
+          {
+              "confidence": 11.7446098678395,
+              "tag": "black"
+          },
+          {
+              "confidence": 10.116832715802634,
+              "tag": "finance"
+          },
+          {
+              "confidence": 9.999537374297455,
+              "tag": "shiny"
+          },
+          {
+              "confidence": 8.695801812550675,
+              "tag": "computer"
+          },
+          {
+              "confidence": 8.591949196289223,
+              "tag": "reflection"
+          },
+          {
+              "confidence": 7.606932847037548,
+              "tag": "modern"
+          },
+          {
+              "confidence": 7.490556574223187,
+              "tag": "art"
+          },
+          {
+              "confidence": 7.484717257609602,
+              "tag": "letter"
+          },
+          {
+              "confidence": 7.422232929241343,
+              "tag": "element"
+          },
+          {
+              "confidence": 7.212055104236062,
+              "tag": "pattern"
+          },
+          {
+              "confidence": 7.174389613905224,
+              "tag": "text"
+          },
+          {
+              "confidence": 7.020596115703179,
+              "tag": "money"
+          },
+          {
+              "confidence": 7.014104941889021,
+              "tag": "bright"
+          }
+      ]
+    }
+  }
+  ]
+}

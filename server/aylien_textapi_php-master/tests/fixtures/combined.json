@@ -1,0 +1,279 @@
+{
+    "tests": [
+        {
+            "input": {
+              "url": "http://www.bbc.com/sport/0/football/25912393",
+              "endpoint": ["extract","classify","concepts","entities","hashtags","language","sentiment","summarize"]
+            },
+            "output": {
+                "results": [
+                    {
+                        "endpoint": "extract",
+                        "result": {
+                            "article": "Lionel Messi: Forward is not for sale, says Barcelona president\n\nBarcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.\n\nFour-time Ballon d'Or winner Messi, 26, is reported to be a target for French side Paris St-Germain.\n\nIn an interview with radio station RAC1, posted on Barcelona's website,\u00a0 Bartomeu said: \"The club will sit down and negotiate a new contract.\n\n\"We will do what we have to, to ensure he's the best-paid player.\"\n\nMessi scored 60 goals in 50 appearances last season but has struggled to match that goalscoring form in 2013-14.\n\nHe has scored 18 goals so far but just eight of those have been in the league.\n\nHis last league goal came in September, before he was out for five weeks with a hamstring injury.\n\n\"He can do everything,\" said Barca coach Gerardo Martino. \"If he succeeds in other facets of his game, it doesn't matter if he scores.\n\n\"Nothing surprises me with him. He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball.\n\n\"He sees passes that most people can only see whilst watching the game on TV or in the stands, not ones that you can normally see on the field.\"",
+                            "author": "",
+                            "feeds": [],
+                            "image": "",
+                            "title": "Messi not for sale - Barca president",
+                            "videos": []
+                        }
+                    },
+                    {
+                        "endpoint": "language",
+                        "result": {
+                            "confidence": 0.9999968769183948,
+                            "lang": "en"
+                        }
+                    },
+                    {
+                        "endpoint": "entities",
+                        "result": {
+                            "entities": {
+                                "date": [
+                                    "September"
+                                ],
+                                "keyword": [
+                                    "Barcelona president Barcelona",
+                                    "coach Gerardo",
+                                    "game",
+                                    "Bartomeu",
+                                    "Messi",
+                                    "goals",
+                                    "contract",
+                                    "Barcelona",
+                                    "club",
+                                    "president",
+                                    "Gerardo",
+                                    "coach",
+                                    "Paris",
+                                    "St-Germain",
+                                    "Barca",
+                                    "interview",
+                                    "side",
+                                    "ball",
+                                    "injury",
+                                    "French"
+                                ],
+                                "location": [
+                                    "Paris St-Germain"
+                                ],
+                                "person": [
+                                    "Lionel Messi",
+                                    "Josep Maria Bartomeu",
+                                    "Messi",
+                                    "Bartomeu",
+                                    "Gerardo Martino"
+                                ]
+                            },
+                            "language": "en"
+                        }
+                    },
+                    {
+                        "endpoint": "concepts",
+                        "result": {
+                            "concepts": {
+                                "http://dbpedia.org/resource/Argentina": {
+                                    "support": 47259,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 165,
+                                            "score": 0.9953560864653448,
+                                            "string": "Argentine"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://schema.org/Place",
+                                        "http://dbpedia.org/ontology/Place",
+                                        "http://dbpedia.org/ontology/PopulatedPlace",
+                                        "http://schema.org/Country",
+                                        "http://dbpedia.org/ontology/Country"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/Ballon_d'Or_(1956\u20132009)": {
+                                    "support": 448,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 224,
+                                            "score": 0.977698718582205,
+                                            "string": "Ballon d'Or"
+                                        }
+                                    ],
+                                    "types": [
+                                        ""
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/Barcelona": {
+                                    "support": 18062,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 44,
+                                            "score": 0.9464432751262734,
+                                            "string": "Barcelona"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://schema.org/Place",
+                                        "http://dbpedia.org/ontology/Place",
+                                        "http://dbpedia.org/ontology/PopulatedPlace",
+                                        "http://dbpedia.org/ontology/Settlement"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/France": {
+                                    "support": 205630,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 285,
+                                            "score": 0.8514556465630503,
+                                            "string": "French"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://schema.org/Place",
+                                        "http://dbpedia.org/ontology/Place",
+                                        "http://dbpedia.org/ontology/PopulatedPlace",
+                                        "http://schema.org/Country",
+                                        "http://dbpedia.org/ontology/Country"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/Gerardo_Martino": {
+                                    "support": 26,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 861,
+                                            "score": 1.0,
+                                            "string": "Gerardo Martino"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://dbpedia.org/ontology/Agent",
+                                        "http://schema.org/Person",
+                                        "http://xmlns.com/foaf/0.1/Person",
+                                        "http://dbpedia.org/ontology/Person",
+                                        "http://dbpedia.org/ontology/SportsManager",
+                                        "http://dbpedia.org/ontology/SoccerManager"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/Lionel_Messi": {
+                                    "support": 736,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 0,
+                                            "score": 1.0,
+                                            "string": "Lionel Messi"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://dbpedia.org/ontology/Agent",
+                                        "http://schema.org/Person",
+                                        "http://xmlns.com/foaf/0.1/Person",
+                                        "http://dbpedia.org/ontology/Person",
+                                        "http://dbpedia.org/ontology/Athlete",
+                                        "http://dbpedia.org/ontology/SoccerPlayer"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/Paris_Saint-Germain_F.C.": {
+                                    "support": 1898,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 297,
+                                            "score": 1.0,
+                                            "string": "Paris St-Germain"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://dbpedia.org/ontology/Agent",
+                                        "http://schema.org/Organization",
+                                        "http://dbpedia.org/ontology/Organisation",
+                                        "http://schema.org/SportsTeam",
+                                        "http://dbpedia.org/ontology/SportsTeam",
+                                        "http://dbpedia.org/ontology/SoccerClub"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/RAC1": {
+                                    "support": 77,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 351,
+                                            "score": 1.0,
+                                            "string": "RAC1"
+                                        }
+                                    ],
+                                    "types": [
+                                        "http://dbpedia.org/ontology/Biomolecule",
+                                        "http://dbpedia.org/ontology/Protein"
+                                    ]
+                                },
+                                "http://dbpedia.org/resource/Radio_broadcasting": {
+                                    "support": 23001,
+                                    "surfaceForms": [
+                                        {
+                                            "offset": 337,
+                                            "score": 0.9992966272239675,
+                                            "string": "radio station"
+                                        }
+                                    ],
+                                    "types": [
+                                        ""
+                                    ]
+                                }
+                            },
+                            "language": "en"
+                        }
+                    },
+                    {
+                        "endpoint": "classify",
+                        "result": {
+                            "categories": [
+                                {
+                                    "code": "15054000",
+                                    "confidence": 1.0,
+                                    "label": "sport - soccer"
+                                }
+                            ],
+                            "language": "en"
+                        }
+                    },
+                    {
+                        "endpoint": "hashtags",
+                        "result": {
+                            "hashtags": [
+                                "#LionelMessi",
+                                "#Barcelona",
+                                "#Argentina",
+                                "#France",
+                                "#ParisSaintGermainFC",
+                                "#GerardoMartino",
+                                "#BallonDOr",
+                                "#RAC1",
+                                "#RadioBroadcasting"
+                            ],
+                            "language": "en"
+                        }
+                    },
+                    {
+                        "endpoint": "sentiment",
+                        "result": {
+                            "polarity": "negative",
+                            "polarity_confidence": 0.9999999999741958,
+                            "subjectivity": "unknown",
+                            "subjectivity_confidence": 0.0
+                        }
+                    },
+                    {
+                        "endpoint": "summarize",
+                        "result": {
+                            "sentences": [
+                                "Lionel Messi: Forward is not for sale, says Barcelona president\n\nBarcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.",
+                                "In an interview with radio station RAC1, posted on Barcelona's website,\u00a0 Bartomeu said: \"The club will sit down and negotiate a new contract.",
+                                "His last league goal came in September, before he was out for five weeks with a hamstring injury.",
+                                "\"If he succeeds in other facets of his game, it doesn't matter if he scores.",
+                                "He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball."
+                            ]
+                        }
+                    }
+                ],
+                "text": "Lionel Messi: Forward is not for sale, says Barcelona president\n\nBarcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.\n\nFour-time Ballon d'Or winner Messi, 26, is reported to be a target for French side Paris St-Germain.\n\nIn an interview with radio station RAC1, posted on Barcelona's website,\u00a0 Bartomeu said: \"The club will sit down and negotiate a new contract.\n\n\"We will do what we have to, to ensure he's the best-paid player.\"\n\nMessi scored 60 goals in 50 appearances last season but has struggled to match that goalscoring form in 2013-14.\n\nHe has scored 18 goals so far but just eight of those have been in the league.\n\nHis last league goal came in September, before he was out for five weeks with a hamstring injury.\n\n\"He can do everything,\" said Barca coach Gerardo Martino. \"If he succeeds in other facets of his game, it doesn't matter if he scores.\n\n\"Nothing surprises me with him. He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball.\n\n\"He sees passes that most people can only see whilst watching the game on TV or in the stands, not ones that you can normally see on the field.\""
+            }
+        }
+    ]
+}

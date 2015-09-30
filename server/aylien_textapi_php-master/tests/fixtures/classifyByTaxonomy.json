@@ -1,0 +1,74 @@
+{
+    "tests": [
+        {
+            "input": {
+                "taxonomy": "iab-qag",
+                "text": "John is a very good football player."
+            },
+            "output": {
+                "categories": [
+                    {
+                        "confident": true,
+                        "id": "IAB17-12",
+                        "label": "Football",
+                        "links": [
+                            {
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB17-12",
+                                "rel": "self"
+                            },
+                            {
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB17",
+                                "rel": "parent"
+                            }
+                        ],
+                        "score": 0.34306295902115236
+                    },
+                    {
+                        "confident": true,
+                        "id": "IAB17",
+                        "label": "Sports",
+                        "links": [
+                            {
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB17",
+                                "rel": "self"
+                            }
+                        ],
+                        "score": 0.2815441066678086
+                    }
+                ],
+                "language": "en",
+                "taxonomy": "iab-qag",
+                "text": "John is a very good football player."
+            }
+        },
+        {
+            "input": {
+                "taxonomy": "iptc-subjectcode",
+                "text": "John is a very good football player."
+            },
+            "output": {
+                "categories": [
+                    {
+                        "confident": true,
+                        "id": "15054000",
+                        "label": "soccer",
+                        "links": [
+                            {
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iptc-subjectcode/15054000",
+                                "rel": "self"
+                            },
+                            {
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iptc-subjectcode/15000000",
+                                "rel": "parent"
+                            }
+                        ],
+                        "score": 0.73740531923283
+                    }
+                ],
+                "language": "en",
+                "taxonomy": "iptc-subjectcode",
+                "text": "John is a very good football player."
+            }
+        }
+    ]
+}

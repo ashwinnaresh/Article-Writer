@@ -1,0 +1,26 @@
+{
+  "tests": [
+  {
+    "input": "John is a very good football player!",
+    "input_type": "text",
+    "output": {
+      "text": "John is a very good football player!",
+      "subjectivity": "objective",
+      "subjectivity_confidence": 0.9896821594138254,
+      "polarity": "positive",
+      "polarity_confidence": 0.9999988272764874
+    }
+  },
+  {
+    "input": "I really enjoyed using this camera",
+    "input_type": "text",
+    "output": {
+      "text": "I really enjoyed using this camera",
+      "subjectivity": "subjective",
+      "subjectivity_confidence": 1.0,
+      "polarity": "positive",
+      "polarity_confidence": 0.9999959769982609
+    }
+  }
+  ]
+}

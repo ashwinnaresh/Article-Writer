@@ -1,0 +1,47 @@
+{
+  "tests": [
+  {
+    "input": "Barack Hussein Obama II (born August 4, 1961) is the 44th and current President of the United States, and the first African American to hold the office.",
+    "input_type": "text",
+    "output": {
+      "text": "Barack Hussein Obama II (born August 4, 1961) is the 44th and current President of the United States, and the first African American to hold the office.",
+      "language": "en",
+      "concepts": {
+        "http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census": {
+          "surfaceForms":[
+          {"string":"African American","score":0.9775916924283343,"offset":116}
+          ],
+          "types":[""],
+          "support":262175
+        },
+        "http://dbpedia.org/resource/Barack_Obama":{
+          "surfaceForms":[
+          {"string":"Barack Hussein Obama II","score":1.0,"offset":0}
+          ],
+          "types":[
+            "http://dbpedia.org/ontology/Agent",
+            "http://schema.org/Person",
+            "http://xmlns.com/foaf/0.1/Person",
+            "http://dbpedia.org/ontology/Person",
+            "http://dbpedia.org/ontology/OfficeHolder"
+          ],
+          "support":14686
+        },
+        "http://dbpedia.org/resource/United_States": {
+          "surfaceForms":[
+          {"string":"United States","score":0.9999067449772838,"offset":87}
+          ],
+          "types":[
+            "http://schema.org/Place",
+            "http://dbpedia.org/ontology/Place",
+            "http://dbpedia.org/ontology/PopulatedPlace",
+            "http://schema.org/Country",
+            "http://dbpedia.org/ontology/Country"
+          ],
+          "support":538753
+        }
+      }
+    }
+  }
+  ]
+}

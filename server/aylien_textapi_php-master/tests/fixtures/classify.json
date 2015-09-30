@@ -1,0 +1,32 @@
+{
+  "tests": [
+  {
+    "input": "CCTV footage shows the moment a suicide car bomber detonates a device in Beirut on Tuesday. The incident took place in an area of support for Hezbollah and left four people dead with many more wounded. A group calling itself the al-Nusra Front in Lebanon has claimed responsibility for the attack saying it was in retaliation for Hezbollah's military support of president Bashar al-Assad's forces in Syria",
+    "input_type": "text",
+    "output": {
+      "text": "CCTV footage shows the moment a suicide car bomber detonates a device in Beirut on Tuesday. The incident took place in an area of support for Hezbollah and left four people dead with many more wounded. A group calling itself the al-Nusra Front in Lebanon has claimed responsibility for the attack saying it was in retaliation for Hezbollah's military support of president Bashar al-Assad's forces in Syria",
+      "language": "en",
+      "categories": [{
+        "label": "defence - biological and chemical weapons",
+        "code": "11001007",
+        "confidence": 1.0
+      }]
+    }
+  },
+  {
+    "input": {
+      "url": "http://www.bbc.com/sport/0/football/25912393"
+    },
+    "input_type": "url",
+    "output": {
+      "text": "Lionel Messi: Forward is not for sale, says Barcelona president\nLionel Messi: Forward is not for sale, says Barcelona president\n\nBarcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.\n\nFour-time Ballon d'Or winner Messi, 26, is reported to be a\n\nIn an interview with radio station RAC1, Bartomeu said: \"The club will sit down and negotiate a new contract.\n\n\"We will do what we have to, to ensure he's the best-paid player.\"\n\nMessi scored 60 goals in 50 appearances last season but has struggled to match that goalscoring form in 2013-14.\n\nHe has scored 18 goals so far but just eight of those have been in the league.\n\nHis last league goal came in September, before he was out for five weeks with a hamstring injury.\n\n\"He can do everything,\" said Barca coach Gerardo Martino. \"If he succeeds in other facets of his game, it doesn't matter if he scores.\n\n\"Nothing surprises me with him. He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball.\n\n\"He sees passes that most people can only see whilst watching the game on TV or in the stands, not ones that you can normally see on the field.\"",
+      "language": "en",
+      "categories": [{
+        "label": "sport - soccer",
+        "code": "15054000",
+        "confidence": 1.0
+      }]
+    }
+  }
+  ]
+}

@@ -42,6 +42,7 @@ function getResults()
 {
 	if(xhr.readyState == 4 && xhr.status == 200)
 	{
+		console.log(xhr.responseText);
 		res = JSON.parse(xhr.responseText);
 		//alert(res[0]);
 		for(i=1;i<=count;i++)
@@ -57,7 +58,9 @@ function updateContent(tile_id,content,url)
 	tile = document.getElementById("tile"+tile_id);
 
 	tile.addEventListener("click",function(){
-		var newtab = window.open(url, '_blank'); 
+		// alert(url);
+		tile.setAttribute("url",url);
+		newtab = window.open(tile.getAttribute("url"), '_blank'); 
 		newtab.focus();
 	},false);
 
@@ -109,6 +112,7 @@ function TileAction()
 		count++;
 		othis.div = document.createElement("div");
 		othis.div.id = "tile"+count;
+		othis.div.setAttribute("url","#");
 		randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
 		othis.div.setAttribute("class",attrList[i]+" "+randColor);
 		
@@ -118,13 +122,13 @@ function TileAction()
 		othis.div.setAttribute("data-delay","10000");
 		
 
-		//create the front div
+		// create the front div
 		othis.fdiv = document.createElement("div");
 		var p = document.createElement("p");
 		var a = document.createElement("a");
 		a.setAttribute("class","metroLarger");
 		a.href = "#";
-		a.innerHTML = "Initial content";
+		a.innerHTML = "";
 		span = document.createElement("span");
 		span.setAttribute("class","tile-title");
 		span.innerHTML = "tile"+count;
@@ -132,7 +136,7 @@ function TileAction()
 		othis.fdiv.appendChild(p);
 		othis.fdiv.appendChild(span);
 
-		// othis.div.appendChild(othis.fdiv);
+		othis.div.appendChild(othis.fdiv);
 
 		for(j=0;j<content.length;j++)
 		{

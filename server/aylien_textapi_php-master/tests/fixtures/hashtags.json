@@ -1,0 +1,13 @@
+{
+  "tests": [
+  {
+    "input": "The Google Cast SDK is simple to integrate because there's no need to write a new app. Just incorporate the SDK into your existing mobile and web apps to bring your content to the TV. You are in control of how and when you develop and publish your cast-ready apps through the Google Cast developer console. The SDK is available on Android and iOS as well as on Chrome through the Google Cast browser extension.",
+    "input_type": "text",
+    "output": {
+      "text": "The Google Cast SDK is simple to integrate because there's no need to write a new app. Just incorporate the SDK into your existing mobile and web apps to bring your content to the TV. You are in control of how and when you develop and publish your cast-ready apps through the Google Cast developer console. The SDK is available on Android and iOS as well as on Chrome through the Google Cast browser extension.",
+      "language": "en",
+      "hashtags": ["#SoftwareDevelopmentKit", "#SDK", "#Google", "#BrowserExtension", "#Android", "#IOS", "#WebApplication"]
+    }
+  }
+  ]
+}
