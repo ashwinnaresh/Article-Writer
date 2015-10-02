@@ -77,9 +77,9 @@ $.fn.liveTile.contentModules = {
 // default option values for .liveTile
 $.fn.liveTile.defaults = {
 	mode: 'slide',                          // 'fade', 'slide', 'flip', 'flip-list', carousel
-	speed: 500,                             // how fast should animations be performed, in milliseconds
-	initDelay: -1,                          // how long to wait before the initial animation
-	delay: 5000,                            // how long to wait between animations 
+	// speed: 500,                             // how fast should animations be performed, in milliseconds
+	// initDelay: -1,                          // how long to wait before the initial animation
+	// delay: 5000,                            // how long to wait between animations 
 	stops: "100%",                          // how much of the back tile should 'slide' reveal before starting a delay
 	stack: false,                           // should tiles in slide mode appear stacked (e.g Me tile) 
 	direction: 'vertical',                  // which direction should animations be performed(horizontal | vertical)
