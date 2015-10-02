@@ -3,11 +3,11 @@
 require_once 'alchemyapi.php';
 require_once("aylien_textapi_php/src/AYLIEN/TextAPI.php");
 $alchemyapi = new AlchemyAPI();
-// $textapi = new AYLIEN\TextAPI("a6379b0a", "6f2cf6012da38962a60079bb4b7cea9c",false);
+$textapi = new AYLIEN\TextAPI("a6379b0a", "6f2cf6012da38962a60079bb4b7cea9c",false);
 // Keyword extraction
 extract($_GET);
 $res_arr=array();
-$thresh_text = 50;
+$thresh_text = 30;
 $keywords = array();
 $text = rawurldecode($demo_text);
 $text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.";
@@ -78,12 +78,13 @@ $keywords = array('computational learning theory'=> '0.971245',
 				if($inner == 'Url')
 				{
 					//Dummy text as AYLIEN causing problems
-					$text_data="'$limit'";
-					$limit=$limit+1;
-					//$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
-					// foreach ($summary->sentences as $sentece) {
-    						// $text_data=$text_data.' '.$sentece;
-    					// }
+					// $text_data="'$limit'";
+					// $limit=$limit+1;
+					$text_data='';
+					$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
+					foreach ($summary->sentences as $sentece) {
+    						$text_data=$text_data.' '.$sentece;
+    					}
     				if(strlen($text_data)>0)
     				{
      					$res_inner_arr[] = array('Description' => $text_data,'Url' => $v );
@@ -151,12 +152,13 @@ arsort($con);
 				if($inner == 'Url')
 				{
 					//Dummy text as AYLIEN causing problems
-					$text_data="'$limit'";
-					$limit=$limit+1;
-					//$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
-					// foreach ($summary->sentences as $sentece) {
-    						// $text_data=$text_data.' '.$sentece;
-    					// }
+					// $text_data="'$limit'";
+					// $limit=$limit+1;
+					$text_data = '';
+					$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
+					foreach ($summary->sentences as $sentece) {
+    						$text_data=$text_data.' '.$sentece;
+    					}
     				if(strlen($text_data)>0)
     				{
      					$res_inner_arr[] = array('Description' => $text_data,'Url' => $v );
