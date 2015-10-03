@@ -95,7 +95,7 @@ function TileAction()
 	staticTiles();
 	updateVideoTile("");
 	updateImages(2,["https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"]);
-	
+	updateImages(3,["http://www.cs.toronto.edu/~urtasun/courses/CSC2515/CSC2515_Winter15_files/machine_learning.jpg"]);
 
 	function DynamicTiles(t,content_array)
 	{
@@ -128,11 +128,10 @@ function TileAction()
 		var tile = document.getElementById("tile"+tile_id);
 		var img = document.createElement("img");
 		img.setAttribute("class","live-tile two-wide");
-		// for(var i=0;i<urls.length;i++)
-		// {
-			img.src = urls[0];
-			// tile.appendChild(img);
-		// }
+		for(var i=0;i<urls.length;i++)
+		{
+			img.src = urls[i];
+		}
 		othis.tilediv.replaceChild(img,tile);
 	}
 
@@ -144,6 +143,8 @@ function TileAction()
 		othis.div.setAttribute("class","live-tile two-wide two-tall"+" "+randColor);
 		othis.tilediv.appendChild(othis.div);
 	}
+
+	video_divs = []
 	function updateVideoTile(url)
 	{
 		vid = document.getElementById("tile1");
@@ -152,7 +153,8 @@ function TileAction()
 		frame.setAttribute("class","live-tile two-wide two-tall");
 		frame.src = "https://www.youtube.com/embed/9Sc-ir2UwGU";
 
-		othis.tilediv.replaceChild(frame,vid);
+		video_divs.push(frame);
+		othis.tilediv.re`laceChild(frame,vid);
 	}
 
 	//Function to create a single tile. Takes the tile count and the content to be displayed in it.
