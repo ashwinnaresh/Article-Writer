@@ -32,9 +32,6 @@ function init()
 	{
 		DynamicTiles(t,[""]);
 	}
-	updateVideoTile("");
-	updateImages(2,["https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"]);
-	updateImages(3,["http://www.cs.toronto.edu/~urtasun/courses/CSC2515/CSC2515_Winter15_files/machine_learning.jpg"]);
 
 	setTimeout(getContents,10000);
 }
