@@ -35,6 +35,7 @@ function init()
 	// }
 
 	setTimeout(getContents,10000);
+	setTimeout(getMediaContents,10000);
 }
 
 function animate()

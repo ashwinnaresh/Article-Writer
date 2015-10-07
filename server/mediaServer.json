@@ -1,0 +1,1063 @@
+{"d":{"results":[{"__metadata":{"uri":"https://api.datamarket.azure.com/D
+ata.ashx/Bing/Search/Composite?Sources=\u0027image+video\u0027&Query=\u0027com
+putational learning theory\u0027&Market=\u0027en-us\u0027&$skip=0&$top=1","typ
+e":"ExpandableSearchResult"},"ID":"7dbda182-9652-46a0-b5f1-9aebdcff88cd","WebT
+otal":"","WebOffset":"","ImageTotal":"7340","ImageOffset":"0","VideoTotal":"23
+0","VideoOffset":"0","NewsTotal":"","NewsOffset":"","SpellingSuggestionsTotal"
+:"","AlteredQuery":"","AlterationOverrideQuery":"","Web":[],"Image":[{"__metad
+ata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expandable
+SearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$s
+kip=0&$top=1","type":"ImageResult"},"ID":"e99f2f1c-
+551f-4592-82e3-c634581dbf78","Title":"bol.com | Computational Learning Theory,
+David Helmbold & B ...","MediaUrl":"http://s.s-bol.com/imgbase0/imagebase3/lar
+ge/FC/5/7/6/0/1001004001940675.jpg","SourceUrl":"http://bol.com/nl/p
+/computational-learning-theory/1001004001940675","DisplayUrl":"bol.com/nl/p
+/computational-learning-theory/1001004001940675","Width":"264","Height":"400",
+"FileSize":"12295","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type
+":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.Meaa75ba1e760
+19e8c8e35ad696ff1dd7o0&pid=15.1","ContentType":"image/jpg","Width":"198","Heig
+ht":"300","FileSize":"6393"}},{"__metadata":{"uri":"https://api.datamarket.azu
+re.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652
+-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=1&$top=1","type":"ImageResult"},"ID
+":"a0e252fa-f215-4711-ac81-5243cf98397f","Title":"bol.com | Computational
+Learning Theory, Shai Ben-David ...","MediaUrl":"http://s.s-bol.com/imgbase0/i
+magebase/large/FC/7/8/5/3/1001004001803587.jpg","SourceUrl":"http://www.bol.co
+m/nl/p/computational-learning-
+theory/1001004001803587/","DisplayUrl":"www.bol.com/nl/p/computational-
+learning-theory/1001004001803587","Width":"266","Height":"400","FileSize":"158
+21","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbna
+il"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.M65d33e93a7eeb7d3dc5d51c187d
+09983o0&pid=15.1","ContentType":"image/jpg","Width":"199","Height":"300","File
+Size":"7273"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ash
+x/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aeb
+dcff88cd\u0027)/Image?$skip=2&$top=1","type":"ImageResult"},"ID":"74227faf-
+4fbf-4035-bd14-985dc12bcbe5","Title":"of the Second European Conference on
+Computational Learning Theory
+...","MediaUrl":"https://weltbild.scene7.com/asset/vgwwb/vgw/computational-
+learning-theory-eurocolt-95-072025611.jpg?$w170re$","SourceUrl":"https://weltb
+ild.de/artikel/buch/computational-learning-theory-eurocolt-
+95_14243864-1","DisplayUrl":"https://weltbild.de/artikel/buch/computational-
+learning-theory...","Width":"261","Height":"400","FileSize":"16191","ContentTy
+pe":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl
+":"http://ts3.mm.bing.net/th?id=OIP.M80f7dacc471b462a5e0af9f784a91b30o0&pid=15
+.1","ContentType":"image/jpg","Width":"195","Height":"300","FileSize":"5336"}}
+,{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/
+ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027
+)/Image?$skip=3&$top=1","type":"ImageResult"},"ID":"2681e322-cc0c-4663-8480-30
+d51578f1e2","Title":"Livro - Computational Learning Theory","MediaUrl":"http:/
+/isuba.s8.com.br/produtos/01/00/item/5368/5/5368594G1.jpg","SourceUrl":"http:/
+/www.submarino.com.br/produto/5368594/livro-computational-learning-
+theory","DisplayUrl":"www.submarino.com.br/produto/5368594/livro-
+computational-learning...","Width":"250","Height":"250","FileSize":"15582","Co
+ntentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"M
+ediaUrl":"http://ts1.mm.bing.net/th?id=OIP.Me6246cf1ba65d43315afc0e9123e172bo0
+&pid=15.1","ContentType":"image/jpg","Width":"250","Height":"250","FileSize":"
+6803"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/
+Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88c
+d\u0027)/Image?$skip=4&$top=1","type":"ImageResult"},"ID":"559fd670-fc05-4ac5-
+9f75-7a6c4fcba558","Title":"Computational Learning Theory","MediaUrl":"http://
+img3.douban.com/mpic/s10113263.jpg","SourceUrl":"http://book.douban.com/subjec
+t/2120110/","DisplayUrl":"book.douban.com/subject/2120110","Width":"98","Heigh
+t":"151","FileSize":"2799","ContentType":"image/jpeg","Thumbnail":{"__metadata
+":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=OIP.M4be4
+52c303007cf4cae880d95f002c30o0&pid=15.1","ContentType":"image/jpg","Width":"98
+","Height":"151","FileSize":"1895"}},{"__metadata":{"uri":"https://api.datamar
+ket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda1
+82-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=5&$top=1","type":"ImageResul
+t"},"ID":"22d37000-1c51-4b48-a8b1-7597e8be08ef","Title":"Computational
+Learning Theory and Natural Learning Systems","MediaUrl":"http://s.s-bol.com/i
+mgbase0/imagebase3/large/FC/2/6/1/7/1001004001767162.jpg","SourceUrl":"http://
+www.bol.com/nl/p/computational-learning-theory-and-natural-learning-
+systems/1001004001767162/","DisplayUrl":"www.bol.com/nl/p/computational-
+learning-theory-and-natural-learning...","Width":"307","Height":"400","FileSiz
+e":"9111","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.T
+humbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M6bd4363c782c5f9d81b7b
+dcee05be3a3o0&pid=15.1","ContentType":"image/jpg","Width":"230","Height":"300"
+,"FileSize":"3921"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Da
+ta.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f
+1-9aebdcff88cd\u0027)/Image?$skip=6&$top=1","type":"ImageResult"},"ID":"1844b8
+63-72f0-486c-85ff-cadf88c97194","Title":"Computational-Learning-Theory-and-
+Natural-Learning-Systems-Vol-II ...","MediaUrl":"http://i.ebayimg.com/00/$T2eC
+16NHJH8E9qSEU6!eBRV!Eil2Wg~~_35.JPG?set_id=89040003C1","SourceUrl":"http://eba
+y.com/itm/computational-learning-theory-and-natural-learning-systems-vol-ii-
+intersectio-/361287502066","DisplayUrl":"ebay.com/itm/computational-learning-
+theory-and-natural-learning...","Width":"234","Height":"300","FileSize":"8031"
+,"ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"
+},"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M8e69777b9bd6253086aa9e99898ee5
+78o0&pid=15.1","ContentType":"image/jpg","Width":"234","Height":"300","FileSiz
+e":"5283"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/B
+ing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcf
+f88cd\u0027)/Image?$skip=7&$top=1","type":"ImageResult"},"ID":"287e4402-7dfc-4
+879-9dab-7d526c02acaf","Title":"Details over Computational learning theory :
+third European conference ...","MediaUrl":"http://i.ebayimg.com/00/s/NDAwWDUwM
+A==/z/XVEAAOSwPcVVxTl0/$_35.JPG","SourceUrl":"http://www.benl.ebay.be/itm
+/Computational-learning-theory-third-European-conference-proceedings-
+Lecture-/291534318047","DisplayUrl":"www.benl.ebay.be/itm/Computational-
+learning-theory-third-European...","Width":"300","Height":"240","FileSize":"55
+24","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbna
+il"},"MediaUrl":"http://ts4.mm.bing.net/th?id=OIP.M2ddb8febc79bdf7e692ec8aa3ae
+050c1o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"240","File
+Size":"3109"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ash
+x/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aeb
+dcff88cd\u0027)/Image?$skip=8&$top=1","type":"ImageResult"},"ID":"94adba1f-
+5c03-44b0-87d5-83bd5272da36","Title":"Computational Learning Theory - Springer
+","MediaUrl":"http://link.springer.com/chapter/10.1007%2F3-540-44581-1_5/looki
+nside/000.png","SourceUrl":"http://link.springer.com/book/10.1007/3-540-44581-
+1","DisplayUrl":"link.springer.com/book/10.1007/3-540-44581-1","Width":"738","
+Height":"1115","FileSize":"92283","ContentType":"image/png","Thumbnail":{"__me
+tadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=OIP
+.M617301d874b18e4a2c06c4967e8deee7o0&pid=15.1","ContentType":"image/jpg","Widt
+h":"198","Height":"300","FileSize":"10949"}},{"__metadata":{"uri":"https://api
+.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00
+277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=9&$top=1","type":"Im
+ageResult"},"ID":"5f96fe8d-2459-4ba8-a06a-9bcc011f84b5","Title":"Computational
+Learning Theory","MediaUrl":"http://link.springer.com/chapter/10.1007%2F3-540-
+59119-2_179/lookinside/000.png","SourceUrl":"http://link.springer.com/chapter/
+10.1007/3-540-59119-2_179","DisplayUrl":"link.springer.com/chapter/10.1007/3-5
+40-59119-2_179","Width":"738","Height":"1117","FileSize":"81911","ContentType"
+:"image/png","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"h
+ttp://ts3.mm.bing.net/th?id=OIP.M23fd5a03c44f7827f590438f7d2607e7o0&pid=15.1",
+"ContentType":"image/jpg","Width":"198","Height":"300","FileSize":"10442"}},{"
+__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Exp
+andableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/I
+mage?$skip=10&$top=1","type":"ImageResult"},"ID":"c24e70f2-b813-4329-b911-4fa0
+72710982","Title":"Computational Learning Theory and Natural Learning Systems,
+Vol. II","MediaUrl":"http://img3.douban.com/mpic/s3261980.jpg","SourceUrl":"ht
+tp://book.douban.com/subject/3218918/","DisplayUrl":"book.douban.com/subject/3
+218918","Width":"107","Height":"138","FileSize":"2734","ContentType":"image/jp
+eg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts1
+.mm.bing.net/th?id=OIP.Mcf0e4bb01bfad8d0c459ac3bebce50fao0&pid=15.1","ContentT
+ype":"image/jpg","Width":"107","Height":"138","FileSize":"1685"}},{"__metadata
+":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSea
+rchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip
+=11&$top=1","type":"ImageResult"},"ID":"e7a5be5f-
+13f5-4609-81b3-a08473947930","Title":"Machines: 16th Annual Conference on
+Computational Learning Theory ...","MediaUrl":"http://ecx.images-amazon.com/im
+ages/I/31DzxPlVbFL._SY344_BO1,204,203,200_.jpg","SourceUrl":"http://www.amazon
+.com/Learning-Theory-Kernel-Machines-
+Computational/dp/3540407200","DisplayUrl":"www.amazon.com/Learning-Theory-
+Kernel-Machines-Computational/dp...","Width":"231","Height":"346","FileSize":"
+10887","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thum
+bnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=OIP.M581dd87fcad77e2a0f18c781
+4ecb1065o0&pid=15.1","ContentType":"image/jpg","Width":"200","Height":"300","F
+ileSize":"4828"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.
+ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9
+aebdcff88cd\u0027)/Image?$skip=12&$top=1","type":"ImageResult"},"ID":"14675d41
+-1baa-4739-8b94-60c70ccf54a2","Title":"Learning and Geometry: Computational
+Approaches","MediaUrl":"https://weltbild.scene7.com/asset/vgw/learning-and-
+geometry-computational-
+approaches-105866990.jpg","SourceUrl":"https://weltbild.ch/artikel/buch
+/learning-and-geometry-computational-
+approaches_16349879-1","DisplayUrl":"https://weltbild.ch/artikel/buch
+/learning-and-geometry...","Width":"451","Height":"648","FileSize":"21119","Co
+ntentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"M
+ediaUrl":"http://ts1.mm.bing.net/th?id=OIP.M66b4945271f04402ce23fbf7cbdc8e81o0
+&pid=15.1","ContentType":"image/jpg","Width":"208","Height":"300","FileSize":"
+5638"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/
+Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88c
+d\u0027)/Image?$skip=13&$top=1","type":"ImageResult"},"ID":"a0d29187-fd55-415a
+-9989-57d1052a821f","Title":"9780521416030.jpg","MediaUrl":"http://d20eq91zdmk
+qd.cloudfront.net/assets/images/book/large/9780/5214/9780521416030.jpg","Sourc
+eUrl":"http://www.bookdepository.com/Computational-Learning-Theory-MHG-
+Anthony/9780521416030","DisplayUrl":"www.bookdepository.com/Computational-
+Learning-Theory-MHG-Anthony...","Width":"400","Height":"430","FileSize":"32289
+","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail
+"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.M481ceebb77a1e6628ffdb5ce3b4f2
+cc4o0&pid=15.1","ContentType":"image/jpg","Width":"279","Height":"300","FileSi
+ze":"10858"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx
+/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebd
+cff88cd\u0027)/Image?$skip=14&$top=1","type":"ImageResult"},"ID":"a6109c6e-742
+6-46ba-a3c4-91a670b694c3","Title":"theory 18th annual conference on learning
+theory colt 2005 bertinoro
+...","MediaUrl":"https://weltbild.scene7.com/asset/vgw/learning-
+theory-111050093.jpg","SourceUrl":"https://www.weltbild.de/artikel/buch
+/learning-
+theory_16351443-1","DisplayUrl":"https://www.weltbild.de/artikel/buch
+/learning-theory_16351443-1","Width":"428","Height":"648","FileSize":"17960","
+ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},
+"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.Md0cc17fb010127e26b6e3f65abaf4689
+o0&pid=15.1","ContentType":"image/jpg","Width":"198","Height":"300","FileSize"
+:"5866"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bin
+g/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff8
+8cd\u0027)/Image?$skip=15&$top=1","type":"ImageResult"},"ID":"fafae989-80d6-43
+66-a299-fb2f5982f446","Title":"Computational Learning Theory and Natural
+Learning Systems, Vol. I","MediaUrl":"http://img3.douban.com/mpic/s3261982.jpg
+","SourceUrl":"http://book.douban.com/subject/3218920/","DisplayUrl":"book.dou
+ban.com/subject/3218920","Width":"100","Height":"148","FileSize":"2794","Conte
+ntType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Medi
+aUrl":"http://ts3.mm.bing.net/th?id=OIP.M3d61e098ae200adcba601319968a88c0o0&pi
+d=15.1","ContentType":"image/jpg","Width":"100","Height":"148","FileSize":"184
+7"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Sea
+rch/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u
+0027)/Image?$skip=16&$top=1","type":"ImageResult"},"ID":"fd67ae31-3a07-47d9-91
+d5-f29c9a826a27","Title":"Computational learning
+theory","MediaUrl":"http://yosinski.com/mlss12/media/slides/MLSS-2012-Rakhlin-
+Statistical-Learning-
+Theory_085.png","SourceUrl":"http://snipview.com/q/computational learning
+theory","DisplayUrl":"snipview.com/q/computational learning theory","Width":"8
+06","Height":"605","FileSize":"42567","ContentType":"image/png","Thumbnail":{"
+__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id
+=OIP.Mcc83935190bfc50ba6f5a0cea125e57eo0&pid=15.1","ContentType":"image/jpg","
+Width":"300","Height":"225","FileSize":"11530"}},{"__metadata":{"uri":"https:/
+/api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid
+\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=17&$top=1","type
+":"ImageResult"},"ID":"c250de19-16a7-4a23-8738-2bf87eaa6922","Title":"Computat
+ional learning
+theory","MediaUrl":"http://upload.wikimedia.org/wikipedia/commons/thumb/4/46
+/Linear-svm-scatterplot.svg/220px-Linear-svm-scatterplot.svg.png","SourceUrl":
+"http://en.wikipedia.org/wiki/Computational_learning_theory","DisplayUrl":"en.
+wikipedia.org/wiki/Computational_learning_theory","Width":"220","Height":"165"
+,"FileSize":"6042","ContentType":"image/png","Thumbnail":{"__metadata":{"type"
+:"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.M9c968cf2e838c
+7bc030a53de829d7d64o0&pid=15.1","ContentType":"image/jpg","Width":"220","Heigh
+t":"165","FileSize":"2906"}},{"__metadata":{"uri":"https://api.datamarket.azur
+e.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-
+46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=18&$top=1","type":"ImageResult"},"ID
+":"245ec27f-ae43-46d0-8772-9a1ff3fd56b0","Title":"Find out how to access
+preview-only content","MediaUrl":"http://link.springer.com/chapter/10.1007%2F3
+-540-44581-1_31/lookinside/000.png","SourceUrl":"http://link.springer.com/chap
+ter/10.1007%2F3-540-44581-1_31","DisplayUrl":"link.springer.com/chapter/10.100
+7%2F3-540-44581-1_31","Width":"738","Height":"1115","FileSize":"93346","Conten
+tType":"image/png","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaU
+rl":"http://ts3.mm.bing.net/th?id=OIP.M8ce30c00b2094c8877154537ad7d30d2o0&pid=
+15.1","ContentType":"image/jpg","Width":"198","Height":"300","FileSize":"10653
+"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Sear
+ch/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0
+027)/Image?$skip=19&$top=1","type":"ImageResult"},"ID":"9d5e6713-20de-4c7f-
+8ba7-21a76aff0bea","Title":"Computational Learning Theory","MediaUrl":"http://
+img3.douban.com/mpic/s18960742.jpg","SourceUrl":"http://book.douban.com/subjec
+t/4506466/","DisplayUrl":"book.douban.com/subject/4506466","Width":"101","Heig
+ht":"146","FileSize":"3872","ContentType":"image/jpeg","Thumbnail":{"__metadat
+a":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M25c
+9789ae7599cf25c0e8152f3c0e0edo0&pid=15.1","ContentType":"image/jpg","Width":"1
+01","Height":"146","FileSize":"2701"}},{"__metadata":{"uri":"https://api.datam
+arket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbd
+a182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=20&$top=1","type":"ImageRe
+sult"},"ID":"f7b24645-451d-494d-9682-1c8c65571c52","Title":"9780262111935.jpg"
+,"MediaUrl":"http://d20eq91zdmkqd.cloudfront.net/assets/images/book/large/9780
+/2621/9780262111935.jpg","SourceUrl":"http://www.bookdepository.com
+/Introduction-Computational-Learning-Theory-
+Michael-J-Kearns/9780262111935","DisplayUrl":"www.bookdepository.com
+/Introduction-Computational-Learning-Theory...","Width":"400","Height":"430","
+FileSize":"33653","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type"
+:"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=OIP.Mb3115a313ca4c
+ac78947e38b55000c4eo0&pid=15.1","ContentType":"image/jpg","Width":"279","Heigh
+t":"300","FileSize":"14099"}},{"__metadata":{"uri":"https://api.datamarket.azu
+re.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652
+-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=21&$top=1","type":"ImageResult"},"I
+D":"2a21b3f8-a42b-41be-bc51-b3df5c82298c","Title":"Computational model of PKA
+and ERK pathways. : Computational design of ...","MediaUrl":"http://www.nature
+.com/neuro/journal/v15/n2/images/nn.2990-F1.jpg","SourceUrl":"http://www.natur
+e.com/neuro/journal/v15/n2/fig_tab/nn.2990_F1.html","DisplayUrl":"www.nature.c
+om/neuro/journal/v15/n2/fig_tab/nn.2990_F1.html","Width":"946","Height":"244",
+"FileSize":"32556","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type
+":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.Mf9791bdd87b0
+c366cb00bf05a1c25f37o0&pid=15.1","ContentType":"image/jpg","Width":"300","Heig
+ht":"77","FileSize":"6454"}},{"__metadata":{"uri":"https://api.datamarket.azur
+e.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-
+46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=22&$top=1","type":"ImageResult"},"ID
+":"20b6cb5f-4eff-48f8-b477-ffc36ce33ca4","Title":"Computational Learning Theor
+y","MediaUrl":"http://link.springer.com/chapter/10.1007%2F3-540-62685-9_22/loo
+kinside/000.png","SourceUrl":"http://link.springer.com/chapter/10.1007/3-540-6
+2685-9_22","DisplayUrl":"link.springer.com/chapter/10.1007/3-540-62685-9_22","
+Width":"738","Height":"1117","FileSize":"87899","ContentType":"image/png","Thu
+mbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing
+.net/th?id=OIP.Mdf4732cb39d396a07a1b0358781fd65eo0&pid=15.1","ContentType":"im
+age/jpg","Width":"198","Height":"300","FileSize":"10107"}},{"__metadata":{"uri
+":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResu
+ltSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=23&$to
+p=1","type":"ImageResult"},"ID":"273e66db-e23b-475d-ba3d-
+d5e51818fc4b","Title":"... Learning Theory : Cambridge Monographs on Applied
+and
+Computational","MediaUrl":"http://covers.booktopia.com.au/big/9780521864671
+/algebraic-geometry-and-statistical-learning-
+theory.jpg","SourceUrl":"http://www.booktopia.com.au/algebraic-geometry-and-
+statistical-learning-theory-sumio-
+watanabe/prod9780521864671.html","DisplayUrl":"www.booktopia.com.au/algebraic-
+geometry-and-statistical-learning...","Width":"264","Height":"400","FileSize":
+"16112","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thu
+mbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.Mcd785dc0fd59742308f2627
+51dcd353bo0&pid=15.1","ContentType":"image/jpg","Width":"198","Height":"300","
+FileSize":"9024"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data
+.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-
+9aebdcff88cd\u0027)/Image?$skip=24&$top=1","type":"ImageResult"},"ID":"efa70a0
+5-de3b-4360-80e2-2dd8ed0147c0","Title":"Computational Chemistry Workbook, w.
+CD-ROM, Thomas Heine, Jan-Ole
+...","MediaUrl":"https://weltbild.scene7.com/asset/vgwwb/vgw/computational-
+chemistry-workbook-w-cd-
+rom-092999066.jpg?$w170re$","SourceUrl":"https://www.weltbild.de/artikel/buch
+/computational-chemistry-workbook-w-cd-
+rom_15811963-1","DisplayUrl":"https://www.weltbild.de/artikel/buch
+/computational-chemistry...","Width":"284","Height":"400","FileSize":"18064","
+ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},
+"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M2355499364bc3699232039bbed7a9a5d
+o0&pid=15.1","ContentType":"image/jpg","Width":"213","Height":"300","FileSize"
+:"8543"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bin
+g/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff8
+8cd\u0027)/Image?$skip=25&$top=1","type":"ImageResult"},"ID":"64472110-e058-47
+27-b549-fcdffeb0cc16","Title":"Scaricare \"Computational Learning Theory and
+PAC learning. Obiettivo ...","MediaUrl":"http://images.slideplayer.it/1/570410
+/slides/slide_22.jpg","SourceUrl":"http://slideplayer.it/slide/570410/","Displ
+ayUrl":"slideplayer.it/slide/570410","Width":"960","Height":"720","FileSize":"
+73433","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thum
+bnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=OIP.Mdb7b8e02eaa1138344e977b4
+0c4a5d51o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"225","F
+ileSize":"11484"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data
+.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-
+9aebdcff88cd\u0027)/Image?$skip=26&$top=1","type":"ImageResult"},"ID
+":"510682ff-475d-439e-87a0-68172c9610c4","Title":"Presentazione Computational
+Learning Theory and PAC learning ...","MediaUrl":"http://images.slideplayer.it
+/1/570410/slides/slide_20.jpg","SourceUrl":"http://slideplayer.it/slide/570410
+/","DisplayUrl":"slideplayer.it/slide/570410","Width":"960","Height":"720","Fi
+leSize":"64016","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"
+Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M8c809b02f7ad015
+05b53c3a104fa2399o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height"
+:"225","FileSize":"9967"}},{"__metadata":{"uri":"https://api.datamarket.azure.
+com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46
+a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=27&$top=1","type":"ImageResult"},"ID":
+"0b9e6fa7-8dee-4266-81eb-47455c8e7621","Title":"Models, neurological
+(Neurologic Models)","MediaUrl":"http://www.nature.com/neuro/journal/v14/n2/im
+ages/nn.2723-F1.jpg","SourceUrl":"http://www.lookfordiagnosis.com/mesh_info.ph
+p?term=Models%2C+Neurological&lang=1","DisplayUrl":"www.lookfordiagnosis.com/m
+esh_info.php?term=Models%2C+Neurological...","Width":"946","Height":"1035","Fi
+leSize":"119467","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":
+"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.Mfe08f1133c5a51
+43e877a49b5bd0a105o0&pid=15.1","ContentType":"image/jpg","Width":"274","Height
+":"300","FileSize":"18680"}},{"__metadata":{"uri":"https://api.datamarket.azur
+e.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-
+46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=28&$top=1","type":"ImageResult"},"ID
+":"d5be6a97-5269-4f35-89bb-5971f0b15288","Title":", we have benefited
+tremendously from computational learning theory ...","MediaUrl":"http://www.no
+ahlab.com.hk/img/projects/full/TransLearn.2.TheoremWFormula.png","SourceUrl":"
+http://www.noahlab.com.hk/labvision/research_ml","DisplayUrl":"www.noahlab.com
+.hk/labvision/research_ml","Width":"728","Height":"545","FileSize":"127714","C
+ontentType":"image/png","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"M
+ediaUrl":"http://ts1.mm.bing.net/th?id=OIP.M6e72934d8e99d5728815634b9fe069a0o0
+&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"224","FileSize":"
+15034"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing
+/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88
+cd\u0027)/Image?$skip=29&$top=1","type":"ImageResult"},"ID":"b8270d83-a3ee-
+4d2f-832f-974ea4a8ff43","Title":"Computational Model of Emotional Learning2.JP
+G","MediaUrl":"http://upload.wikimedia.org/wikipedia/en/a/aa/Computational_Mod
+el_of_Emotional_Learning2.JPG","SourceUrl":"http://www.digplanet.com/wiki/BELB
+IC","DisplayUrl":"www.digplanet.com/wiki/BELBIC","Width":"539","Height":"276",
+"FileSize":"17121","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type
+":"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M27532ac762a7
+90259740eba029e67f42o0&pid=15.1","ContentType":"image/jpg","Width":"300","Heig
+ht":"153","FileSize":"7175"}},{"__metadata":{"uri":"https://api.datamarket.azu
+re.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652
+-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=30&$top=1","type":"ImageResult"},"I
+D":"5571d6a4-6982-49a0-b45c-aa3fa6450a21","Title":"machine learning
+computational learning theory","MediaUrl":"http://web.cse.ohio-
+state.edu/lair/images/misha.png","SourceUrl":"http://web.cse.ohio-
+state.edu/lair/research.html","DisplayUrl":"web.cse.ohio-state.edu/lair/resear
+ch.html","Width":"502","Height":"390","FileSize":"77199","ContentType":"image/
+png","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts
+1.mm.bing.net/th?id=OIP.M39395efeec5445f8836ecf10afb43936H0&pid=15.1","Content
+Type":"image/jpg","Width":"480","Height":"372","FileSize":"13254"}},{"__metada
+ta":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableS
+earchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$sk
+ip=31&$top=1","type":"ImageResult"},"ID":"719dc476-08ab-
+46bf-b067-1d33f904b907","Title":"Computational psychopathology: Using learning
+theory to understand
+...","MediaUrl":"http://cdn.kingston.ac.uk/includes/img/cms/site-images/orig
+/HEEG-
+event-002.jpg","SourceUrl":"http://kingston.ac.uk/events/item/1486/04-mar-2015
+-computational-psychopathology-using-learning-theory-to-understand-
+impulsivity-and-inhibition-in-psychopathy","DisplayUrl":"kingston.ac.uk/events
+/item/1486/04-mar-2015-computational...","Width":"2000","Height":"1331","FileS
+ize":"160684","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bi
+ng.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.M06bf99150aa533d5d
+47a67b994eb26b3o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"
+199","FileSize":"6785"}},{"__metadata":{"uri":"https://api.datamarket.azure.co
+m/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0
+-b5f1-9aebdcff88cd\u0027)/Image?$skip=32&$top=1","type":"ImageResult"},"ID
+":"d61725ac-b5fc-47a7-acd2-673f65058b4f","Title":"This stuff is exactly what a
+theory of natural rationality (and
+...","MediaUrl":"http://1.bp.blogspot.com/_QdXZgs6IXF8/RrDy2GFSvLI/AAAAAAAAAdY
+/Xlq-nib8GBA/s400/tdbrain.jpg","SourceUrl":"http://naturalrationality.blogspot
+.com/2007/08/basic-mode-of-behavior-review-
+of.html","DisplayUrl":"naturalrationality.blogspot.com/2007/08/basic-mode-of-b
+ehavior...","Width":"400","Height":"240","FileSize":"32548","ContentType":"ima
+ge/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http:
+//ts4.mm.bing.net/th?id=OIP.Mba6c09ed7bb5d68f0b9c25aeb73ab3c9o0&pid=15.1","Con
+tentType":"image/jpg","Width":"300","Height":"180","FileSize":"11756"}},{"__me
+tadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expanda
+bleSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image
+?$skip=33&$top=1","type":"ImageResult"},"ID":"567c373b-48e5-4542-a41a-
+15d89ad91070","Title":"El blog de la neurociencia computacional","MediaUrl":"h
+ttp://2.bp.blogspot.com/--gkO9R7vFIs/TWDaEqGx0fI/AAAAAAAAANU/Qp60u0NqR4U/s1600
+/zee.jpg","SourceUrl":"http://neurociencia-computacional.blogspot.com/2011/02
+/computational-model-for-social-learning.html","DisplayUrl":"neurociencia-
+computacional.blogspot.com/2011/02/computational-model...","Width":"502","Heig
+ht":"142","FileSize":"11318","ContentType":"image/jpeg","Thumbnail":{"__metada
+ta":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.Mbe
+8cdccb407d0210e48e02a51367bd7bo0&pid=15.1","ContentType":"image/jpg","Width":"
+300","Height":"84","FileSize":"2578"}},{"__metadata":{"uri":"https://api.datam
+arket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbd
+a182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=34&$top=1","type":"ImageRe
+sult"},"ID":"8d4f674e-3ee6-4b5c-8d88-a02151ab05c5","Title":"Computational
+Learning Theory","MediaUrl":"http://jmvidal.cse.sc.edu/talks/clt/shatter.png",
+"SourceUrl":"http://jmvidal.cse.sc.edu/talks/clt/allslides.html","DisplayUrl":
+"jmvidal.cse.sc.edu/talks/clt/allslides.html","Width":"352","Height":"241","Fi
+leSize":"20362","ContentType":"image/png","Thumbnail":{"__metadata":{"type":"B
+ing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=OIP.Mc7af52c445c8cdfa
+094870918dbd7256o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":
+"205","FileSize":"8665"}},{"__metadata":{"uri":"https://api.datamarket.azure.c
+om/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a
+0-b5f1-9aebdcff88cd\u0027)/Image?$skip=35&$top=1","type":"ImageResult"},"ID":"
+f41b1e45-9a02-46a2-b041-6288bf37374e","Title":"Theory and Computational Modeli
+ng","MediaUrl":"http://cns.bu.edu/~mdranias/pmwiki/uploads/Main/Theory2.jpg","
+SourceUrl":"http://cns.bu.edu/~mdranias/pmwiki/pmwiki.php?n=Main.TheoreticalRe
+search","DisplayUrl":"cns.bu.edu/~mdranias/pmwiki/pmwiki.php?n=Main.Theoretica
+lResearch","Width":"864","Height":"663","FileSize":"110601","ContentType":"ima
+ge/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http:
+//ts4.mm.bing.net/th?id=OIP.Mdbb0cf32edd87552e75909528392b0cco0&pid=15.1","Con
+tentType":"image/jpg","Width":"300","Height":"230","FileSize":"18966"}},{"__me
+tadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expanda
+bleSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image
+?$skip=36&$top=1","type":"ImageResult"},"ID":"40d6f4bd-f713-44c9-a6ea-
+467e3de90b70","Title":"bol.com | Computational Science and Its Applications |
+9783642219276 ...","MediaUrl":"http://s.s-bol.com/imgbase0/imagebase/large/FC/
+5/2/8/5/1001004011595825.jpg","SourceUrl":"http://www.bol.com/nl/p
+/computational-science-and-its-
+applications/1001004011595825/","DisplayUrl":"www.bol.com/nl/p/computational-
+science-and-its-applications...","Width":"264","Height":"400","FileSize":"1267
+6","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnai
+l"},"MediaUrl":"http://ts2.mm.bing.net/th?id=OIP.M70856a3cb6ef7194824c004f2173
+7c41o0&pid=15.1","ContentType":"image/jpg","Width":"198","Height":"300","FileS
+ize":"6522"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx
+/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebd
+cff88cd\u0027)/Image?$skip=37&$top=1","type":"ImageResult"},"ID":"ed1840ad-
+0af5-4ff5-95c3-ae0f57d93cd4","Title":"Research Interests","MediaUrl":"http://w
+ww.cnbc.cmu.edu/~plaut/images/network.gif","SourceUrl":"http://www.cnbc.cmu.ed
+u/~plaut/","DisplayUrl":"www.cnbc.cmu.edu/~plaut","Width":"277","Height":"219"
+,"FileSize":"4493","ContentType":"image/gif","Thumbnail":{"__metadata":{"type"
+:"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=OIP.M50f90cb8f665a
+27619e94abfeb21ab3co0&pid=15.1","ContentType":"image/jpg","Width":"277","Heigh
+t":"219","FileSize":"24299"}},{"__metadata":{"uri":"https://api.datamarket.azu
+re.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652
+-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=38&$top=1","type":"ImageResult"},"I
+D":"0d112caa-9af4-43c9-a9d2-0e656ab4ec84","Title":"... theories to
+omputational complexity theories and to quantum computing","MediaUrl":"http://
+www.noahlab.com.hk/img/projects/full/TransLearn.1.Theorem.png","SourceUrl":"ht
+tp://www.noahlab.com.hk/labvision/research_ml","DisplayUrl":"www.noahlab.com.h
+k/labvision/research_ml","Width":"728","Height":"546","FileSize":"80300","Cont
+entType":"image/png","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Medi
+aUrl":"http://ts2.mm.bing.net/th?id=OIP.M2e9d71389675ee7cf030a52b5edf50a1o0&pi
+d=15.1","ContentType":"image/jpg","Width":"300","Height":"225","FileSize":"172
+11"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Se
+arch/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\
+u0027)/Image?$skip=39&$top=1","type":"ImageResult"},"ID":"aaeb6990-5d4c-4f7a-
+b81f-e6b23d111c90","Title":"mathesis homepage - Computational Modelling","Medi
+aUrl":"http://www.ics.forth.gr/mathesis/images/achiev_images/forth1.jpg","Sour
+ceUrl":"http://www.ics.forth.gr/mathesis/computational.html","DisplayUrl":"www
+.ics.forth.gr/mathesis/computational.html","Width":"508","Height":"303","FileS
+ize":"74756","ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bin
+g.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=OIP.Mef4151712f1698caeb
+6988ac5f1e2eaao0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"1
+78","FileSize":"7685"}},{"__metadata":{"uri":"https://api.datamarket.azure.com
+/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-
+b5f1-9aebdcff88cd\u0027)/Image?$skip=40&$top=1","type":"ImageResult"},"ID":"95
+fc1dd2-d0c3-4e5a-b993-0cf5251ab535","Title":"Computational Neuroscience of Add
+iction","MediaUrl":"http://www.ucl.ac.uk/~ucbpcjh/CHarrison/Addiction_files/sh
+apeimage_2.png","SourceUrl":"http://www.ucl.ac.uk/~ucbpcjh/CHarrison/Addiction
+.html","DisplayUrl":"www.ucl.ac.uk/~ucbpcjh/CHarrison/Addiction.html","Width":
+"538","Height":"303","FileSize":"44629","ContentType":"image/png","Thumbnail":
+{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?
+id=OIP.Md46d9239a8e47d7b8e5f88cf898ca306o0&pid=15.1","ContentType":"image/jpg"
+,"Width":"300","Height":"168","FileSize":"9425"}},{"__metadata":{"uri":"https:
+//api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(gui
+d\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=41&$top=1","typ
+e":"ImageResult"},"ID":"3dded157-a57f-41e8-b117-ad1cd2f79597","Title":"... as
+learning, remembering and forgetting using a computational model","MediaUrl":"
+http://images.sciencedaily.com/2015/08/150810162040_1_900x600.jpg","SourceUrl"
+:"http://www.sciencedaily.com/releases/2015/08/150810162040.htm","DisplayUrl":
+"www.sciencedaily.com/releases/2015/08/150810162040.htm","Width":"800","Height
+":"600","FileSize":"34700","ContentType":"image/jpeg","Thumbnail":{"__metadata
+":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=OIP.M630b
+25ae2bc70f7ce025135acac2cc7co0&pid=15.1","ContentType":"image/jpg","Width":"30
+0","Height":"225","FileSize":"8276"}},{"__metadata":{"uri":"https://api.datama
+rket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda
+182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip=42&$top=1","type":"ImageRes
+ult"},"ID":"a9e6d7d5-3121-4fc9-a679-b37a78be925b","Title":"... context
+learning theory frames of Gordon Music Learning Theory","MediaUrl":"http://www
+.exmattatoio.it/sito/images/stories/oma/batteria.jpg","SourceUrl":"http://www.
+sithtech.net/photographyzto/Gordon-Music-Learning-
+Theory.html","DisplayUrl":"www.sithtech.net/photographyzto/Gordon-Music-
+Learning-Theory.html","Width":"250","Height":"250","FileSize":"53892","Content
+Type":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaU
+rl":"http://ts4.mm.bing.net/th?id=OIP.M1c7fa6bb8c65df7cd800cf46fffb1b74o0&pid=
+15.1","ContentType":"image/jpg","Width":"250","Height":"250","FileSize":"14235
+"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Sear
+ch/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0
+027)/Image?$skip=43&$top=1","type":"ImageResult"},"ID":"4d569dc2-d7e7-416b-
+9a8f-7f2390557d43","Title":"Computational Intelligence and Systems
+Scienceï½œInterdisciplinary ...","MediaUrl":"http://www.igs.titech.ac.jp/engli
+sh/uploads/img_dis01.jpg","SourceUrl":"http://www.igs.titech.ac.jp/english/dep
+artments/dis.html","DisplayUrl":"www.igs.titech.ac.jp/english/departments/dis.
+html","Width":"491","Height":"368","FileSize":"52673","ContentType":"image/jpe
+g","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.
+mm.bing.net/th?id=OIP.Maf54fbafaa39dc5af8a408f7e344ba69o0&pid=15.1","ContentTy
+pe":"image/jpg","Width":"300","Height":"224","FileSize":"15165"}},{"__metadata
+":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSea
+rchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image?$skip
+=44&$top=1","type":"ImageResult"},"ID":"96add55e-
+bfdd-4358-95f2-940b21805faa","Title":"Google
+Images","MediaUrl":"http://jmvidal.cse.sc.edu/talks/clt/pac-err.png","SourceUr
+l":"http://snipview.com/q/computational_learning_theory","DisplayUrl":"snipvie
+w.com/q/computational_learning_theory","Width":"600","Height":"337","FileSize"
+:"26209","ContentType":"image/png","Thumbnail":{"__metadata":{"type":"Bing.Thu
+mbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=OIP.M97f9bd3184c0f201b1b2c3a
+c118358e4o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"168","
+FileSize":"5667"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data
+.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-
+9aebdcff88cd\u0027)/Image?$skip=45&$top=1","type":"ImageResult"},"ID":"9816f95
+8-9f30-4ff4-bbc8-4c3484473c65","Title":"Computational Physics, Course 509 -
+Physics Applications of Computers","MediaUrl":"http://www.physics.rutgers.edu/
+~haule/ComputationalPhysics/books0002.jpg","SourceUrl":"http://www.physics.rut
+gers.edu/~haule/ComputationalPhysics/","DisplayUrl":"www.physics.rutgers.edu/~
+haule/ComputationalPhysics","Width":"666","Height":"992","FileSize":"603850","
+ContentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},
+"MediaUrl":"http://ts1.mm.bing.net/th?id=OIP.M691ffc050498abb65f007d5e087762dd
+o0&pid=15.1","ContentType":"image/jpg","Width":"201","Height":"300","FileSize"
+:"9314"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bin
+g/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff8
+8cd\u0027)/Image?$skip=46&$top=1","type":"ImageResult"},"ID":"445753f5-3a61-42
+b2-9fdb-955d51e0c8ef","Title":"enter your mobile number or email address below
+and we ll send you a","MediaUrl":"http://ecx.images-amazon.com/images/I/41P968
+oUm3L._SY445_QL70_.jpg","SourceUrl":"http://www.amazon.com/Dialogic-Inquiry-
+Socio-cultural-Computational-Perspectives-
+ebook/dp/B00QIT3MLG","DisplayUrl":"www.amazon.com/Dialogic-Inquiry-Socio-
+cultural-Computational...","Width":"296","Height":"445","FileSize":"16144","Co
+ntentType":"image/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"M
+ediaUrl":"http://ts2.mm.bing.net/th?id=OIP.M1b2e432144a6537c1a6176c49de375f8o0
+&pid=15.1","ContentType":"image/jpg","Width":"199","Height":"300","FileSize":"
+8409"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/
+Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88c
+d\u0027)/Image?$skip=47&$top=1","type":"ImageResult"},"ID":"6915b73b-650c-4a89
+-a28e-159b320143b9","Title":"Learning Theory","MediaUrl":"http://s.s-bol.com/i
+mgbase0/imagebase/large/FC/3/5/0/8/1001004009658053.jpg","SourceUrl":"http://w
+ww.bol.com/nl/p/learning-
+theory/1001004009658053/","DisplayUrl":"www.bol.com/nl/p/learning-theory/10010
+04009658053","Width":"266","Height":"400","FileSize":"10363","ContentType":"im
+age/jpeg","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http
+://ts4.mm.bing.net/th?id=OIP.M2ea09d2afa6bf9b4dde405e4fd94d049o0&pid=15.1","Co
+ntentType":"image/jpg","Width":"199","Height":"300","FileSize":"4854"}},{"__me
+tadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expanda
+bleSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Image
+?$skip=48&$top=1","type":"ImageResult"},"ID":"9432cd60-fc4d-4e0b-
+9a17-2b5b2fe5e1a0","Title":"... computer science known as computational
+learning theory. clinic","MediaUrl":"http://gromgull.net/blog/wp-
+content/uploads/2010/03/ncd.png","SourceUrl":"http://machine-learning-
+algorithms-using-matlab.clinic007.com/","DisplayUrl":"machine-learning-
+algorithms-using-matlab.clinic007.com","Width":"862","Height":"590","FileSize"
+:"64121","ContentType":"image/png","Thumbnail":{"__metadata":{"type":"Bing.Thu
+mbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=OIP.M9f766048aa5b895d1e04aab
+59b0f1ea5o0&pid=15.1","ContentType":"image/jpg","Width":"300","Height":"205","
+FileSize":"7224"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data
+.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-
+9aebdcff88cd\u0027)/Image?$skip=49&$top=1","type":"ImageResult"},"ID":"0a13676
+9-189c-4eee-90de-f82893b6eee9","Title":"... computer science known as
+computational learning theory.
+clinic","MediaUrl":"http://www.dataenthusiast.com/wp-content/uploads/2013/02
+/Supervised-Learning.png","SourceUrl":"http://machine-learning-real-world-
+examples.clinic007.com/","DisplayUrl":"machine-learning-real-world-examples.cl
+inic007.com","Width":"1049","Height":"564","FileSize":"160879","ContentType":"
+image/png","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"htt
+p://ts2.mm.bing.net/th?id=OIP.Md089088ed65a18a6a719637f13dd1464o0&pid=15.1","C
+ontentType":"image/jpg","Width":"300","Height":"161","FileSize":"16235"}}],"Vi
+deo":[{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Se
+arch/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\
+u0027)/Video?$skip=0&$top=1","type":"VideoResult"},"ID":"badb3d66-b73f-400c-
+b85a-ee996010e7e5","Title":"Computational learning theory","MediaUrl":"https:/
+/www.youtube.com/watch?v=g0cCkWU3fiM","DisplayUrl":"http://www.bing.com/videos
+/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=4FDAF5A0DB537
+BC256F84FDAF5A0DB537BC256F8&view=detail","RunTime":"149000","Thumbnail":{"__me
+tadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=WN.
+7P3YKAWH6fMMAgXHtL%2fKzw&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width
+":"160","Height":"89","FileSize":"10501"}},{"__metadata":{"uri":"https://api.d
+atamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u0027
+7dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=1&$top=1","type":"Vide
+oResult"},"ID":"346e0f23-2b54-4a2c-8c33-f0271aded395","Title":"Language
+Learning Theories","MediaUrl":"https://www.youtube.com/watch?v=YPcBPNRTjmQ","D
+isplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learni
+ng+theory&FORM=MONITR&id=F964EFD124A95BCAF8B0F964EFD124A95BCAF8B0&view=detail"
+,"RunTime":"3281000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Medi
+aUrl":"http://ts3.mm.bing.net/th?id=WN.Q1CFMwJ6KzcfqT5Zre1hDA&pid=15.1&W=160&H
+=68","ContentType":"image/jpg","Width":"160","Height":"68","FileSize":"10424"}
+},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search
+/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u002
+7)/Video?$skip=2&$top=1","type":"VideoResult"},"ID":"e0c36280-c25d-49eb-933a-
+d6f7dae40b29","Title":"Information Theory","MediaUrl":"https://www.youtube.com
+/watch?v=AVudRzRhzd0","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-u
+s&q=computational+learning+theory&FORM=MONITR&id=825FBDAA5E38173C6CAB825FBDAA5
+E38173C6CAB&view=detail","RunTime":"5196000","Thumbnail":{"__metadata":{"type"
+:"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=WN.neGU%2bmXEatkPz
+e4OXdb%2f2w&pid=15.1&W=160&H=128","ContentType":"image/jpg","Width":"160","Hei
+ght":"128","FileSize":"15072"}},{"__metadata":{"uri":"https://api.datamarket.a
+zure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-96
+52-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=3&$top=1","type":"VideoResult"},"
+ID":"f10afac2-5ce4-430b-b067-9d6d6b37c59e","Title":"Podcast #2 - Learning with
+computational models","MediaUrl":"https://www.youtube.com/watch?v=PHtsXzMXlO8"
+,"DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+lea
+rning+theory&FORM=MONITR&id=D9F82FB2AC5095442643D9F82FB2AC5095442643&view=deta
+il","RunTime":"508000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Me
+diaUrl":"http://ts4.mm.bing.net/th?id=WN.%2ft8tWnk6WH1miBI2Se4sxw&pid=15.1&W=1
+60&H=119","ContentType":"image/jpg","Width":"160","Height":"119","FileSize":"1
+3549"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/
+Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88c
+d\u0027)/Video?$skip=4&$top=1","type":"VideoResult"},"ID":"fd325c39-306a-42c9
+-829e-73a7c9538d67","Title":"Lecture 25: Computational Game Theory","MediaUrl"
+:"https://www.youtube.com/watch?v=E8G_XH6eP3E","DisplayUrl":"http://www.bing.c
+om/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=9D93
+5199F49C927650C39D935199F49C927650C3&view=detail","RunTime":"4831000","Thumbna
+il":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net
+/th?id=WN.Iub%2bL%2bWy28SFf6ThaMA9MQ&pid=15.1&W=160&H=89","ContentType":"image
+/jpg","Width":"160","Height":"89","FileSize":"8943"}},{"__metadata":{"uri":"ht
+tps://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet
+(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=5&$top=1","
+type":"VideoResult"},"ID":"e316ff7e-2419-4fe7-ad53-9d5cfbfee30c","Title":"Comp
+utational Modeling of Reinforcement Learning","MediaUrl":"https://www.youtube.
+com/watch?v=UvbX_DbvuRs","DisplayUrl":"http://www.bing.com/videos/search?mkt
+=en-us&q=computational+learning+theory&FORM=MONITR&id=2D529F4AB8FCA641CED12D52
+9F4AB8FCA641CED1&view=detail","RunTime":"340000","Thumbnail":{"__metadata":{"t
+ype":"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=WN.WMYPfVIkoWP
+1JZ0DovKtrA&pid=15.1&W=160&H=99","ContentType":"image/jpg","Width":"160","Heig
+ht":"99","FileSize":"14904"}},{"__metadata":{"uri":"https://api.datamarket.azu
+re.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652
+-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=6&$top=1","type":"VideoResult"},"ID
+":"b01b22c3-0177-4343-97ca-94d9942921ea","Title":"Understanding Computation","
+MediaUrl":"https://www.youtube.com/watch?v=bjRq3t1OGXg","DisplayUrl":"http://w
+ww.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MONIT
+R&id=77C92033EB4907214BA277C92033EB4907214BA2&view=detail","RunTime":"834000",
+"Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.
+bing.net/th?id=WN.hI2nB0eUbwj91RsdhsUreg&pid=15.1&W=160&H=89","ContentType":"i
+mage/jpg","Width":"160","Height":"89","FileSize":"9932"}},{"__metadata":{"uri"
+:"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResul
+tSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=7&$top=
+1","type":"VideoResult"},"ID":"cf66e66b-ee9e-4cc8-8f6c-
+0a40974f7970","Title":"Tommy Poggio on the Computational Magic of the Ventral 
+Stream","MediaUrl":"https://www.youtube.com/watch?v=YRBOxHBWJAM","DisplayUrl":
+"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&F
+ORM=MONITR&id=3B30D431E83B58DE831B3B30D431E83B58DE831B&view=detail","RunTime":
+"3723000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http
+://ts2.mm.bing.net/th?id=WN.BNOYgZUNMGfC1wjHvvuc5A&pid=15.1&W=160&H=120","Cont
+entType":"image/jpg","Width":"160","Height":"120","FileSize":"14854"}},{"__met
+adata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expandab
+leSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?
+$skip=8&$top=1","type":"VideoResult"},"ID":"ac0c470e-763d-41d1-a13c-
+1b66a798b979","Title":"Motor Learning of Reaching Movements in a Computational
+...","MediaUrl":"https://www.youtube.com/watch?v=iUcbxHTdMEE","DisplayUrl":"ht
+tp://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FORM
+=MONITR&id=2C9BAB09D8F3CE2C27CB2C9BAB09D8F3CE2C27CB&view=detail","RunTime":"20
+000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts
+2.mm.bing.net/th?id=WN.EOWh4zciEEYGBq%2fFmtdGYg&pid=15.1&W=160&H=147","Content
+Type":"image/jpg","Width":"160","Height":"147","FileSize":"15409"}},{"__metada
+ta":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableS
+earchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$sk
+ip=9&$top=1","type":"VideoResult"},"ID":"99497df6-b81c-44ed-
+8f30-ba230cf9bbd8","Title":"Evolution as Computational Learning
+I","MediaUrl":"https://www.youtube.com/watch?v=Ivtt-
+v9CbS8","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computatio
+nal+learning+theory&FORM=MONITR&id=1497590B9A2C0B97613D1497590B9A2C0B97613D&vi
+ew=detail","RunTime":"3193000","Thumbnail":{"__metadata":{"type":"Bing.Thumbna
+il"},"MediaUrl":"http://ts4.mm.bing.net/th?id=WN.oJw96k%2f4KIGx3DXX%2fD603A&pi
+d=15.1&W=160&H=120","ContentType":"image/jpg","Width":"160","Height":"120","Fi
+leSize":"14453"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.
+ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9
+aebdcff88cd\u0027)/Video?$skip=10&$top=1","type":"VideoResult"},"ID":"c99d8514
+-5c15-44c1-ae5b-c52f1b156e83","Title":"Machine Learning: Lecture 8","MediaUrl"
+:"http://www.powershow.com/view1/1978c0-ZDc1Z/Machine_Learning_Lecture_8_power
+point_ppt_presentation","DisplayUrl":"http://www.bing.com/videos/search?mkt
+=en-us&q=computational+learning+theory&FORM=MONITR&id=4AC5C48E806A41B5D61E4AC5
+C48E806A41B5D61E&view=detail","RunTime":"0","Thumbnail":{"__metadata":{"type":
+"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=WN.mbD8LEAQ6ycKgt4Y
+GNEQWA&pid=15.1&W=160&H=120","ContentType":"image/jpg","Width":"160","Height":
+"120","FileSize":"18037"}},{"__metadata":{"uri":"https://api.datamarket.azure.
+com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46
+a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=11&$top=1","type":"VideoResult"},"ID
+":"2959619a-fd37-4df8-b2f9-33a445926827","Title":"Symmetry Group-based
+Learning for Regularity Discovery ...","MediaUrl":"https://www.youtube.com/wat
+ch?v=62nr29_zGZg","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=
+computational+learning+theory&FORM=MONITR&id=5FDD077C7158A3B2A3DD5FDD077C7158A
+3B2A3DD&view=detail","RunTime":"4454000","Thumbnail":{"__metadata":{"type":"Bi
+ng.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=WN.neyhJ0LQMhXZW4csIXO
+sHg&pid=15.1&W=160&H=99","ContentType":"image/jpg","Width":"160","Height":"99"
+,"FileSize":"21120"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/D
+ata.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5
+f1-9aebdcff88cd\u0027)/Video?$skip=12&$top=1","type":"VideoResult"},"ID
+":"cec25c8c-88be-45ce-ad88-b065b26f26bf","Title":"Peter Dayan: Interactions
+Between Model-Free and Model ...","MediaUrl":"https://www.youtube.com/watch?v=
+01z6agTRvOo","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=compu
+tational+learning+theory&FORM=MONITR&id=AB312A67AFB03BF99ED2AB312A67AFB03BF99E
+D2&view=detail","RunTime":"3154000","Thumbnail":{"__metadata":{"type":"Bing.Th
+umbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=WN.iCLFc3aTNxjhZ1Hze8uikg&p
+id=15.1&W=160&H=120","ContentType":"image/jpg","Width":"160","Height":"120","F
+ileSize":"17571"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data
+.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-
+9aebdcff88cd\u0027)/Video?$skip=13&$top=1","type":"VideoResult"},"ID
+":"3b74104e-e03f-4182-ade6-5af1fa5390b1","Title":"Darwinian Machine Learning:
+Principles of Machine Learning ...","MediaUrl":"https://www.youtube.com/watch?
+v=54RuBssDF_o","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=com
+putational+learning+theory&FORM=MONITR&id=85FF63D02DAAD9561E1785FF63D02DAAD956
+1E17&view=detail","RunTime":"3443000","Thumbnail":{"__metadata":{"type":"Bing.
+Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=WN.0Z1EJTL2JGKUjl%2fSeFSH
+fQ&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width":"160","Height":"89",
+"FileSize":"13385"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Da
+ta.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f
+1-9aebdcff88cd\u0027)/Video?$skip=14&$top=1","type":"VideoResult"},"ID":"73e20
+508-0f3f-4279-8482-09ac378e36f2","Title":"The incentive salience theory by
+Kent Berridge","MediaUrl":"https://www.youtube.com/watch?v=15TvKADY0QQ","Displ
+ayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+t
+heory&FORM=MONITR&id=8A8E270493E339421C238A8E270493E339421C23&view=detail","Ru
+nTime":"721000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl"
+:"http://ts3.mm.bing.net/th?id=WN.gjkN9AqUbn66M0pSUphNgA&pid=15.1&W=160&H=120"
+,"ContentType":"image/jpg","Width":"160","Height":"120","FileSize":"18253"}},{
+"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Ex
+pandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/
+Video?$skip=15&$top=1","type":"VideoResult"},"ID":"134dac53-cb4f-45fc-a5fd-
+56a9b90ed1bb","Title":"Learning Invariant Features Using Inertial Priors","Med
+iaUrl":"https://www.youtube.com/watch?v=kT8KLygSTu0","DisplayUrl":"http://www.
+bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&i
+d=CE274A8DE1834B14B41ACE274A8DE1834B14B41A&view=detail","RunTime":"3709000","T
+humbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bi
+ng.net/th?id=WN.iEqS2qLgSUOxp3Xx28Ah9g&pid=15.1&W=160&H=120","ContentType":"im
+age/jpg","Width":"160","Height":"120","FileSize":"14048"}},{"__metadata":{"uri
+":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResu
+ltSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=16&$to
+p=1","type":"VideoResult"},"ID":"7de8b8c3-c4aa-
+4f99-b021-9c8bd79c09de","Title":"The Adaptive Immune System as a Learning Algo
+rithm","MediaUrl":"https://www.youtube.com/watch?v=D-Zk27FWmVg","DisplayUrl":"
+http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FO
+RM=MONITR&id=97B12F881192C334870F97B12F881192C334870F&view=detail","RunTime":"
+2318000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http:
+//ts3.mm.bing.net/th?id=WN.CWJWZ0pYXW3fHYT95QQUmQ&pid=15.1&W=160&H=89","Conten
+tType":"image/jpg","Width":"160","Height":"89","FileSize":"9680"}},{"__metadat
+a":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSe
+archResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$ski
+p=17&$top=1","type":"VideoResult"},"ID":"6313991b-
+68bb-4508-88c6-e9a77b063cef","Title":"Lecture 23: Model Predictive Control","M
+ediaUrl":"https://www.youtube.com/watch?v=1nfl6OM32-4","DisplayUrl":"http://ww
+w.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR
+&id=85B33DFEDC7B2FACEE4C85B33DFEDC7B2FACEE4C&view=detail","RunTime":"4647000",
+"Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.
+bing.net/th?id=WN.mENImN2AnIRJJbC6Br8Xhg&pid=15.1&W=160&H=89","ContentType":"i
+mage/jpg","Width":"160","Height":"89","FileSize":"9913"}},{"__metadata":{"uri"
+:"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResul
+tSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=18&$top
+=1","type":"VideoResult"},"ID":"e67b6d2f-
+6ec5-4ba0-beb5-f88cd2058ba8","Title":"The Computational Nature of Language Lea
+rning","MediaUrl":"http://videolectures.net/mitworld_niyogi_cnl/","DisplayUrl"
+:"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&
+FORM=MONITR&id=A4D5FD4F5C49D20F6BE0A4D5FD4F5C49D20F6BE0&view=detail","RunTime"
+:"2473799","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"htt
+p://ts3.mm.bing.net/th?id=WN.Qn4UBr9r%2b7qxOzSBRvpl2w&pid=15.1&W=160&H=103","C
+ontentType":"image/jpg","Width":"160","Height":"103","FileSize":"6151"}},{"__m
+etadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expand
+ableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Vide
+o?$skip=19&$top=1","type":"VideoResult"},"ID":"f85fb125-8a9b-
+4f2b-b832-ca772f17b8ab","Title":"Color Study of a Hurricane
+Animation","MediaUrl":"https://www.youtube.com/watch?v=pxAYdU6G-
+dQ","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+
+learning+theory&FORM=MONITR&id=249364DB81989E5606F5249364DB81989E5606F5&view=d
+etail","RunTime":"723000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},
+"MediaUrl":"http://ts4.mm.bing.net/th?id=WN.57AuXbZDk6jK7fL412CAWA&pid=15.1&W=
+160&H=120","ContentType":"image/jpg","Width":"160","Height":"120","FileSize":"
+16193"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing
+/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88
+cd\u0027)/Video?$skip=20&$top=1","type":"VideoResult"},"ID":"6b90a5a7-fbb4-476
+8-a2d9-3fb5ba05d3e3","Title":"PlayPhysics: An Emotional Student Model for
+Game-based ...","MediaUrl":"https://www.youtube.com/watch?v=QYM3Dez3JWw","Disp
+layUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+
+theory&FORM=MONITR&id=0EFFCFEE480153A3F3E70EFFCFEE480153A3F3E7&view=detail","R
+unTime":"587000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl
+":"http://ts3.mm.bing.net/th?id=WN.UpjTqpwkEaZBKd0pNVOlAQ&pid=15.1&W=160&H=120
+","ContentType":"image/jpg","Width":"160","Height":"120","FileSize":"19036"}},
+{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/E
+xpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)
+/Video?$skip=21&$top=1","type":"VideoResult"},"ID":"b0620a02-b6d7-4b40-bf93-bc
+135e53274c","Title":"Predictive Model Screening and Learning Curves in ...","M
+ediaUrl":"https://vimeo.com/26974901","DisplayUrl":"http://www.bing.com/videos
+/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=91CD348437DCB
+B985FC491CD348437DCBB985FC4&view=detail","RunTime":"1518000","Thumbnail":{"__m
+etadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=WN
+.BQO1XEOz7hecweb%2b4tryFw&pid=15.1&W=160&H=120","ContentType":"image/jpg","Wid
+th":"160","Height":"120","FileSize":"12739"}},{"__metadata":{"uri":"https://ap
+i.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u0
+0277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=22&$top=1","type":"
+VideoResult"},"ID":"4579bbee-6f2d-48fb-941f-c597d5d6800b","Title":"Scaling
+Deep Learning to 10,000 Cores and Beyond","MediaUrl":"https://www.youtube.com/
+watch?v=mFy7TIkAmKg","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us
+&q=computational+learning+theory&FORM=MONITR&id=DBA7EE67974A7AA9C44DDBA7EE6797
+4A7AA9C44D&view=detail","RunTime":"3512000","Thumbnail":{"__metadata":{"type":
+"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=WN.I%2bBcb4P5HoNN%2
+fFO4LVCNbg&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width":"160","Heigh
+t":"89","FileSize":"13811"}},{"__metadata":{"uri":"https://api.datamarket.azur
+e.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-
+46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=23&$top=1","type":"VideoResult"},"ID
+":"eaf9678c-b35f-4389-be66-c863fb61f11f","Title":"The Computational Magic of
+Pattern Recognition in Cortex ...","MediaUrl":"https://vimeo.com/64403072","Di
+splayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learnin
+g+theory&FORM=MONITR&id=B8C879C91DDF8A0E40EFB8C879C91DDF8A0E40EF&view=detail",
+"RunTime":"3174000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Media
+Url":"http://ts1.mm.bing.net/th?id=WN.MzlVSgjFc3udbx3pzd5znA&pid=15.1&W=160&H=
+89","ContentType":"image/jpg","Width":"160","Height":"89","FileSize":"14423"}}
+,{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/
+ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027
+)/Video?$skip=24&$top=1","type":"VideoResult"},"ID":"dd796f4b-9bb2-4310-9cfb-
+fb1169093020","Title":"Scalable Learning and Inference in Hierarchical Models 
+of...","MediaUrl":"https://www.youtube.com/watch?v=Ia4CT5E9TP4","DisplayUrl":"
+http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FO
+RM=MONITR&id=95E4AE59DD756D79191395E4AE59DD756D791913&view=detail","RunTime":"
+3195000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http:
+//ts4.mm.bing.net/th?id=WN.JKuwQ7PZvQOw2EdE7NE4IA&pid=15.1&W=160&H=120","Conte
+ntType":"image/jpg","Width":"160","Height":"120","FileSize":"13005"}},{"__meta
+data":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expandabl
+eSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$
+skip=25&$top=1","type":"VideoResult"},"ID":"9fab8534-2c9f-
+4fd3-b557-5f65f3a792fc","Title":"Theory of mind through the lens of algorithms
+| Andreea ...","MediaUrl":"https://www.youtube.com/watch?v=a19lSbFPRqY","Displ
+ayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+t
+heory&FORM=MONITR&id=E508DEF7847DE400A263E508DEF7847DE400A263&view=detail","Ru
+nTime":"738000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl"
+:"http://ts4.mm.bing.net/th?id=WN.zknvIGIONrLEhFGZBRzGvQ&pid=15.1&W=160&H=89",
+"ContentType":"image/jpg","Width":"160","Height":"89","FileSize":"10683"}},{"_
+_metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expa
+ndableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Vi
+deo?$skip=26&$top=1","type":"VideoResult"},"ID":"a13c54b6-382c-4b83-b0dc-
+e8f85690d819","Title":"ECE 804 - Spring 2013 - Lecture 006 with Tomaso Poggio"
+,"MediaUrl":"https://www.youtube.com/watch?v=Y9ghSEIan5c","DisplayUrl":"http:/
+/www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MON
+ITR&id=D375C0C689AE444CD8CBD375C0C689AE444CD8CB&view=detail","RunTime":"445900
+0","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.
+mm.bing.net/th?id=WN.Y8NywAwEix2oHoV2yCN7Bw&pid=15.1&W=160&H=89","ContentType"
+:"image/jpg","Width":"160","Height":"89","FileSize":"19485"}},{"__metadata":{"
+uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchR
+esultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=27&
+$top=1","type":"VideoResult"},"ID":"cc66f146-3d2a-4831-95fb-
+7dcb5b9595cc","Title":"Probabilistic Machine Learning in Computational Adverti
+sing","MediaUrl":"http://videolectures.net/nipsworkshops09_graepel_pmlca/","Di
+splayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learnin
+g+theory&FORM=MONITR&id=A09118D8938DD27EC98DA09118D8938DD27EC98D&view=detail",
+"RunTime":"1508680","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Media
+Url":"http://ts4.mm.bing.net/th?id=WN.uSwyAKbyEDsiAvjdxJAvCg&pid=15.1&W=160&H=
+104","ContentType":"image/jpg","Width":"160","Height":"104","FileSize":"5767"}
+},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search
+/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u002
+7)/Video?$skip=28&$top=1","type":"VideoResult"},"ID":"39d3663a-
+60c7-46d7-baf2-19031bd2be05","Title":"International Journal of Computational
+Science and ...","MediaUrl":"https://www.youtube.com/watch?v=uCSpIIxFUO0","Dis
+playUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning
++theory&FORM=MONITR&id=DC7463E40DAE3CD48934DC7463E40DAE3CD48934&view=detail","
+RunTime":"26000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl
+":"http://ts1.mm.bing.net/th?id=WN.jPGQ04jaIT%2fi4rpaAd7sLg&pid=15.1&W=160&H=1
+06","ContentType":"image/jpg","Width":"160","Height":"106","FileSize":"27237"}
+},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search
+/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u002
+7)/Video?$skip=29&$top=1","type":"VideoResult"},"ID":"e288f053-2a0d-428a-8d3b-
+77d32dccbc11","Title":"Lecture 6: Nonlinear regression","MediaUrl":"https://ww
+w.youtube.com/watch?v=AbK7UYk4OVQ","DisplayUrl":"http://www.bing.com/videos/se
+arch?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=4251BF9BEEAB67AC
+09FA4251BF9BEEAB67AC09FA&view=detail","RunTime":"4717000","Thumbnail":{"__meta
+data":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.net/th?id=WN.zp
+RUdU3QZWN7teb8Kmr9kw&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width":"1
+60","Height":"89","FileSize":"9747"}},{"__metadata":{"uri":"https://api.datama
+rket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda
+182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=30&$top=1","type":"VideoRes
+ult"},"ID":"15df59c9-a021-46d6-ae33-29e5009a981f","Title":"NIPS 2012 Tutorial
+- Joel Tropp - User-Friendly Tools for ...","MediaUrl":"https://www.youtube.co
+m/watch?v=YSupQSKVV7w","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-
+us&q=computational+learning+theory&FORM=MONITR&id=7952CD72693C4729B4907952CD72
+693C4729B490&view=detail","RunTime":"6287000","Thumbnail":{"__metadata":{"type
+":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=WN.SYE400KmOSmVGM
+Exg4a33g&pid=15.1&W=160&H=92","ContentType":"image/jpg","Width":"160","Height"
+:"92","FileSize":"13529"}},{"__metadata":{"uri":"https://api.datamarket.azure.
+com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46
+a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=31&$top=1","type":"VideoResult"},"ID":
+"97d330e8-2bdf-4b4b-b4c7-108b4478bd37","Title":"Evolution of neural network
+robotic controllers","MediaUrl":"https://www.youtube.com/watch?v=lmPJeKRs8gE",
+"DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+lear
+ning+theory&FORM=MONITR&id=89FB50EA6B38F4BC978889FB50EA6B38F4BC9788&view=detai
+l","RunTime":"167000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"Med
+iaUrl":"http://ts2.mm.bing.net/th?id=WN.vYZI1l%2b5YT%2bGqSyTa4CGfg&pid=15.1&W=
+160&H=120","ContentType":"image/jpg","Width":"160","Height":"120","FileSize":"
+17244"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing
+/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88
+cd\u0027)/Video?$skip=32&$top=1","type":"VideoResult"},"ID":"478c589c-
+7ea3-41c0-8ebc-3888edde8f38","Title":"Computing a theory of all knowledge","Me
+diaUrl":"http://www.ted.com/talks/stephen_wolfram_computing_a_theory_of_everyt
+hing","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computationa
+l+learning+theory&FORM=MONITR&id=2028E2EE104FB6BB0C6D2028E2EE104FB6BB0C6D&view
+=detail","RunTime":"1198000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail
+"},"MediaUrl":"http://ts3.mm.bing.net/th?id=WN.QKWDewH6bTRfmY9jWt%2bXFw&pid=15
+.1&W=160&H=89","ContentType":"image/jpg","Width":"160","Height":"89","FileSize
+":"10507"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/B
+ing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcf
+f88cd\u0027)/Video?$skip=33&$top=1","type":"VideoResult"},"ID":"f1b655ed-a364-
+4ed3-93af-a84d90f984c2","Title":"Basics of Computational Reinforcement Learnin
+g","MediaUrl":"http://videolectures.net/rldm2015_littman_computational_reinfor
+cement/","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computati
+onal+learning+theory&FORM=MONITR&id=0BF8D6E5B3F21B043A210BF8D6E5B3F21B043A21&v
+iew=detail","RunTime":"0","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},
+"MediaUrl":"http://ts3.mm.bing.net/th?id=WN.YUq%2fueUh83gIbjIDAWZWcg&pid=15.1&
+W=160&H=104","ContentType":"image/jpg","Width":"160","Height":"104","FileSize"
+:"6704"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bin
+g/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff8
+8cd\u0027)/Video?$skip=34&$top=1","type":"VideoResult"},"ID":"bffb525b-
+adf2-404c-8915-54fae7cb50c9","Title":"Algorithmic Game Theory, Lecture 1 (Intr
+oduction)","MediaUrl":"https://www.youtube.com/watch?v=TM_QFmQU_VA","DisplayUr
+l":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theor
+y&FORM=MONITR&id=D698DB294ABA76810547D698DB294ABA76810547&view=detail","RunTim
+e":"4164000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"h
+ttp://ts3.mm.bing.net/th?id=WN.UvYcRizdSMM4ZsVGBZFi%2fg&pid=15.1&W=160&H=89","
+ContentType":"image/jpg","Width":"160","Height":"89","FileSize":"14582"}},{"__
+metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expan
+dableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Vid
+eo?$skip=35&$top=1","type":"VideoResult"},"ID":"3e2a7dbc-22c8-415d-
+bb92-4c7430ad0c75","Title":"Ben Goertzel | Artificial General Intelligence: An
+Overview","MediaUrl":"https://www.youtube.com/watch?v=i7c89EepVOI","DisplayUrl
+":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory
+&FORM=MONITR&id=9EFAB44638445D9679129EFAB44638445D967912&view=detail","RunTime
+":"797000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"htt
+p://ts2.mm.bing.net/th?id=WN.uudf4gd92lqAZagENgUUVQ&pid=15.1&W=160&H=120","Con
+tentType":"image/jpg","Width":"160","Height":"120","FileSize":"14041"}},{"__me
+tadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expanda
+bleSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video
+?$skip=36&$top=1","type":"VideoResult"},"ID":"dc8ca398-b91e-4906-bb7b-
+0830d61c77e4","Title":"The formation of habits: A computational model mixing .
+..","MediaUrl":"http://videolectures.net/rldm2015_topalidou_hebbian_learning/"
+,"DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+lea
+rning+theory&FORM=MONITR&id=067882C266346BCC3074067882C266346BCC3074&view=deta
+il","RunTime":"0","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUr
+l":"http://ts3.mm.bing.net/th?id=WN.rqvtbwcLjqGVGgX6h4nk%2fA&pid=15.1&W=160&H=
+104","ContentType":"image/jpg","Width":"160","Height":"104","FileSize":"5254"}
+},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search
+/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u002
+7)/Video?$skip=37&$top=1","type":"VideoResult"},"ID":"2ffb4ead-
+ed78-4d89-87e0-ac1a78e0d898","Title":"Genetic algorithm. Learning to jump over
+ball.","MediaUrl":"https://www.youtube.com/watch?v=Gl3EjiVlz_4","DisplayUrl":"
+http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory&FO
+RM=MONITR&id=D515F1CDB2A453BB6EA4D515F1CDB2A453BB6EA4&view=detail","RunTime":"
+174000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http:/
+/ts1.mm.bing.net/th?id=WN.bMsPyZ2V4Sl7wqVqjdMUDg&pid=15.1&W=160&H=120","Conten
+tType":"image/jpg","Width":"160","Height":"120","FileSize":"6666"}},{"__metada
+ta":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableS
+earchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$sk
+ip=38&$top=1","type":"VideoResult"},"ID":"f8149802-a66f-4592-b774-c86c4d97afb2
+","Title":"Thomas Hannagan - The interaction of cued attention and ...","Media
+Url":"https://vimeo.com/79115256","DisplayUrl":"http://www.bing.com/videos/sea
+rch?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=BAC64F7C49EC19B35
+753BAC64F7C49EC19B35753&view=detail","RunTime":"1879000","Thumbnail":{"__metad
+ata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=WN.zkM
+Ef7Gui%2fnvpJHIXRwWdg&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width":"
+160","Height":"89","FileSize":"12893"}},{"__metadata":{"uri":"https://api.data
+market.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277db
+da182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=39&$top=1","type":"VideoR
+esult"},"ID":"9cf371ce-17be-4a5f-aad5-deef389ec356","Title":"Lecture 23: Model
+predictive control (cont), future directions","MediaUrl":"https://www.youtube.
+com/watch?v=NYcrGnvDgsE","DisplayUrl":"http://www.bing.com/videos/search?mkt
+=en-us&q=computational+learning+theory&FORM=MONITR&id=BBAC0EAA4DE75BECC408BBAC
+0EAA4DE75BECC408&view=detail","RunTime":"4691000","Thumbnail":{"__metadata":{"
+type":"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=WN.iEBCLKnuLe
+hNhT9UKSlQ9Q&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width":"160","Hei
+ght":"89","FileSize":"12617"}},{"__metadata":{"uri":"https://api.datamarket.az
+ure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-965
+2-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=40&$top=1","type":"VideoResult"},"
+ID":"8e7a8407-5fe9-44cf-97b0-a35638539df7","Title":"The Neuroscience of
+Reinforcement Learning","MediaUrl":"http://videolectures.net/icml09_niv_tnorl/
+","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+le
+arning+theory&FORM=MONITR&id=0D3F8B77B80000C26A460D3F8B77B80000C26A46&view=det
+ail","RunTime":"8269480","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"
+MediaUrl":"http://ts3.mm.bing.net/th?id=WN.7gFNosqi%2fspDLxtgUQ4RaQ&pid=15.1&W
+=160&H=103","ContentType":"image/jpg","Width":"160","Height":"103","FileSize":
+"4470"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing
+/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88
+cd\u0027)/Video?$skip=41&$top=1","type":"VideoResult"},"ID":"fe7f96ba-9f2e-
+4a35-bf1c-3c42aaf8f4a9","Title":"Programming (Logicals) in MATLAB | Matlab
+Tutorials ...","MediaUrl":"https://www.youtube.com/watch?v=oqoYRSDGgXk","Displ
+ayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+t
+heory&FORM=MONITR&id=8D15747F42EB1B75C5728D15747F42EB1B75C572&view=detail","Ru
+nTime":"515000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl"
+:"http://ts3.mm.bing.net/th?id=WN.BvMRWsrj%2fOc0WaLIgXhN4Q&pid=15.1&W=160&H=12
+0","ContentType":"image/jpg","Width":"160","Height":"120","FileSize":"11113"}}
+,{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/
+ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027
+)/Video?$skip=42&$top=1","type":"VideoResult"},"ID":"6a3cd044-4eb6-4523-972f-
+163d6d7403fe","Title":"Computers with Commonsense: Artificial Intelligence at
+the ...","MediaUrl":"http://video.mit.edu/watch/computers-with-commonsense-
+artificial-intelligence-at-the-mit-round-
+table-9469/","DisplayUrl":"http://www.bing.com/videos/search?mkt=en-us&q=compu
+tational+learning+theory&FORM=MONITR&id=D6484E6B526DFBB1F4BCD6484E6B526DFBB1F4
+BC&view=detail","RunTime":"3049799","Thumbnail":{"__metadata":{"type":"Bing.Th
+umbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=WN.zX0Odi5N040NXyxwH2%2fJ0A
+&pid=15.1&W=160&H=96","ContentType":"image/jpg","Width":"160","Height":"96","F
+ileSize":"4271"}},{"__metadata":{"uri":"https://api.datamarket.azure.com/Data.
+ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9
+aebdcff88cd\u0027)/Video?$skip=43&$top=1","type":"VideoResult"},"ID":"b9668391
+-f551-40ed-9e0e-550086fd4b54","Title":"MCMC Learning","MediaUrl":"http://video
+lectures.net/colt2015_kanade_mcmc_learning/","DisplayUrl":"http://www.bing.com
+/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=EB9D0D
+214FD056B4727CEB9D0D214FD056B4727C&view=detail","RunTime":"0","Thumbnail":{"__
+metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts4.mm.bing.net/th?id=W
+N.DdmlvNQt9Q7l5yy0HA24Lw&pid=15.1&W=160&H=104","ContentType":"image/jpg","Widt
+h":"160","Height":"104","FileSize":"6894"}},{"__metadata":{"uri":"https://api.
+datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u002
+77dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=44&$top=1","type":"Vi
+deoResult"},"ID":"3d12d48d-0790-448d-8fa9-c7025e5e0036","Title":"Interview
+with Eric Xing","MediaUrl":"http://videolectures.net/mlas06_xing_iex/","Displa
+yUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+th
+eory&FORM=MONITR&id=F9E14D93040F52E8A59FF9E14D93040F52E8A59F&view=detail","Run
+Time":"0","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http
+://ts1.mm.bing.net/th?id=WN.JFsOHL1YxEZWBj3Qwcs6gg&pid=15.1&W=160&H=104","Cont
+entType":"image/jpg","Width":"160","Height":"104","FileSize":"8145"}},{"__meta
+data":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expandabl
+eSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$
+skip=45&$top=1","type":"VideoResult"},"ID":"57a1274a-bcd0-432a-965a-
+1c7319984bfe","Title":"Introduction to Introduction to Electrodynamics","Media
+Url":"https://www.youtube.com/watch?v=6NOIqhxvZ74","DisplayUrl":"http://www.bi
+ng.com/videos/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=
+3913A2C12ADF6DAE401E3913A2C12ADF6DAE401E&view=detail","RunTime":"157000","Thum
+bnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts2.mm.bing.
+net/th?id=WN.A5lhU8AFGgJFJR1SH1pyyg&pid=15.1&W=160&H=89","ContentType":"image/
+jpg","Width":"160","Height":"89","FileSize":"12102"}},{"__metadata":{"uri":"ht
+tps://api.datamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet
+(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=46&$top=1",
+"type":"VideoResult"},"ID":"340400b5-9c4f-4557-9f8d-1d1ddba0a077","Title":"How
+to Count","MediaUrl":"https://www.youtube.com/watch?v=AvK7Nk3A_TA","DisplayUrl
+":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+theory
+&FORM=MONITR&id=CFD4565E5B1190A1DCF7CFD4565E5B1190A1DCF7&view=detail","RunTime
+":"78000","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http
+://ts3.mm.bing.net/th?id=WN.s8aXdvIAuwD3RDIgX5U4QA&pid=15.1&W=160&H=120","Cont
+entType":"image/jpg","Width":"160","Height":"120","FileSize":"11213"}},{"__met
+adata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expandab
+leSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?
+$skip=47&$top=1","type":"VideoResult"},"ID":"2bea8c19-d088-4c4a-
+83c8-36a377cba316","Title":"Data Stream Mining for Ubiquitous Environments","M
+ediaUrl":"http://videolectures.net/is2012_gama_ubiquitous_environments/","Disp
+layUrl":"http://www.bing.com/videos/search?mkt=en-us&q=computational+learning+
+theory&FORM=MONITR&id=3B159672FB540EB0FE5F3B159672FB540EB0FE5F&view=detail","R
+unTime":"0","Thumbnail":{"__metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"ht
+tp://ts4.mm.bing.net/th?id=WN.AKJN4zmFNTXhi7WBRmsEtg&pid=15.1&W=160&H=104","Co
+ntentType":"image/jpg","Width":"160","Height":"104","FileSize":"5549"}},{"__me
+tadata":{"uri":"https://api.datamarket.azure.com/Data.ashx/Bing/Search/Expanda
+bleSearchResultSet(guid\u00277dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video
+?$skip=48&$top=1","type":"VideoResult"},"ID":"31819c3c-f633-464c-931e-
+d6af27bc214c","Title":"Steven Pinker on Language Pragmatics","MediaUrl":"https
+://www.youtube.com/watch?v=VKbp4hEHV-s","DisplayUrl":"http://www.bing.com/vide
+os/search?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=D91BD8FF2E2
+4892F2598D91BD8FF2E24892F2598&view=detail","RunTime":"197000","Thumbnail":{"__
+metadata":{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts1.mm.bing.net/th?id=W
+N.noUscKsMtbJd8nqewTOGjw&pid=15.1&W=160&H=89","ContentType":"image/jpg","Width
+":"160","Height":"89","FileSize":"6829"}},{"__metadata":{"uri":"https://api.da
+tamarket.azure.com/Data.ashx/Bing/Search/ExpandableSearchResultSet(guid\u00277
+dbda182-9652-46a0-b5f1-9aebdcff88cd\u0027)/Video?$skip=49&$top=1","type":"Vide
+oResult"},"ID":"788d79ee-5cab-4330-8396-0770a3271284","Title":"Computational
+advertising: business models, technologies ...","MediaUrl":"http://videolectur
+es.net/russir09_shanahan_cabmtai/","DisplayUrl":"http://www.bing.com/videos/se
+arch?mkt=en-us&q=computational+learning+theory&FORM=MONITR&id=E8B6881D4355CA88
+9014E8B6881D4355CA889014&view=detail","RunTime":"0","Thumbnail":{"__metadata":
+{"type":"Bing.Thumbnail"},"MediaUrl":"http://ts3.mm.bing.net/th?id=WN.XbM8Gf9o
+v3Afot76h8n2Cw&pid=15.1&W=160&H=104","ContentType":"image/jpg","Width":"160","
+Height":"104","FileSize":"6513"}}],"News":[],"RelatedSearch":[],"SpellingSugge
+stions":[]}]}}
