@@ -19,18 +19,21 @@
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/MetroJs.js"></script>
 	<script type="text/javascript">
-				$(document).ready(function(){
-					d1 = document.getElementById("d1");
-					cur = 3;
-				});
+				// $(document).ready(function(){
+				// 	d1 = document.getElementById("d1");
+				// 	cur = 3;
+				// });
+				cur = 3;
 				function getPrev()
 				{
 					var prev = cur - 1;
 					//alert(prev+","+cur);
 					curDiv = $("#"+cur);
 					prevDiv = $("#"+prev);
-					curDiv.animate({'width':'0px','height':'0px'},1000);
-					prevDiv.animate({'width':'150px'},1000);
+					// curDiv.animate({'width':'0px','height':'0px'},1000);
+					// prevDiv.animate({'width':'150px'},1000);
+					alert();
+					prevDiv.slideUp("slow","linear");
 					cur = prev;
 					//alert(cur);
 				}

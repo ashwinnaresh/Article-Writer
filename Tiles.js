@@ -9,7 +9,7 @@ function getContents()
 			{
 				console.log(typeof(data));
 				res = JSON.parse(data);
-				console.log("Result data - "+res);
+				console.log(res[0]);
 				for(i=1;i<=count;i++)
 				{
 					updateContent(i,res[i]['Description'],res[i]['Url']);

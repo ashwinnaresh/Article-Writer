@@ -1,9 +1,9 @@
 <?php
 //require_once 'C:\wamp\www\Article-Writer\unirest-php\src\Unirest.php';
 require_once 'alchemyapi.php';
-require_once("aylien_textapi_php/src/AYLIEN/TextAPI.php");
+// require_once("aylien_textapi_php/src/AYLIEN/TextAPI.php");
 $alchemyapi = new AlchemyAPI();
-$textapi = new AYLIEN\TextAPI("a6379b0a", "6f2cf6012da38962a60079bb4b7cea9c",false);
+// $textapi = new AYLIEN\TextAPI("a6379b0a", "6f2cf6012da38962a60079bb4b7cea9c",false);
 // Keyword extraction
 extract($_GET);
 $res_arr=array();
@@ -80,14 +80,10 @@ $keywords = array('computational learning theory'=> '0.971245',
 					//Dummy text as AYLIEN causing problems
 					// $text_data="'$limit'";
 					// $limit=$limit+1;
-					$text_data='';
-					$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
-					foreach ($summary->sentences as $sentece) {
-    						$text_data=$text_data.' '.$sentece;
-    					}
-    				if(strlen($text_data)>0)
+					$text_data = $alchemyapi->text('url',$v,null);
+    				if(strlen($text_data['text'])>0)
     				{
-     					$res_inner_arr[] = array('Description' => $text_data,'Url' => $v );
+     					$res_inner_arr[] = array('Description' => $text_data['text'],'Url' => $v );
      				}
     			}	
 			}	
