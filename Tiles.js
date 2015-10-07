@@ -2,19 +2,21 @@ function getContents()
 {
 	var content = editor.getContent();
 
-	// $.ajax({url:"http://localhost:8088/Article-Writer/server/Server.php",
-	// 		type:"GET",
-	// 		data:"demo_text="+encodeURI(content),
-	// 		success: function(data)
-	// 		{
-	// 			alert(data);
-	// 			res = JSON.parse(data);
-	// 			for(i=1;i<=count;i++)
-	// 			{
-	// 				updateContent(i,res[i]['Description'],res[i]['Url']);
-	// 			}
-	// 		}
-	// 	});
+	$.ajax({url:"http://localhost/Article-Writer/server/Server.php",
+			type:"GET",
+			data:"demo_text="+encodeURI(content),
+			success: function(data)
+			{
+				console.log(typeof(data));
+				res = JSON.parse(data);
+				console.log("Result data - "+res);
+				for(i=1;i<=count;i++)
+				{
+					updateContent(i,res[i]['Description'],res[i]['Url']);
+				}
+			},
+			error : function(){console.log("Could not get data");}
+		});
 	updateVideoTile("https://www.youtube.com/watch?v=9Sc-ir2UwGU");
 	updateImages(2,["https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"]);
 	updateImages(3,["http://www.cs.toronto.edu/~urtasun/courses/CSC2515/CSC2515_Winter15_files/machine_learning.jpg"]);

@@ -36,6 +36,7 @@ function init()
 	setTimeout(getContents,10000);
 }
 
+
 function animate()
 {
 	$(".live-tile").liveTile();
@@ -46,6 +47,7 @@ function animate()
 function staticTiles()
 {
 	//Create tiles for each item in the initial list
+	
 	for(i=3;i<attrList.length;i++)
 	{
 		addTile(i,content_array);

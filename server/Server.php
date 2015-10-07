@@ -154,14 +154,15 @@ arsort($con);
 					//Dummy text as AYLIEN causing problems
 					// $text_data="'$limit'";
 					// $limit=$limit+1;
-					$text_data = '';
-					$summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
-					foreach ($summary->sentences as $sentece) {
-    						$text_data=$text_data.' '.$sentece;
-    					}
-    				if(strlen($text_data)>0)
+					// $text_data = '';
+					// $summary = $textapi->Summarize(array('url' => $v, 'sentences_number' => 5));
+					// foreach ($summary->sentences as $sentece) {
+    						// $text_data=$text_data.' '.$sentece;
+    					// }
+					 $text_data = $alchemyapi->text('url',$v,null);
+    				if(strlen($text_data['text'])>0)
     				{
-     					$res_inner_arr[] = array('Description' => $text_data,'Url' => $v );
+     					$res_inner_arr[] = array('Description' => $text_data['text'],'Url' => $v );
      				}
     			}	
 			}	
