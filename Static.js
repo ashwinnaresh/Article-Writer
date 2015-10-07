@@ -64,7 +64,7 @@ function updateTiles(i,content_array,url_array)
 			cdiv.innerHTML = content_array[k];
 			cdiv.setAttribute("url",url_array[k]);
 			cdiv.addEventListener("click",function(){
-				var newtab = window.open(tile.getAttribute("url"), '_blank'); 
+				var newtab = window.open(cdiv.getAttribute("url"), '_blank'); 
 				newtab.focus();
 			},false);
 			div.appendChild(cdiv);
@@ -72,7 +72,7 @@ function updateTiles(i,content_array,url_array)
 		div.style.overflowY = "auto";
 		animate();
 	}
-	else
+	else if(i>=11 && i<20)
 	{
 		DynamicTiles(i,content_array,url_array);
 	}
@@ -134,7 +134,7 @@ function addTile(i,content,urls)
 		cdiv.innerHTML = content[k];
 		cdiv.setAttribute("url",urls[k]);
 		cdiv.addEventListener("click",function(){
-				var newtab = window.open(tile.getAttribute("url"), '_blank'); 
+				var newtab = window.open(cdiv.getAttribute("url"), '_blank'); 
 				newtab.focus();
 			},false);
 		div.appendChild(cdiv);

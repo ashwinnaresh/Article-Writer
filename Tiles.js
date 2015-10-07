@@ -37,21 +37,21 @@ function getContents()
 }
 
 
-function updateContent(tile_id,content,url)
-{
-	// content = "HI THERE";
-	var tile = document.getElementById("tile"+tile_id);
+// function updateContent(tile_id,content,url)
+// {
+// 	// content = "HI THERE";
+// 	var tile = document.getElementById("tile"+tile_id);
 
-	tile.addEventListener("click",function(){
-		// alert(url);
-		tile.setAttribute("url",url);
-		newtab = window.open(tile.getAttribute("url"), '_blank'); 
-		newtab.focus();
-	},false);
+// 	tile.addEventListener("click",function(){
+// 		// alert(url);
+// 		tile.setAttribute("url",url);
+// 		newtab = window.open(tile.getAttribute("url"), '_blank'); 
+// 		newtab.focus();
+// 	},false);
 
-	tile.style.overflowY = "auto";
-	tile.innerHTML = content;
-}
+// 	tile.style.overflowY = "auto";
+// 	tile.innerHTML = content;
+// }
 
 function updateVideoTile(url)
 {
