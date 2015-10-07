@@ -10,7 +10,7 @@ $res_arr=array();
 $thresh_text = 30;
 $keywords = array();
 $text = rawurldecode($demo_text);
-$text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.";
+// $text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.";
 $text_arr = explode(" ",$text);
 $word_count = count($text_arr);
 // $response = $alchemyapi->keywords('text',$text, array('maxRetrieve'=>2));
@@ -70,6 +70,7 @@ $keywords = array('computational learning theory'=> '0.971245',
 	$arr=json_decode($response,true);
 	$res_inner_arr=array();
 	$search_res = $arr['d']['results'];
+	// array_push($res_arr,$search_res);
 	//Create json for each search result
 	for($i=0;$i<5;$i++)
 		{
@@ -80,11 +81,11 @@ $keywords = array('computational learning theory'=> '0.971245',
 					//Dummy text as AYLIEN causing problems
 					// $text_data="'$limit'";
 					// $limit=$limit+1;
-					$text_data = $alchemyapi->text('url',$v,null);
-    				if(strlen($text_data['text'])>0)
-    				{
-     					$res_inner_arr[] = array('Description' => $text_data['text'],'Url' => $v );
-     				}
+					// $text_data = $alchemyapi->text('url',$v,null);
+    				// if(strlen($text_data['text'])>0)
+    				// {
+     					$res_inner_arr[] = array('Description' => $search_res[$i]['Description'],'Url' => $v );
+     				// }
     			}	
 			}	
 		}
@@ -155,11 +156,11 @@ arsort($con);
 					// foreach ($summary->sentences as $sentece) {
     						// $text_data=$text_data.' '.$sentece;
     					// }
-					 $text_data = $alchemyapi->text('url',$v,null);
-    				if(strlen($text_data['text'])>0)
-    				{
-     					$res_inner_arr[] = array('Description' => $text_data['text'],'Url' => $v );
-     				}
+					 // $text_data = $alchemyapi->text('url',$v,null);
+    		// 		if(strlen($text_data['text'])>0)
+    		// 		{
+     					$res_inner_arr[] = array('Description' => $search_res[$i]['Description'],'Url' => $v );
+     				// }
     			}	
 			}	
 		}
