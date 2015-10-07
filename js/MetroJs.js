@@ -76,24 +76,24 @@ $.fn.liveTile.contentModules = {
 
 // default option values for .liveTile
 $.fn.liveTile.defaults = {
-	mode: 'slide',                          // 'fade', 'slide', 'flip', 'flip-list', carousel
-	// speed: 500,                             // how fast should animations be performed, in milliseconds
-	// initDelay: -1,                          // how long to wait before the initial animation
-	// delay: 5000,                            // how long to wait between animations 
+	mode: "carousel",                          // 'fade', 'slide', 'flip', 'flip-list', carousel
+	speed: 700,                             // how fast should animations be performed, in milliseconds
+	initDelay: -1,                          // how long to wait before the initial animation
+	delay: 10000,                            // how long to wait between animations 
 	stops: "100%",                          // how much of the back tile should 'slide' reveal before starting a delay
 	stack: false,                           // should tiles in slide mode appear stacked (e.g Me tile) 
 	direction: 'vertical',                  // which direction should animations be performed(horizontal | vertical)
 	animationDirection: 'forward',          // the direction that carousel mode uses to determine which way to slide in tiles
 	tileSelector: '>div,>li,>p,>img,>a',    // the selector used by carousel mode and flip-list to choose tile containers
 	tileFaceSelector: '>div,>li,>p,>img,>a',// the selector used to choose the front and back containers
-	ignoreDataAttributes: false,            // should data attributes be ignored
+	ignoreDataAttributes: true,            // should data attributes be ignored
 	click: null,                            // function ($tile, tdata) { return true; }
 	link: '',                               // a url to go to when clicked
 	newWindow: false,                       // should the link be opened in a new window
 	bounce: false,                          // should the tile shrink when tapped
 	bounceDirections: 'all',                // which direction the tile will tile 'all', 'edges, 'corners'
 	bounceFollowsMove: true,                // should a tile in bounce state tilt in the direction of the mouse as it moves
-	pauseOnHover: false,                    // should tile animations be paused on hover in and restarted on hover out
+	pauseOnHover: true,                    // should tile animations be paused on hover in and restarted on hover out
 	pauseOnHoverEvent: 'both',              // pause is called on mouseover, mouseout, or both
 	playOnHover: false,                     // should "play" be called on hover
 	playOnHoverEvent: 'both',               // play is called on mouseover, mouseout, or both

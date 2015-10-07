@@ -30,16 +30,15 @@ function init()
 	staticTiles();
 	for(t=11;t<18;t++)
 	{
-		DynamicTiles(t,[""]);
+		DynamicTiles(t,["HI","HELLO","WORLD"]);
 	}
 
 	setTimeout(getContents,10000);
 }
 
-
 function animate()
 {
-	$(".live-tile").liveTile();
+	$(".live-tile").not(".exclude").liveTile();
 	$( ".tiles" ).sortable();
 	$( ".tiles" ).disableSelection();
 };
@@ -47,10 +46,9 @@ function animate()
 function staticTiles()
 {
 	//Create tiles for each item in the initial list
-	
 	for(i=3;i<attrList.length;i++)
 	{
-		addTile(i,content_array);
+		addTile(i,["HI","HELLO","WORLD"]);
 	}
 }
 
@@ -67,13 +65,13 @@ function createImageTiles()
 	othis.div = document.createElement("div");
 	othis.div.id = "tile2";
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-	othis.div.setAttribute("class","live-tile two-wide"+" "+randColor);
+	othis.div.setAttribute("class","live-tile two-wide"+" accent "+randColor+" exclude");
 	othis.tilediv.appendChild(othis.div);
 
 	othis.div = document.createElement("div");
 	othis.div.id = "tile3";
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-	othis.div.setAttribute("class","live-tile two-wide"+" "+randColor);
+	othis.div.setAttribute("class","live-tile two-wide"+" accent "+randColor+" exclude");
 	othis.tilediv.appendChild(othis.div);
 }
 
@@ -83,7 +81,7 @@ function createVideoTile()
 	othis.div = document.createElement("div");
 	othis.div.id = "tile1";
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-	othis.div.setAttribute("class","live-tile two-wide two-tall"+" "+randColor);
+	othis.div.setAttribute("class","live-tile two-wide two-tall"+" accent "+randColor+" exclude");
 	othis.tilediv.appendChild(othis.div);
 }
 
@@ -97,7 +95,7 @@ function addTile(i,content)
 	othis.div.id = "tile"+tile_no;
 	othis.div.setAttribute("url","#");
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-	othis.div.setAttribute("class",attrList[i]+" accent "+randColor+" exclude");
+	othis.div.setAttribute("class",attrList[i]+" accent "+randColor);
 	span = document.createElement("span");
 	span.setAttribute("class","tile-title");
 	
@@ -107,9 +105,7 @@ function addTile(i,content)
 	for(var k=0;k<content.length;k++)
 	{
 		othis.cdiv = document.createElement("div");
-		othis.cdiv.setAttribute("class",attrList[i]+" accent "+randColor+" exclude");
-		othis.cdiv.innerHTML = content[i];
-		// othis.cdiv.style.display = "none";
+		othis.cdiv.innerHTML = content[k];
 		othis.div.appendChild(othis.cdiv);
 	}
 
