@@ -23,7 +23,7 @@ function init()
 
 	tilecolors = ["amber","blue","brown","cobalt","crimson","cyan","emerald","green","indigo","lime","magenta","mango","mauve","orange","olive","pink","purple","violet","red","sienna","steel","teal","yellow","black"]
 
-	attrList = ["","","","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile"];
+	attrList = ["","","","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile","live-tile"];
 
 
 	createVideoTile();
@@ -35,7 +35,8 @@ function init()
 	// }
 
 	setTimeout(getContents,10000);
-	setTimeout(getMediaContents,10000);
+	// setTimeout(getMediaContents,10000);
+	// setTimeout(checkContents,20000);
 }
 
 function animate()
@@ -54,30 +55,7 @@ function staticTiles()
 	}
 }
 
-function updateTiles(i,content_array,url_array)
-{
-	if(i<11)
-	{
-		div = document.getElementById("tile"+i);
-		for(var k=0;k<content_array.length;k++)
-		{
-			cdiv = document.createElement("div");
-			cdiv.innerHTML = content_array[k];
-			cdiv.setAttribute("url",url_array[k]);
-			cdiv.addEventListener("click",function(){
-				var newtab = window.open(cdiv.getAttribute("url"), '_blank'); 
-				newtab.focus();
-			},false);
-			div.appendChild(cdiv);
-		}
-		div.style.overflowY = "auto";
-		animate();
-	}
-	else if(i>=11 && i<20)
-	{
-		DynamicTiles(i,content_array,url_array);
-	}
-}
+
 
 function DynamicTiles(t,content_array,url_array)
 {
