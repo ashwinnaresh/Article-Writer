@@ -1,6 +1,7 @@
 xhr = new XMLHttpRequest();
 content_array = [""];
 updated_tile_count = 4;
+replace_count = 4;
 
 function init()
 {
@@ -29,14 +30,15 @@ function init()
 	createVideoTile();
 	createImageTiles();
 	staticTiles();
+	DynamicTiles(11,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// for(t=11;t<18;t++)
 	// {
-	// 	DynamicTiles(t,["HI","HELLO","WORLD"]);
+	// 	DynamicTiles(t,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// }
 
-	setTimeout(getContents,10000);
+	// setTimeout(getContents,10000);
 	// setTimeout(getMediaContents,10000);
-	// setTimeout(checkContents,20000);
+	// setTimeout(checkContents,10000);
 }
 
 function animate()
@@ -62,6 +64,7 @@ function DynamicTiles(t,content_array,url_array)
 	//Create tiles dynamically
 	attrList.push("live-tile");
 	addTile(t,content_array,url_array);
+	manageTile(t+1);
 }
 
 		
@@ -123,6 +126,29 @@ function addTile(i,content,urls)
 	animate();
 }
 
+function manageTile(tile_id)
+{
+	//code for retaining useful tiles and when to flush retained tiles to be added
+
+	//if already 11 tiles are replaced, start from first
+	if(replace_count > 11)
+		replace_count = 4;
+	
+	old_tile = document.getElementById("tile"+replace_count);
+	new_tile = document.getElementById("tile"+tile_id);
+	//swap the id's before replacing
+	t = old_tile.id;
+	old_tile.id = new_tile.id;
+	new_tile.id = t;
+	//put the new id's in the span
+	old_tile.childNodes[0].innerHTML = old_tile.id;
+	new_tile.childNodes[0].innerHTML = new_tile.id;
+	
+	alert("old = "+old_tile.id+" new = "+new_tile.id);
+	tilediv.replaceChild(new_tile,old_tile);
+	tilediv.appendChild(old_tile);
+	replace_count++;
+}
 
 function iframeRef(frameRef) 
 {
