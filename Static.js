@@ -14,6 +14,8 @@ function init()
 	//get editor
 	editor = iframeRef(document.getElementById("editor"));
 
+	prev = "";
+	dt = new Date();
 	//Setup the page
 	// = this;
 	tilediv = document.getElementById("mycontainer");
@@ -30,15 +32,15 @@ function init()
 	createVideoTile();
 	createImageTiles();
 	staticTiles();
-	DynamicTiles(11,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
+	// DynamicTiles(11,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// for(t=11;t<18;t++)
 	// {
 	// 	DynamicTiles(t,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// }
 
-	// setTimeout(getContents,10000);
+	setTimeout(getContents,10000);
 	// setTimeout(getMediaContents,10000);
-	// setTimeout(checkContents,10000);
+	setTimeout(checkContents,20000);
 }
 
 function animate()
@@ -144,7 +146,7 @@ function manageTile(tile_id)
 	old_tile.childNodes[0].innerHTML = old_tile.id;
 	new_tile.childNodes[0].innerHTML = new_tile.id;
 	
-	alert("old = "+old_tile.id+" new = "+new_tile.id);
+	// alert("old = "+old_tile.id+" new = "+new_tile.id);
 	tilediv.replaceChild(new_tile,old_tile);
 	tilediv.appendChild(old_tile);
 	replace_count++;

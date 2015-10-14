@@ -1,10 +1,36 @@
-function getContents()
+function getConcept()
 {
-	var content = editor.getContent();
-	prev = content;
+	if(content.split(" ").length > 40)
+	{
+		$.ajax({
+			url : 'http://localhost/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
+			type : 'get',
+			success : function(data)
+			{
+				return data;
+			},
+			error : function(){console.log("could not get concept");}
+		});
+	}
+	else
+		return "empty";
+}
+
+function getContents(concept)
+{
+    time_prev = dt.getTime();
+	content = editor.getContent();
+	if(content.split(" ").length <= 30 || prev == "")
+		sliding_window = content;
+	else
+	{
+		diff = content.split(" ").length - prev.split(" ").length;
+		sliding_window = content.split(" ").slice(-(diff+10)).join(" ");
+	}
+	prev = content;	
 	$.ajax({url:"http://localhost/Article-Writer/server/Server.php",
 			type:"GET",
-			data:"demo_text="+encodeURI(content),
+			data:"demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
 			success: function(data)
 			{
 				// console.log("data type "+typeof(data));
@@ -14,7 +40,7 @@ function getContents()
 				var count = 0;
 				for(j=updated_tile_count;j<updated_tile_count+2;j++)
 				{
-					alert(updated_tile_count);
+					// alert(updated_tile_count);
 					content_array = [];
 					url_array = [];
 					for(i=0;i<5;i++)
@@ -41,9 +67,68 @@ function getContents()
 function checkContents()
 {
 	var content = editor.getContent();
-	if(prev!=content)
+	//considerable amount of content, get data from server
+	if(content.split(" ").length - prev.split(" ").length > 15)
 		getContents();
-	setTimeout(checkContents,20000);
+	//user is idle, load more results
+	dt = new Date();
+	// alert(dt.getTime());
+	// alert(time_prev);
+	if(prev == content && dt.getTime() - time_prev > 15000)
+	{
+		// alert("here");
+		getMoreResults();
+	}	
+	setTimeout(checkContents,30000);
+}
+
+function getMoreResults()
+{
+	$.ajax({
+		url : 'http://localhost/Article-Writer/server/more_results.json',
+		type : 'get',
+		success : function(data)
+		{
+			var count = 0;
+			if(data.length == 0)
+			{
+				return;
+			}
+			for(j=updated_tile_count;j<updated_tile_count+2;j++)
+			{
+				// alert(updated_tile_count);
+				content_array = [];
+				url_array = [];
+				for(i=0;i<5;i++)
+				{
+					content_array.push(data[count]['results'][i]['Description']);
+					url_array.push(data[count]['results'][i]['Url']);
+					// console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
+				}
+				count++;
+				updateTiles(j,content_array,url_array);
+				//updated_tile_count++;
+			}
+
+			updated_tile_count+=2;
+
+			deleteFile();
+		},
+		error : function(){console.log("could not load more results");}
+	});
+}
+
+function deleteFile()
+{
+	$.ajax({
+		url : 'http://localhost/Article-Writer/server/deleteFile.php',
+		type : 'get',
+		success : function(data)
+		{
+			console.log(data);
+		},
+		error : function(){console.log("could not delete file");}
+	});
 }
 
 function getMediaContents()
