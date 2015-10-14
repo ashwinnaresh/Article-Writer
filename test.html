@@ -14,6 +14,33 @@
 					position: absolute;
 					right: 0%;
 				}
+
+				        #search input {
+						background: none repeat scroll 0 0 #fff;
+						border: 2px solid blue;
+						color: #7F7F7F;
+						float: left;
+						font: 12px 'Helvetica','Lucida Sans Unicode','Lucida Grande',sans-serif;
+						height: 40px;
+						margin: 0;
+						padding: 10px;
+						transition: background 0.3s ease-in-out 0s;
+						width: 300px;
+					}
+
+					#search button {
+						background: url("search.png") no-repeat scroll center center blue;
+						cursor: pointer;
+						height: 40px;
+						text-indent: -99999em;
+						transition: background 0.3s ease-in-out 0s;
+						width: 40px;
+						border: 2px solid #fff;
+					}
+
+					#search button:hover {
+						background-color:#000;
+					}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -60,6 +87,13 @@
 				<span class="tile-title"><button class="btn-link" id="prev" onclick="getPrev()"><span class="glyphicon glyphicon-circle-arrow-left"></button><button class="btn-link" id="next" onclick="getNext()"><span class="glyphicon glyphicon-circle-arrow-right"></button></span>
 				<!-- <button class="tile-title">Prev&lt;-</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Next-&gt;</button> -->
 		</div>
+
+		<form method="get" id="search" action="http://w3lessons.info/">
+              <input type="text" class="search" value="Enter search term" onblur="if(this.value == '') { this.value = 'Type and hit enter'; }" onfocus="if(this.value == 'Enter search term') { this.value = ''; }" name="s">
+              <button type="submit">Submit</button>
+        </form>
+
+</form>
 
 </body>
 </html>

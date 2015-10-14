@@ -5,6 +5,8 @@ replace_count = 4;
 
 function init()
 {
+	getTitle();
+
 	document.body.style.backgroundImage = "url('images/bg1.png')";
 	ta = document.getElementById("editor");
 	ta.style.position = "fixed";
@@ -160,4 +162,18 @@ function iframeRef(frameRef)
 function getRandomInt(min, max)
 {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+function getTitle()
+{
+	$(document).ready(function(e) {
+      bootbox.prompt("Enter a title / topic", function(result) {                
+      if (result === null) {                                             
+        alert("NO TEXT");                              
+      } else {
+        alert(result);                          
+      }
+    });
+        });
 }

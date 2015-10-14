@@ -222,3 +222,41 @@ function updateTiles(i,content_array,url_array)
 		DynamicTiles(i,content_array,url_array);
 	}
 }
+
+
+function search()
+{
+	
+	search_text = document.getElementById("search_box").value;
+	$.ajax({
+		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+search_text,
+		type:"GET",
+		success:function(data)
+		{
+			alert("SUCCESS");
+			// console.log("data type "+typeof(data));
+			// res = JSON.parse(data);
+			// console.log(res[0]['results'][0]['Description']);
+			// console.log(res[1]['results'][1]['Description']);
+			var count = 0;
+			for(j=updated_tile_count;j<updated_tile_count+2;j++)
+			{
+				// alert(updated_tile_count);
+				content_array = [];
+				url_array = [];
+				for(i=0;i<5;i++)
+				{
+					content_array.push(data);
+					url_array.push("http://google.com");
+					// content_array.push(res[count]['results'][i]['Description']);
+					// url_array.push(res[count]['results'][i]['Url']);
+					// console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
+				}
+				count++;
+				updateTiles(j,content_array,url_array);
+				//updated_tile_count++;
+			}
+			updated_tile_count+=2;
+			},
+	});
+}
