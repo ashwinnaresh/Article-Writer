@@ -105,14 +105,18 @@ function addTile(i,content,urls)
 	div = document.createElement("div");
 	tile_no = i+1;
 	div.id = "tile"+tile_no;
-	// div.setAttribute("url","#");
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
 	div.setAttribute("class",attrList[i]+" accent "+randColor);
 	span = document.createElement("span");
 	span.setAttribute("class","tile-title");
 	
 	span.innerHTML = "tile"+tile_no;
-	div.appendChild(span);		
+	div.appendChild(span);	
+
+	div.setAttribute("data-toggle","tooltip");
+	div.setAttribute("title","Tile_topic");
+    $('[data-toggle="tooltip"]').tooltip();   
+	
 
 	for(var k=0;k<content.length;k++)
 	{
