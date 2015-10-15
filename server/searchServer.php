@@ -5,6 +5,17 @@
 	$rootUri = 'https://api.datamarket.azure.com/Bing/Search';
 	$market = urlencode("'en-us'");
 	$serviceOp = 'Web';
+	$file_searched = fopen("search_terms.txt","a+");
+	$size = filesize("search_terms.txt");
+	if($size == 0)
+		$searched = array();
+	else
+	{
+	$searched = fread($file_searched,filesize("search_terms.txt"));
+	$searched = explode(";", $searched);
+	}
+	if(!in_array($search_term, $searched))
+	{
 	$keyword = "" . $search_text;
 	$query = rawurlencode("'$keyword'");
 	$requestUri = "$rootUri/$serviceOp?\$format=json&Query=$query&Market=$market";
@@ -38,6 +49,6 @@
 		}	
 	}
 	$res_arr[] = array('search_term' => $search_text, 'results' => $res_inner_arr);
-
+}
 	echo json_encode($res_arr);
 ?>
