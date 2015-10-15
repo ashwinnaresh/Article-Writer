@@ -186,6 +186,10 @@ function updateTiles(i,content_array,url_array)
 	if(i<11)
 	{
 		div = document.getElementById("tile"+i);
+		div.setAttribute("data-toggle","tooltip");
+		div.setAttribute("title","Tile_topic");
+		$('[data-toggle="tooltip"]').tooltip(); 
+		  
 		for(var k=0;k<content_array.length;k++)
 		{
 			cdiv = document.createElement("div");

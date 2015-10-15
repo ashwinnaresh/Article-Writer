@@ -107,15 +107,6 @@ function addTile(i,content,urls)
 	div.id = "tile"+tile_no;
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
 	div.setAttribute("class",attrList[i]+" accent "+randColor);
-	span = document.createElement("span");
-	span.setAttribute("class","tile-title");
-	
-	span.innerHTML = "tile"+tile_no;
-	div.appendChild(span);	
-
-	div.setAttribute("data-toggle","tooltip");
-	div.setAttribute("title","Tile_topic");
-    $('[data-toggle="tooltip"]').tooltip();   
 	
 
 	for(var k=0;k<content.length;k++)
