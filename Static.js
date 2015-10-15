@@ -170,7 +170,7 @@ function getTitle()
       } else {
 
       	var pos = window.innerWidth/4;
-      	editor.insertTitle(pos,result);
+      	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
 		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
@@ -194,8 +194,9 @@ function getTitle()
 				content_array.push(res[count]['results'][i]['Description']);
 				url_array.push(res[count]['results'][i]['Url']);
 				console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
+				console.log("Search term : "+res[count]['search_term']);
 			}
-			updateTiles(j,content_array,url_array);
+			updateTiles(j,content_array,url_array,res[count]['search_term']);
 			updated_tile_count+=1;
 		},
 	});                          
