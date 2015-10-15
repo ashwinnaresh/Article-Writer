@@ -1,16 +1,5 @@
 <?php
-    $file_searched = fopen("search_terms.txt","a+");
-	$size = filesize("search_terms.txt");
-	if($size == 0)
-		$searched = array();
-	else
-	{
-		$searched = fread($file_searched,filesize("search_terms.txt"));
-		$searched = explode(";", $searched);
-	}
 	extract($_GET);
-	if(!in_array($search_text, $searched))
-	{
 	$res_arr = array();
 	$acctKey = 'diiEv1nuNsNkXv7jMSuE+RmiBC7UXj+Nl0rCjj+3gVI=';
 	$rootUri = 'https://api.datamarket.azure.com/Bing/Search';
@@ -49,8 +38,6 @@
 		}	
 	}
 	$res_arr[] = array('search_term' => $search_text, 'results' => $res_inner_arr);
-	fwrite($file_searched, $search_text);
-	fclose($file_searched);
+
 	echo json_encode($res_arr);
-}
 ?>
