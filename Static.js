@@ -5,6 +5,9 @@ replace_count = 4;
 
 function init()
 {
+	//get editor
+	editor = iframeRef(document.getElementById("editor"));
+
 	getTitle();
 
 	document.body.style.backgroundImage = "url('images/bg1.png')";
@@ -12,9 +15,6 @@ function init()
 	ta.style.position = "fixed";
 	ta.style.frameborder="0";
 	ta.width = window.innerWidth/2+"px";
-
-	//get editor
-	editor = iframeRef(document.getElementById("editor"));
 
 	prev = "";
 	dt = new Date();
@@ -170,10 +170,41 @@ function getTitle()
 	$(document).ready(function(e) {
       bootbox.prompt("Enter a title / topic", function(result) {                
       if (result === null) {                                             
-        alert("NO TEXT");                              
+        alert("Please enter a title!");
+        getTitle();                              
       } else {
-        alert(result);                          
+
+      	var pos = window.innerWidth/4;
+      	editor.insertTitle(pos,result);
+
+			$.ajax({
+		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
+		type:"GET",
+		success:function(data)
+		{
+			// alert("SUCCESS");
+			// console.log("data type "+typeof(data));
+			res = JSON.parse(data);
+			// console.log("res[0]");
+			// console.log(res[0]['results'][0]['Description']);
+			//  console.log(res[1]['results'][1]['Description']);
+			var count = 0;
+			j=updated_tile_count;
+			content_array = [];
+			url_array = [];
+			for(i=0;i<5;i++)
+			{
+				// content_array.push(data);
+				// url_array.push("http://google.com");
+				content_array.push(res[count]['results'][i]['Description']);
+				url_array.push(res[count]['results'][i]['Url']);
+				console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
+			}
+			updateTiles(j,content_array,url_array);
+			updated_tile_count+=1;
+		},
+	});                          
       }
     });
-        });
+    });
 }

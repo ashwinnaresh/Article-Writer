@@ -88,6 +88,18 @@
           // alert(editor.getText().split(' ').length);
           return editor.getText();
       }
+
+      function insertTitle(pos,text)
+      { 
+        editor.insertText(0, text, {
+        'bold': true,
+        'underline':true,
+        'size':'large',
+        'align':'right',
+        'fore-color': '#ffff00'
+        });
+
+      }
     </script>
   </body>
 </html>

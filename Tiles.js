@@ -191,13 +191,15 @@ function updateTiles(i,content_array,url_array)
 			cdiv = document.createElement("div");
 			cdiv.innerHTML = content_array[k];
 			cdiv.setAttribute("url",url_array[k]);
+			cdiv.style.cursor = "pointer";
+			cdiv.style.overflowY = "auto";
 			cdiv.addEventListener("click",function(){
 				var newtab = window.open(cdiv.getAttribute("url"), '_blank'); 
 				newtab.focus();
 			},false);
 			div.appendChild(cdiv);
 		}
-		div.style.overflowY = "auto";
+		
 		animate();
 	}
 	else if(i>=11 && i<20)
