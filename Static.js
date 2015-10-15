@@ -40,9 +40,9 @@ function init()
 	// 	DynamicTiles(t,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// }
 
-	// setTimeout(getContents,10000);
-	// setTimeout(getMediaContents,10000);
-	// setTimeout(checkContents,20000);
+	setTimeout(getContents,10000);
+	setTimeout(getMediaContents,10000);
+	setTimeout(checkContents,20000);
 }
 
 function animate()

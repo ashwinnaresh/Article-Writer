@@ -101,7 +101,7 @@ foreach ($keywords as $word => $relevance)
 
 if($concept != "empty")
 {
-	$concept ="Machine Learning";
+	//$concept ="Machine Learning";
 	if(!array_key_exists($concept, $keywords))
 	{
 		//Search for each keyword
