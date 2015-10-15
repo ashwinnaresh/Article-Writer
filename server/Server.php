@@ -10,6 +10,7 @@ $res_arr = array();
 $more_res = array();
 $keywords = array();
 $text = rawurldecode($demo_text);
+//$already_searched = fopen("search_terms.txt","r");
 
 // $text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.";
 
