@@ -165,8 +165,7 @@ function getTitle()
 	$(document).ready(function(e) {
       bootbox.prompt("Enter a title / topic", function(result) {                
       if (result === null) {                                             
-        alert("Please enter a title!");
-        getTitle();                              
+                             
       } else {
 
       	var pos = window.innerWidth/4;
@@ -203,4 +202,24 @@ function getTitle()
       }
     });
     });
+}
+
+function openFromFile()
+{
+	document.getElementById('files').addEventListener('change', readFile, false);
+	$("#files").click();
+}
+function readFile(evt)
+{
+	var files = evt.target.files; // FileList object
+    for (var i = 0, f; f = files[i]; i++) {
+		var reader = new FileReader();
+
+		reader.onload = function(e) {
+		  var text = reader.result;
+		  editor.insertIntoEditor(text);
+		}
+
+		reader.readAsText(f);
+    }
 }
