@@ -10,33 +10,36 @@ $res_arr = array();
 $more_res = array();
 $keywords = array();
 $text = rawurldecode($demo_text);
-//$already_searched = fopen("search_terms.txt","r");
-
+$file_searched = fopen("search_terms.txt","a+");
+$size = filesize("search_terms.txt");
+if($size == 0)
+	$searched = array();
+else{
+$searched = fread($file_searched,filesize("search_terms.txt"));
+$searched = explode(";", $searched);
+}
 // $text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.";
 
-// $response = $alchemyapi->keywords('text',$text, array('maxRetrieve'=>2));
-// if ($response['status'] == 'OK') 
-// {
-// 	$words = '';
-// 	foreach ($response['keywords'] as $keyword) 
-// 	{
-// 		//$words = $words . ';' . $keyword['text'] . ':' . $keyword['relevance'];
-// 		if($keyword['relevance'] >= $threshold)
-// 		{
-// 			$words = $words . ';' . $keyword['text'] . ':' . $keyword['relevance'];
-// 			$keywords[$keyword['text']]=$keyword['relevance'];
-// 		}
-// 	}
-// } 
-// else 
-// {
-// 	echo 'Error in the keyword extraction call: ', $response['statusInfo'];
-// }
-$keywords = array('computational learning theory'=> '0.971245',
-					'pattern recognition'=> '0.854866',
-					'artificial intelligence'=> '0.793011',
-					'Machine learning' => '0.714784',
-					'subfield'=> '0.638192');
+$response = $alchemyapi->keywords('text',$text, array('maxRetrieve'=>2));
+if ($response['status'] == 'OK') 
+{
+	$words = '';
+	foreach ($response['keywords'] as $keyword) 
+	{
+		//$words = $words . ';' . $keyword['text'] . ':' . $keyword['relevance'];
+			$words = $words . ';' . $keyword['text'] . ':' . $keyword['relevance'];
+			$keywords[$keyword['text']]=$keyword['relevance'];
+	}
+} 
+else 
+{
+	echo 'Error in the keyword extraction call: ', $response['statusInfo'];
+}
+// $keywords = array('computational learning theory'=> '0.971245',
+// 					'pattern recognition'=> '0.854866',
+// 					'artificial intelligence'=> '0.793011',
+// 					'Machine learning' => '0.714784',
+// 					'subfield'=> '0.638192');
 arsort($keywords);
 // Algorithm for picking top keywords and concepts and performing a search 
 // For 50 words or lesser, perform a search based on the keywords, otherwise, search based on words
@@ -51,6 +54,8 @@ $limit = 0;
 foreach ($keywords as $word => $relevance) 
 {
 	//Search for each keyword
+	if(!in_array($word, $searched))
+	{
 	$keyword = "" . $word;
 	$query = rawurlencode("'$keyword'");
 	$requestUri = "$rootUri/$serviceOp?\$format=json&Query=$query&Market=$market";
@@ -97,12 +102,14 @@ foreach ($keywords as $word => $relevance)
 	//Final results
 	$more_res[] = array('search_term' => $word, 'results' => $more_res_inner_arr);
 	$res_arr[] = array('search_term' => $word, 'results' => $res_inner_arr);
+	fwrite($file_searched, $word.";");
+}
 }
 
 if($concept != "empty")
 {
 	//$concept ="Machine Learning";
-	if(!array_key_exists($concept, $keywords))
+	if(!array_key_exists($concept, $keywords) && !in_array($concept, $searched))
 	{
 		//Search for each keyword
 		$keyword = "" . $concept;
@@ -150,9 +157,11 @@ if($concept != "empty")
 		//Final results
 		$more_res[] = array('search_term' => $concept, 'results' => $more_res_inner_arr);
 		$res_arr[] = array('search_term' => $concept, 'results' => $res_inner_arr);
+		fwrite($file_searched, $concept.";");
 	}
 
 }
+fclose($file_searched);
 $file = fopen("more_results.json","w");
 fwrite($file,json_encode($more_res));
 fclose($file);

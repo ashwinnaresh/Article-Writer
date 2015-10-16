@@ -1,1 +1,2 @@
-computational learning theory;pattern recognition;artificial intelligence;Machine learning;subfield;Machine Learning;
+AI
+Artificial intelligence;
