@@ -77,14 +77,15 @@ function createImageTiles()
 	div = document.createElement("div");
 	div.id = "tile2";
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-	div.setAttribute("class","live-tile two-wide"+" accent "+randColor+" exclude");
+	div.setAttribute("class","live-tile two-wide"+" accent "+randColor);
 	tilediv.appendChild(div);
 
 	div = document.createElement("div");
 	div.id = "tile3";
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
-	div.setAttribute("class","live-tile two-wide"+" accent "+randColor+" exclude");
+	div.setAttribute("class","live-tile two-wide"+" accent "+randColor);
 	tilediv.appendChild(div);
+
 }
 
 
@@ -107,17 +108,20 @@ function addTile(i,content,urls)
 	div.id = "tile"+tile_no;
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
 	div.setAttribute("class",attrList[i]+" accent "+randColor);
-	
+	$("#tile"+tile_no).bind('copy', function() {
+    alert("COPY");
+	});	
 
 	for(var k=0;k<content.length;k++)
 	{
 		cdiv = document.createElement("div");
 		cdiv.innerHTML = content[k];
 		cdiv.setAttribute("url",urls[k]);
-		cdiv.addEventListener("click",function(){
+		cdiv.addEventListener("click",function(event){
 				var newtab = window.open(cdiv.getAttribute("url"), '_blank'); 
 				newtab.focus();
 			},false);
+
 		div.appendChild(cdiv);
 	}
 
@@ -172,7 +176,7 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{

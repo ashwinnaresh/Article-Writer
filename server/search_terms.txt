@@ -1,2 +1,1 @@
-AI
-Artificial intelligence;
+MACHINE;computational learning theory;artificial intelligence. Machine;

@@ -35,8 +35,8 @@ function getContents(concept)
 			{
 				// console.log("data type "+typeof(data));
 				res = JSON.parse(data);
-				// console.log(res[0]['results'][0]['Description']);
-				// console.log(res[1]['results'][1]['Description']);
+				console.log(res[0]['results'][0]['Description']);
+				console.log(res[1]['results'][1]['Description']);
 				var count = 0;
 				for(j=updated_tile_count;j<updated_tile_count+2;j++)
 				{
@@ -142,8 +142,10 @@ function getMediaContents()
 			console.log("Media data : ");
 			console.log(res);
 			updateVideoTile(res[0]['results']['video']);
-			updateImages(2,[res[0]['results']['img1']['url']],res[0]['results']['img1']['src']);
-			updateImages(3,[res[0]['results']['img2']['url']],res[0]['results']['img2']['src']);
+			// updateImages(2,[res[0]['results']['img1']['url']],res[0]['results']['img1']['src']);
+			temp_imgs = ["https://www.informatik.uni-hamburg.de/ML/ml-wordle.jpg","http://www.cs.toronto.edu/~urtasun/courses/CSC411/CSC411_Fall15_files/machine_learning.jpg","http://3.bp.blogspot.com/-Ltz_l0bwQiA/UbXp2XLsE2I/AAAAAAAAAtU/jzAIEU1cRdY/s1600/20130610+-+Machine_Learning.png","https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"];
+			updateImages(2,temp_imgs);
+			updateImages(3,temp_imgs.sort());
 		},
 		error : function(){console.log("could not get data");}
 	});
@@ -163,22 +165,26 @@ function updateVideoTile(url)
 	vid_tile.appendChild(frame);
 }
 
-function updateImages(tile_id,urls,src)
+function updateImages(tile_id,urls)
 {
 	var tile = document.getElementById("tile"+tile_id);
-	tile.setAttribute("url",src);
-	tile.addEventListener("click",function(){
-		var newtab = window.open(tile.getAttribute("url"), '_blank'); 
-		newtab.focus();
-	},false);
-	var img = document.createElement("img");
-	img.setAttribute("class","live-tile two-wide");
+
+	
 	for(var i=0;i<urls.length;i++)
 	{
+		var img_div = document.createElement("div");
+		var img = document.createElement("img");
 		img.src = urls[i];
+		img.className = "full";
+		img.height = "100";
+		img.width = "100";
+		img_div.addEventListener("click",function(){
+		var newtab = window.open(urls[i], '_blank'); 
+		newtab.focus();
+		},false);
+		img_div.appendChild(img);
+		tile.appendChild(img_div);
 	}
-	// tilediv.replaceChild(img,tile);
-	tile.appendChild(img);
 }
 
 function updateTiles(i,content_array,url_array,tile_topic)
@@ -189,14 +195,14 @@ function updateTiles(i,content_array,url_array,tile_topic)
 		div.setAttribute("data-toggle","tooltip");
 		div.setAttribute("title",tile_topic.toUpperCase());
 		$('[data-toggle="tooltip"]').tooltip(); 
-		  
 		for(var k=0;k<content_array.length;k++)
 		{
 			cdiv = document.createElement("div");
 			cdiv.innerHTML = content_array[k];
 			cdiv.setAttribute("url",url_array[k]);
-			cdiv.style.cursor = "pointer";
+
 			cdiv.style.overflowY = "auto";
+
 			cdiv.addEventListener("click",function(){
 				var newtab = window.open(cdiv.getAttribute("url"), '_blank'); 
 				newtab.focus();

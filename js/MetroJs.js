@@ -82,7 +82,7 @@ $.fn.liveTile.defaults = {
 	delay: 10000,                            // how long to wait between animations 
 	stops: "100%",                          // how much of the back tile should 'slide' reveal before starting a delay
 	stack: false,                           // should tiles in slide mode appear stacked (e.g Me tile) 
-	direction: 'vertical',                  // which direction should animations be performed(horizontal | vertical)
+	direction: 'horizontal',                  // which direction should animations be performed(horizontal | vertical)
 	animationDirection: 'forward',          // the direction that carousel mode uses to determine which way to slide in tiles
 	tileSelector: '>div,>li,>p,>img,>a',    // the selector used by carousel mode and flip-list to choose tile containers
 	tileFaceSelector: '>div,>li,>p,>img,>a',// the selector used to choose the front and back containers
