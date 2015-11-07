@@ -38,16 +38,16 @@
 	$search_res = $arr['d']['results'];
 	// echo $search_res[0]['Image'][0]['MediaUrl'];
 	$res_inner_arr = array(
-			'img1' => array(
-								'url' => $search_res[0]['Image'][0]['MediaUrl'],
-								'src' => $search_res[0]['Image'][0]['SourceUrl']
-						),
-			'img2' => array(
-								'url' => $search_res[0]['Image'][1]['MediaUrl'],
-								'src' => $search_res[0]['Image'][1]['SourceUrl']
-						),
+			'img' => array(),
+			'src' => array(),
 			'video' => $search_res[0]['Video'][0]['MediaUrl']
 		);
+	for($i = 0; $i < 10; $i++) 
+	{
+		array_push($res_inner_arr['img'], $search_res[0]['Image'][$i]['MediaUrl']);
+		array_push($res_inner_arr['src'], $search_res[0]['Image'][$i]['SourceUrl']);
+	}
+
 	$res_arr[] = array('search_term' => $concept, 'results' => $res_inner_arr);
 	echo json_encode($res_arr);
 	// echo gettype($response);

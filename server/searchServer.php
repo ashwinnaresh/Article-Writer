@@ -14,7 +14,7 @@
 	$searched = fread($file_searched,filesize("search_terms.txt"));
 	$searched = explode(";", $searched);
 	}
-	if(!in_array($search_term, $searched))
+	if(!in_array($search_text, $searched))
 	{
 	$keyword = "" . $search_text;
 	$query = rawurlencode("'$keyword'");

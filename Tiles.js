@@ -143,9 +143,13 @@ function getMediaContents()
 			console.log(res);
 			updateVideoTile(res[0]['results']['video']);
 			// updateImages(2,[res[0]['results']['img1']['url']],res[0]['results']['img1']['src']);
-			temp_imgs = ["https://www.informatik.uni-hamburg.de/ML/ml-wordle.jpg","http://www.cs.toronto.edu/~urtasun/courses/CSC411/CSC411_Fall15_files/machine_learning.jpg","http://3.bp.blogspot.com/-Ltz_l0bwQiA/UbXp2XLsE2I/AAAAAAAAAtU/jzAIEU1cRdY/s1600/20130610+-+Machine_Learning.png","https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"];
-			updateImages(2,temp_imgs);
-			updateImages(3,temp_imgs.sort());
+			// temp_imgs = ["https://www.informatik.uni-hamburg.de/ML/ml-wordle.jpg","http://www.cs.toronto.edu/~urtasun/courses/CSC411/CSC411_Fall15_files/machine_learning.jpg","http://3.bp.blogspot.com/-Ltz_l0bwQiA/UbXp2XLsE2I/AAAAAAAAAtU/jzAIEU1cRdY/s1600/20130610+-+Machine_Learning.png","https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"];
+			img_urls = res[0]['results']['img'];
+			src_urls = res[0]['results']['src'];
+			console.log(img_urls);
+			console.log(src_urls);
+			updateImages(2,img_urls.slice(0,5),src_urls.slice(0,5));
+			updateImages(3,img_urls.slice(5,10),src_urls.slice(5,10));
 		},
 		error : function(){console.log("could not get data");}
 	});
@@ -165,7 +169,7 @@ function updateVideoTile(url)
 	vid_tile.appendChild(frame);
 }
 
-function updateImages(tile_id,urls)
+function updateImages(tile_id,urls,src_urls)
 {
 	var tile = document.getElementById("tile"+tile_id);
 
@@ -179,7 +183,7 @@ function updateImages(tile_id,urls)
 		img.height = "100";
 		img.width = "100";
 		img_div.addEventListener("click",function(){
-		var newtab = window.open(urls[i], '_blank'); 
+		var newtab = window.open(src_urls[i], '_blank'); 
 		newtab.focus();
 		},false);
 		img_div.appendChild(img);
