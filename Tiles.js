@@ -179,11 +179,13 @@ function updateImages(tile_id,urls,src_urls)
 		var img_div = document.createElement("div");
 		var img = document.createElement("img");
 		img.src = urls[i];
+		alert(src_urls[i]);
+		img_div.setAttribute("url",src_urls[i]);
 		img.className = "full";
 		img.height = "100";
 		img.width = "100";
 		img_div.addEventListener("click",function(){
-		var newtab = window.open(src_urls[i], '_blank'); 
+		var newtab = window.open(img_div.getAttribute("url"), '_blank'); 
 		newtab.focus();
 		},false);
 		img_div.appendChild(img);
