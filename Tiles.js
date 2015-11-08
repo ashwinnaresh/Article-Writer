@@ -3,7 +3,7 @@ function getConcept()
 	if(content.split(" ").length > 40)
 	{
 		$.ajax({
-			url : 'http://localhost/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
+			url : 'http://localhost:8088/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
 			type : 'get',
 			success : function(data)
 			{
@@ -28,7 +28,7 @@ function getContents(concept)
 		sliding_window = content.split(" ").slice(-(diff+10)).join(" ");
 	}
 	prev = content;	
-	$.ajax({url:"http://localhost/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
+	$.ajax({url:"http://localhost:8088/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
 			type:"GET",
 			success: function(data)
 			{
@@ -58,11 +58,7 @@ function getContents(concept)
 				updated_tile_count+=2;
 			},
 			error : function(){console.log("Could not get data");}
-		});
-	// updateVideoTile("https://www.youtube.com/watch?v=9Sc-ir2UwGU");
-	// updateImages(2,["https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"]);
-	// updateImages(3,["http://www.cs.toronto.edu/~urtasun/courses/CSC2515/CSC2515_Winter15_files/machine_learning.jpg"]);
-	
+		});	
 }
 
 function checkContents()
@@ -86,7 +82,7 @@ function checkContents()
 function getMoreResults()
 {
 	$.ajax({
-		url : 'http://localhost/Article-Writer/server/more_results.json',
+		url : 'http://localhost:8088/Article-Writer/server/more_results.json',
 		type : 'get',
 		success : function(data)
 		{
@@ -122,7 +118,7 @@ function getMoreResults()
 function deleteFile()
 {
 	$.ajax({
-		url : 'http://localhost/Article-Writer/server/deleteFile.php',
+		url : 'http://localhost:8088/Article-Writer/server/deleteFile.php',
 		type : 'get',
 		success : function(data)
 		{
@@ -136,15 +132,13 @@ function getMediaContents()
 {
 	var content = editor.getContent();
 	$.ajax({
-		url : "http://localhost/Article-Writer/server/mediaServer.php?demo_text="+encodeURI(content),
+		url : "http://localhost:8088/Article-Writer/server/mediaServer.php?demo_text="+encodeURI(content),
 		type : "GET",
 		success : function(data){
 			res = JSON.parse(data);
 			console.log("Media data : ");
 			console.log(res);
 			updateVideoTile(res[0]['results']['video']);
-			// updateImages(2,[res[0]['results']['img1']['url']],res[0]['results']['img1']['src']);
-			// temp_imgs = ["https://www.informatik.uni-hamburg.de/ML/ml-wordle.jpg","http://www.cs.toronto.edu/~urtasun/courses/CSC411/CSC411_Fall15_files/machine_learning.jpg","http://3.bp.blogspot.com/-Ltz_l0bwQiA/UbXp2XLsE2I/AAAAAAAAAtU/jzAIEU1cRdY/s1600/20130610+-+Machine_Learning.png","https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"];
 			img_urls = res[0]['results']['img'];
 			src_urls = res[0]['results']['src'];
 			// console.log(img_urls);
@@ -232,7 +226,7 @@ function search()
 	
 	search_text = document.getElementById("search_box").value;
 	$.ajax({
-		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+search_text,
+		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+search_text,
 		type:"GET",
 		success:function(data)
 		{

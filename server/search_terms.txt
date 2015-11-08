@@ -1,1 +1,2 @@
-NATURAL LANGUAGE;natural language;natural language input;undefined;machine translation;notably successful NLP;statistical machine translation;1970s many programmers;real-world information;hand-written rules;e.g. transformational grammar;
+NATURAL LANGUAGE;natural language;natural language input;undefined;machine translation;notably successful NLP;statistical machine translation;1970s many programmers;real-world information;hand-written rules;e.g. transformational grammar;IPHONE;IPHONE
+iPhone 6s;intuitive operating;iPhone 6s;powerful technology;

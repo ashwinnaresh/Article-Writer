@@ -108,10 +108,11 @@ function addTile(i,content,urls)
 	div.id = "tile"+tile_no;
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
 	div.setAttribute("class",attrList[i]+" accent "+randColor);
+	div.setAttribute("copy",false);
 
 	div.oncontextmenu = function(event)
 	{
-		// var content = editor.getContent();
+		div.setAttribute("copy",true);
 		editor.insertIntoEditor(editor.getContent().length+4,event.target.innerHTML);
 		event.preventDefault();
 	}
@@ -136,16 +137,34 @@ function addTile(i,content,urls)
 function manageTile(tile_id)
 {
 	//code for retaining useful tiles and when to flush retained tiles to be added
-	if(tile_id >= 20)
+	var status = document.getElementById("tile"+tile_id).getAttribute("copy");	// Whether user has right clicked on it
+	if(!status)
 	{
-		// shift the tiles by 1 to make space for the new tile
-		for(i = 4; i < 19; i++)
+		if(tile_id >= 20)
 		{
-			old_tile = document.getElementById("tile"+(i+1));
-			if( i == 4) //for first content tile
-				new_tile = document.getElementById("tile"+i);
-			else
-				new_tile = temp;
+			// shift the tiles by 1 to make space for the new tile
+			for(i = 4; i < 19; i++)
+			{
+				old_tile = document.getElementById("tile"+(i+1));
+				if( i == 4) //for first content tile
+					new_tile = document.getElementById("tile"+i);
+				else
+					new_tile = temp;
+				//swap the id's before replacing
+				t = old_tile.id;
+				old_tile.id = new_tile.id;
+				new_tile.id = t;
+				//put the new id's in the span
+				old_tile.childNodes[0].innerHTML = old_tile.id;
+				new_tile.childNodes[0].innerHTML = new_tile.id;
+				
+				// alert("old = "+old_tile.id+" new = "+new_tile.id);
+				tilediv.replaceChild(new_tile,old_tile);
+				temp = old_tile;
+			}
+			// replace the old tile4 with the newly added tile
+			old_tile = document.getElementById("tile4");
+			new_tile = document.getElementById("tile"+tile_id);
 			//swap the id's before replacing
 			t = old_tile.id;
 			old_tile.id = new_tile.id;
@@ -156,44 +175,29 @@ function manageTile(tile_id)
 			
 			// alert("old = "+old_tile.id+" new = "+new_tile.id);
 			tilediv.replaceChild(new_tile,old_tile);
-			temp = old_tile;
 		}
-		// replace the old tile4 with the newly added tile
-		old_tile = document.getElementById("tile4");
-		new_tile = document.getElementById("tile"+tile_id);
-		//swap the id's before replacing
-		t = old_tile.id;
-		old_tile.id = new_tile.id;
-		new_tile.id = t;
-		//put the new id's in the span
-		old_tile.childNodes[0].innerHTML = old_tile.id;
-		new_tile.childNodes[0].innerHTML = new_tile.id;
-		
-		// alert("old = "+old_tile.id+" new = "+new_tile.id);
-		tilediv.replaceChild(new_tile,old_tile);
+		else
+		{
+			//if already 11 tiles are replaced, start from first
+			if(replace_count > 11)
+				replace_count = 4;
+			
+			old_tile = document.getElementById("tile"+replace_count);
+			new_tile = document.getElementById("tile"+tile_id);
+			//swap the id's before replacing
+			t = old_tile.id;
+			old_tile.id = new_tile.id;
+			new_tile.id = t;
+			//put the new id's in the span
+			old_tile.childNodes[0].innerHTML = old_tile.id;
+			new_tile.childNodes[0].innerHTML = new_tile.id;
+			
+			// alert("old = "+old_tile.id+" new = "+new_tile.id);
+			tilediv.replaceChild(new_tile,old_tile);
+			tilediv.appendChild(old_tile);
+			replace_count++;
+		}
 	}
-	else
-	{
-		//if already 11 tiles are replaced, start from first
-		if(replace_count > 11)
-			replace_count = 4;
-		
-		old_tile = document.getElementById("tile"+replace_count);
-		new_tile = document.getElementById("tile"+tile_id);
-		//swap the id's before replacing
-		t = old_tile.id;
-		old_tile.id = new_tile.id;
-		new_tile.id = t;
-		//put the new id's in the span
-		old_tile.childNodes[0].innerHTML = old_tile.id;
-		new_tile.childNodes[0].innerHTML = new_tile.id;
-		
-		// alert("old = "+old_tile.id+" new = "+new_tile.id);
-		tilediv.replaceChild(new_tile,old_tile);
-		tilediv.appendChild(old_tile);
-		replace_count++;
-	}
-	
 }
 
 function iframeRef(frameRef) 
@@ -219,7 +223,7 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{
