@@ -28,16 +28,17 @@ function getContents(concept)
 		sliding_window = content.split(" ").slice(-(diff+10)).join(" ");
 	}
 	prev = content;	
-	$.ajax({url:"http://localhost/Article-Writer/server/Server.php",
+	$.ajax({url:"http://localhost/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
 			type:"GET",
-			data:"demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
 			success: function(data)
 			{
 				// console.log("data type "+typeof(data));
 				res = JSON.parse(data);
-				console.log(res[0]['results'][0]['Description']);
-				console.log(res[1]['results'][1]['Description']);
+				// console.log(res[0]['results'][0]['Description']);
+				// console.log(res[1]['results'][1]['Description']);
 				var count = 0;
+				console.log(res);
+				//populate 2 tiles for every search
 				for(j=updated_tile_count;j<updated_tile_count+2;j++)
 				{
 					// alert(updated_tile_count);
@@ -47,7 +48,7 @@ function getContents(concept)
 					{
 						content_array.push(res[count]['results'][i]['Description']);
 						url_array.push(res[count]['results'][i]['Url']);
-						// console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
+						console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
 					}
 					count++;
 					updateTiles(j,content_array,url_array,res[count]['search_term']);
@@ -146,7 +147,8 @@ function getMediaContents()
 			// temp_imgs = ["https://www.informatik.uni-hamburg.de/ML/ml-wordle.jpg","http://www.cs.toronto.edu/~urtasun/courses/CSC411/CSC411_Fall15_files/machine_learning.jpg","http://3.bp.blogspot.com/-Ltz_l0bwQiA/UbXp2XLsE2I/AAAAAAAAAtU/jzAIEU1cRdY/s1600/20130610+-+Machine_Learning.png","https://coursera.s3.amazonaws.com/topics/ml/large-icon.png"];
 			img_urls = res[0]['results']['img'];
 			src_urls = res[0]['results']['src'];
-			console.log(img_urls);
+			// console.log(img_urls);
+			// 
 			console.log(src_urls);
 			updateImages(2,img_urls.slice(0,5),src_urls.slice(0,5));
 			updateImages(3,img_urls.slice(5,10),src_urls.slice(5,10));
@@ -179,7 +181,7 @@ function updateImages(tile_id,urls,src_urls)
 		var img_div = document.createElement("div");
 		var img = document.createElement("img");
 		img.src = urls[i];
-		alert(src_urls[i]);
+		// alert(src_urls[i]);
 		img_div.setAttribute("url",src_urls[i]);
 		img.className = "full";
 		img.height = "100";
@@ -218,7 +220,7 @@ function updateTiles(i,content_array,url_array,tile_topic)
 		
 		animate();
 	}
-	else if(i>=11 && i<20)
+	else if(i>=11)
 	{
 		DynamicTiles(i,content_array,url_array);
 	}
