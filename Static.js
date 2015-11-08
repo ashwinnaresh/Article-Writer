@@ -108,9 +108,13 @@ function addTile(i,content,urls)
 	div.id = "tile"+tile_no;
 	randColor = tilecolors[getRandomInt(0,tilecolors.length-1)];
 	div.setAttribute("class",attrList[i]+" accent "+randColor);
-	$("#tile"+tile_no).bind('copy', function() {
-    alert("COPY");
-	});	
+
+	div.oncontextmenu = function(event)
+	{
+		// var content = editor.getContent();
+		editor.insertIntoEditor(editor.getContent().length+4,event.target.innerHTML);
+		event.preventDefault();
+	}
 
 	for(var k=0;k<content.length;k++)
 	{
@@ -260,7 +264,7 @@ function readFile(evt)
 
 		reader.onload = function(e) {
 		  var text = reader.result;
-		  editor.insertIntoEditor(text);
+		  editor.insertIntoEditor(0,text);
 		}
 
 		reader.readAsText(f);
