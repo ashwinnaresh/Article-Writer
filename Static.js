@@ -198,6 +198,10 @@ function manageTile(tile_id)
 			replace_count++;
 		}
 	}
+	else
+	{
+		replace_count = tile_id + 1; //try replacing the next tile after that
+	}
 }
 
 function iframeRef(frameRef) 
@@ -223,7 +227,7 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{

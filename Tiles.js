@@ -3,7 +3,7 @@ function getConcept()
 	if(content.split(" ").length > 40)
 	{
 		$.ajax({
-			url : 'http://localhost:8088/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
+			url : 'http://localhost/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
 			type : 'get',
 			success : function(data)
 			{
@@ -28,7 +28,7 @@ function getContents(concept)
 		sliding_window = content.split(" ").slice(-(diff+10)).join(" ");
 	}
 	prev = content;	
-	$.ajax({url:"http://localhost:8088/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
+	$.ajax({url:"http://localhost/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
 			type:"GET",
 			success: function(data)
 			{
@@ -82,7 +82,7 @@ function checkContents()
 function getMoreResults()
 {
 	$.ajax({
-		url : 'http://localhost:8088/Article-Writer/server/more_results.json',
+		url : 'http://localhost/Article-Writer/server/more_results.json',
 		type : 'get',
 		success : function(data)
 		{
@@ -118,7 +118,7 @@ function getMoreResults()
 function deleteFile()
 {
 	$.ajax({
-		url : 'http://localhost:8088/Article-Writer/server/deleteFile.php',
+		url : 'http://localhost/Article-Writer/server/deleteFile.php',
 		type : 'get',
 		success : function(data)
 		{
@@ -132,7 +132,7 @@ function getMediaContents()
 {
 	var content = editor.getContent();
 	$.ajax({
-		url : "http://localhost:8088/Article-Writer/server/mediaServer.php?demo_text="+encodeURI(content),
+		url : "http://localhost/Article-Writer/server/mediaServer.php?demo_text="+encodeURI(content),
 		type : "GET",
 		success : function(data){
 			res = JSON.parse(data);
@@ -226,7 +226,7 @@ function search()
 	
 	search_text = document.getElementById("search_box").value;
 	$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+search_text,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+search_text,
 		type:"GET",
 		success:function(data)
 		{

@@ -3,11 +3,33 @@
 	$alchemyapi = new AlchemyAPI();
 	extract($_GET);
 	$res_arr=array();
-	$con = array('computational learning theory'=> '0.971245',
-					'Computer'=> '0.854866',
-					'artificial intelligence'=> '0.793011',
-					'Machine learning' => '0.714784',
-					'subfield'=> '0.638192');
+	$text = rawurldecode($demo_text);
+	//echo $text;
+	//$text_arr = explode(" ",$text);
+	$response = $alchemyapi->concepts('text',$text,array('maxRetrieve'=>2));
+	if ($response['status'] == 'OK') 
+	{
+		$con = array();
+		// if(isset($response['concepts']))
+		// 	echo "set";
+		// echo json_encode($response);
+		foreach ($response['concepts'] as $concept) 
+		{
+				//array_push($concepts, $concept['text']);
+
+				$con[$concept['text']] = $concept['relevance'];
+				// echo $concept['relevance'];
+		}
+	} 
+	else 
+	{
+		echo 'Error in the concept tagging call: ', $response['statusInfo'];
+	}
+	// $con = array('computational learning theory'=> '0.971245',
+	// 				'Computer'=> '0.854866',
+	// 				'artificial intelligence'=> '0.793011',
+	// 				'Machine learning' => '0.714784',
+	// 				'subfield'=> '0.638192');
 	arsort($con);
 	$concept = array_keys($con)[0];
 	// echo $concept;

@@ -14,9 +14,10 @@ $file_searched = fopen("search_terms.txt","a+");
 $size = filesize("search_terms.txt");
 if($size == 0)
 	$searched = array();
-else{
-$searched = fread($file_searched,filesize("search_terms.txt"));
-$searched = explode(";", $searched);
+else
+{
+	$searched = fread($file_searched,filesize("search_terms.txt"));
+	$searched = explode(";", $searched);
 }
 // $text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.";
 
