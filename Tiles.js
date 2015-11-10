@@ -38,6 +38,7 @@ function getContents(concept)
 				// console.log(res[1]['results'][1]['Description']);
 				var count = 0;
 				console.log(res);
+
 				//populate 2 tiles for every search
 				for(j=updated_tile_count;j<updated_tile_count+2;j++)
 				{
@@ -50,8 +51,11 @@ function getContents(concept)
 						url_array.push(res[count]['results'][i]['Url']);
 						console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
 					}
-					count++;
+					
+					console.log("Count : "+count);
+					console.log(res[count]);
 					updateTiles(j,content_array,url_array,res[count]['search_term']);
+					count++;
 					//updated_tile_count++;
 				}
 
@@ -66,7 +70,9 @@ function checkContents()
 	var content = editor.getContent();
 	//considerable amount of content, get data from server
 	if(content.split(" ").length - prev.split(" ").length > 15)
-		getContents();
+	{	getContents();
+		alert("finished getContents");
+	}
 	//user is idle, load more results
 	dt = new Date();
 	if(prev == content && dt.getTime() - time_prev > 15000)
@@ -98,8 +104,11 @@ function getMoreResults()
 					url_array.push(data[count]['results'][i]['Url']);
 					// console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
 				}
-				count++;
+				
+				console.log("Count : "+count);
+				console.log(res[count]);
 				updateTiles(j,content_array,url_array,res[count]['search_term']);
+				count++;
 				//updated_tile_count++;
 			}
 
@@ -118,7 +127,7 @@ function deleteFile()
 		type : 'get',
 		success : function(data)
 		{
-			console.log(data);
+			// console.log(data);
 		},
 		error : function(){console.log("could not delete file");}
 	});
@@ -132,14 +141,14 @@ function getMediaContents()
 		type : "GET",
 		success : function(data){
 			res = JSON.parse(data);
-			console.log("Media data : ");
-			console.log(res);
+			// console.log("Media data : ");
+			// console.log(res);
 			updateVideoTile(res[0]['results']['video']);
 			img_urls = res[0]['results']['img'];
 			src_urls = res[0]['results']['src'];
 			// console.log(img_urls);
 			// 
-			console.log(src_urls);
+			// console.log(src_urls);
 			updateImages(2,img_urls.slice(0,5),src_urls.slice(0,5));
 			updateImages(3,img_urls.slice(5,10),src_urls.slice(5,10));
 		},
@@ -241,7 +250,7 @@ function search()
 				// url_array.push("http://google.com");
 				content_array.push(res[count]['results'][i]['Description']);
 				url_array.push(res[count]['results'][i]['Url']);
-				console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
+				// console.log("Desc : "+res[count]['results'][i]['Description']+" URL : "+res[count]['results'][i]['Url']);
 			}
 			updateTiles(j,content_array,url_array,res[count]['search_term']);
 			updated_tile_count+=1;
