@@ -129,7 +129,6 @@ function addTile(i,content,urls)
 
 		div.appendChild(cdiv);
 	}
-
 	tilediv.appendChild(div);
 	animate();
 }
@@ -158,7 +157,6 @@ function manageTile(tile_id)
 				old_tile.childNodes[0].innerHTML = old_tile.id;
 				new_tile.childNodes[0].innerHTML = new_tile.id;
 				
-				// alert("old = "+old_tile.id+" new = "+new_tile.id);
 				tilediv.replaceChild(new_tile,old_tile);
 				temp = old_tile;
 			}
@@ -173,7 +171,7 @@ function manageTile(tile_id)
 			old_tile.childNodes[0].innerHTML = old_tile.id;
 			new_tile.childNodes[0].innerHTML = new_tile.id;
 			
-			// alert("old = "+old_tile.id+" new = "+new_tile.id);
+
 			tilediv.replaceChild(new_tile,old_tile);
 		}
 		else
@@ -192,7 +190,7 @@ function manageTile(tile_id)
 			old_tile.childNodes[0].innerHTML = old_tile.id;
 			new_tile.childNodes[0].innerHTML = new_tile.id;
 			
-			// alert("old = "+old_tile.id+" new = "+new_tile.id);
+
 			tilediv.replaceChild(new_tile,old_tile);
 			tilediv.appendChild(old_tile);
 			replace_count++;
@@ -227,11 +225,11 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{
-			// alert("SUCCESS");
+
 			// console.log("data type "+typeof(data));
 			res = JSON.parse(data);
 			// console.log("res[0]");
@@ -277,4 +275,64 @@ function readFile(evt)
 
 		reader.readAsText(f);
     }
+
+    restoreTiles();
+}
+function restoreTiles()
+{
+	// GET CALL TO GET THE JSON
+	$.ajax({
+    url: 'http://localhost/Article-Writer/server/SaveTiles.php',
+    type: 'GET',
+    success: function(msg) {
+        var json = JSON.parse(msg);
+        var container = document.getElementById("mycontainer");
+        container.innerHTML = "";
+        createVideoTile();
+        createImageTiles();
+
+        console.log(json);
+        var tile_count = 3;
+
+        updateVideoTile(json["tile1"]);
+        delete json["tile1"];
+
+        var img_arr1 = json["tile2"];
+        var urls = [];
+        for(var i=0;i<img_arr1.length;i++)
+        {
+        	urls.push(img_arr1[i]);
+        }
+        updateImages(2,urls,urls);
+
+        var img_arr2 = json["tile3"];
+        var urls = [];
+        for(var i=0;i<img_arr2.length;i++)
+        {
+        	urls.push(img_arr2[i]);
+        }
+        updateImages(3,urls,urls);
+
+        delete json["tile2"];
+        delete json["tile3"];
+
+       	for(k in json)
+       	{
+   			var content_arr = [];
+   			var url_array = [];
+
+       		if(json[k].length > 0)// Gives number of content divs of each tile
+       		{
+       			for(j in json[k])	//For each content div
+	       		{
+	       			content_arr.push(json[k][j].text);
+	       			url_array.push(json[k][j].link);
+	       		}
+       		}
+  			addTile(tile_count,content_arr,url_array);
+
+  			tile_count++;
+       	}
+    }
+	});
 }

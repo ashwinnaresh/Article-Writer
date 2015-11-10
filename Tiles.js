@@ -3,7 +3,7 @@ function getConcept()
 	if(content.split(" ").length > 40)
 	{
 		$.ajax({
-			url : 'http://localhost:8088/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
+			url : 'http://localhost/Article-Writer/server/conceptServer.php?text='+encodeURI(content),
 			type : 'get',
 			success : function(data)
 			{
@@ -28,7 +28,7 @@ function getContents(concept)
 		sliding_window = content.split(" ").slice(-(diff+10)).join(" ");
 	}
 	prev = content;	
-	$.ajax({url:"http://localhost:8088/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
+	$.ajax({url:"http://localhost/Article-Writer/server/Server.php?demo_text="+encodeURI(sliding_window)+"&concept="+encodeURI(getConcept()),
 			type:"GET",
 			success: function(data)
 			{
@@ -69,11 +69,8 @@ function checkContents()
 		getContents();
 	//user is idle, load more results
 	dt = new Date();
-	// alert(dt.getTime());
-	// alert(time_prev);
 	if(prev == content && dt.getTime() - time_prev > 15000)
 	{
-		// alert("here");
 		getMoreResults();
 	}	
 	setTimeout(checkContents,30000);
@@ -82,7 +79,7 @@ function checkContents()
 function getMoreResults()
 {
 	$.ajax({
-		url : 'http://localhost:8088/Article-Writer/server/more_results.json',
+		url : 'http://localhost/Article-Writer/server/more_results.json',
 		type : 'get',
 		success : function(data)
 		{
@@ -93,7 +90,6 @@ function getMoreResults()
 			}
 			for(j=updated_tile_count;j<updated_tile_count+2;j++)
 			{
-				// alert(updated_tile_count);
 				content_array = [];
 				url_array = [];
 				for(i=0;i<5;i++)
@@ -118,7 +114,7 @@ function getMoreResults()
 function deleteFile()
 {
 	$.ajax({
-		url : 'http://localhost:8088/Article-Writer/server/deleteFile.php',
+		url : 'http://localhost/Article-Writer/server/deleteFile.php',
 		type : 'get',
 		success : function(data)
 		{
@@ -132,7 +128,7 @@ function getMediaContents()
 {
 	var content = editor.getContent();
 	$.ajax({
-		url : "http://localhost:8088/Article-Writer/server/mediaServer.php?demo_text="+encodeURI(content),
+		url : "http://localhost/Article-Writer/server/mediaServer.php?demo_text="+encodeURI(content),
 		type : "GET",
 		success : function(data){
 			res = JSON.parse(data);
@@ -156,6 +152,7 @@ function updateVideoTile(url)
 {
 	var vid_id = url.split("=")[1];
 	var vid_tile = document.getElementById("tile1");
+	vid_tile.setAttribute("url",url);
 	frame = document.createElement("iframe");
 	frame.setAttribute('allowFullScreen','');
 	frame.setAttribute("class","live-tile two-wide two-tall");
@@ -175,7 +172,6 @@ function updateImages(tile_id,urls,src_urls)
 		var img_div = document.createElement("div");
 		var img = document.createElement("img");
 		img.src = urls[i];
-		// alert(src_urls[i]);
 		img_div.setAttribute("url",src_urls[i]);
 		img.className = "full";
 		img.height = "100";
@@ -226,11 +222,10 @@ function search()
 	
 	search_text = document.getElementById("search_box").value;
 	$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+search_text,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+search_text,
 		type:"GET",
 		success:function(data)
 		{
-			// alert("SUCCESS");
 			// console.log("data type "+typeof(data));
 			res = JSON.parse(data);
 			// console.log("res[0]");

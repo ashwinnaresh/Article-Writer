@@ -52,7 +52,26 @@ function saveTiles()
 	var tilediv = document.getElementById("mycontainer");
 	var tiles = tilediv.childNodes;
 	var tiles_obj = {};
-	for(var i=1;i<tiles.length;i++)
+	tiles_obj["tile1"] = document.getElementById("tile1").getAttribute("url");
+	
+	var img_tile1 = document.getElementById("tile2");
+	var img_urls = [];
+	for(var k=0;k<img_tile1.childNodes.length;k++)
+	{
+		img_urls.push(img_tile1.childNodes[k].firstChild.src);
+	}
+	tiles_obj["tile2"] = img_urls;
+
+	var img_tile2 = document.getElementById("tile3");
+	var img_urls = [];
+	for(var k=0;k<img_tile2.childNodes.length;k++)
+	{
+		img_urls.push(img_tile2.childNodes[k].firstChild.src);
+	}
+	tiles_obj["tile3"] = img_urls;
+
+
+	for(var i=4;i<tiles.length;i++)
 	{
 		var content = tiles[i].childNodes;
 		var tile = new Array();
@@ -68,6 +87,7 @@ function saveTiles()
 		}
 		tiles_obj[tiles[i].id] = tile;
 	}
+	console.log(tiles_obj);
 	// tiles_obj = { [{text,url},{text,url},{text,url},{text,url},{text,url}] , [{text,url},{text,url},{text,url},{text,url},{text,url}] }
 	
 
@@ -81,18 +101,4 @@ function saveTiles()
         alert(msg);
     }
 	});
-
-	// GET CALL TO GET THE JSON
-	$.ajax({
-    url: 'http://localhost:8088/Article-Writer/server/SaveTiles.php',
-    type: 'GET',
-    success: function(msg) {
-        var json = JSON.parse(msg);
-       	for(k in json)
-       	for(j in json[k])
-       		for(i in json[k][j])
-       			alert(json[k][j][i]);
-    }
-	});
-
 }
