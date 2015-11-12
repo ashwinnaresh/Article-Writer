@@ -196,7 +196,7 @@ function updateImages(tile_id,urls,src_urls)
 
 function updateTiles(i,content_array,url_array,tile_topic)
 {
-	if(i<11)
+	if(i<12)
 	{
 		div = document.getElementById("tile"+i);
 		div.setAttribute("data-toggle","tooltip");
@@ -219,7 +219,7 @@ function updateTiles(i,content_array,url_array,tile_topic)
 		
 		animate();
 	}
-	else if(i>=11)
+	else if(i>=12)
 	{
 		DynamicTiles(i,content_array,url_array);
 	}
