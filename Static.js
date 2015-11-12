@@ -35,19 +35,9 @@ function init()
 	createImageTiles();
 	staticTiles();
 	// DynamicTiles(11,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
-	// for(t=4;t<12;t++)
-	// 	updateTiles(t,["tile"+t,"tile"+t,"tile"+t],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"],"tile"+t);
-	
-	// for(var t=11;t<19;t++)
+	// for(t=11;t<18;t++)
 	// {
-	// 	// alert(t);
-	// 	DynamicTiles(t,["tile"+t,"tile"+t,"tile"+t],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
-	// }
-
-	// for(var t=19;t<20;t++)
-	// {
-	// 	alert(t);
-	// 	DynamicTiles(t,["tile"+t,"tile"+t,"tile"+t],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
+	// 	DynamicTiles(t,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// }
 
 	setTimeout(getContents,10000);
@@ -146,9 +136,9 @@ function addTile(i,content,urls)
 function manageTile(tile_id)
 {
 	//code for retaining useful tiles and when to flush retained tiles to be added
-	// var status = document.getElementById("tile"+tile_id).getAttribute("copy");	// Whether user has right clicked on it
-	// if(!status)
-	// {
+	var status = document.getElementById("tile"+tile_id).getAttribute("copy");	// Whether user has right clicked on it
+	if(!status)
+	{
 		if(tile_id >= 20)
 		{
 			// shift the tiles by 1 to make space for the new tile
@@ -164,27 +154,22 @@ function manageTile(tile_id)
 				old_tile.id = new_tile.id;
 				new_tile.id = t;
 				//put the new id's in the span
-				// old_tile.childNodes[0].innerHTML = old_tile.id;
-				// new_tile.childNodes[0].innerHTML = new_tile.id;
-				// tile4 = document.getElementById("tile4");
+				old_tile.childNodes[0].innerHTML = old_tile.id;
+				new_tile.childNodes[0].innerHTML = new_tile.id;
+				
 				tilediv.replaceChild(new_tile,old_tile);
 				temp = old_tile;
-
-				// if(i == 4)
-				// 	tilediv.insertBefore(new_tile)
 			}
 			// replace the old tile4 with the newly added tile
-			// alert(tile4.innerHTML);
-			old_tile = document.getElementById("tile"+4);
-			// alert(old_tile);
+			old_tile = document.getElementById("tile4");
 			new_tile = document.getElementById("tile"+tile_id);
 			//swap the id's before replacing
 			t = old_tile.id;
 			old_tile.id = new_tile.id;
 			new_tile.id = t;
 			//put the new id's in the span
-			// old_tile.childNodes[0].innerHTML = old_tile.id;
-			// new_tile.childNodes[0].innerHTML = new_tile.id;
+			old_tile.childNodes[0].innerHTML = old_tile.id;
+			new_tile.childNodes[0].innerHTML = new_tile.id;
 			
 
 			tilediv.replaceChild(new_tile,old_tile);
@@ -202,24 +187,19 @@ function manageTile(tile_id)
 			old_tile.id = new_tile.id;
 			new_tile.id = t;
 			//put the new id's in the span
-			// old_tile.childNodes[0].innerHTML = old_tile.id;
-			// new_tile.childNodes[0].innerHTML = new_tile.id;
+			old_tile.childNodes[0].innerHTML = old_tile.id;
+			new_tile.childNodes[0].innerHTML = new_tile.id;
 			
 
 			tilediv.replaceChild(new_tile,old_tile);
 			tilediv.appendChild(old_tile);
 			replace_count++;
 		}
-	// }
-	// else
-	// {
-	// 	replace_count = tile_id + 1; //try replacing the next tile after that
-	// }
-}
-
-function swapTiles(tile1, tile2)
-{
-
+	}
+	else
+	{
+		replace_count = tile_id + 1; //try replacing the next tile after that
+	}
 }
 
 function iframeRef(frameRef) 
@@ -245,7 +225,7 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{
@@ -302,7 +282,7 @@ function restoreTiles()
 {
 	// GET CALL TO GET THE JSON
 	$.ajax({
-    url: 'http://localhost:8088/Article-Writer/server/SaveTiles.php',
+    url: 'http://localhost/Article-Writer/server/SaveTiles.php',
     type: 'GET',
     success: function(msg) {
         var json = JSON.parse(msg);
