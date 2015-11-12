@@ -225,7 +225,7 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{
@@ -282,7 +282,7 @@ function restoreTiles()
 {
 	// GET CALL TO GET THE JSON
 	$.ajax({
-    url: 'http://localhost/Article-Writer/server/SaveTiles.php',
+    url: 'http://localhost:8088/Article-Writer/server/SaveTiles.php',
     type: 'GET',
     success: function(msg) {
         var json = JSON.parse(msg);
