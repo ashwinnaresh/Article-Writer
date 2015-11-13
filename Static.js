@@ -34,10 +34,19 @@ function init()
 	createVideoTile();
 	createImageTiles();
 	staticTiles();
-	// DynamicTiles(11,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
-	// for(t=11;t<18;t++)
+	//  for(t=4;t<12;t++)
+	// 	updateTiles(t,["tile"+t,"tile"+t,"tile"+t],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"],"tile"+t);
+	
+	// for(var t=11;t<19;t++)
 	// {
-	// 	DynamicTiles(t,["HI","HELLO","WORLD"],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
+	// 	// alert(t);
+	// 	DynamicTiles(t,["tile"+(t+1),"tile"+(t+1),"tile"+(t+1)],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
+	// }
+
+	// for(var t=19;t<20;t++)
+	// {
+	// 	alert(t);
+	// 	DynamicTiles(t,["tile"+(t+1),"tile"+(t+1),"tile"+(t+1)],["https://www.google.com","https://www.youtube.com","https://www.facebook.com"]);
 	// }
 
 	setTimeout(getContents,10000);
@@ -137,68 +146,63 @@ function manageTile(tile_id)
 {
 	//code for retaining useful tiles and when to flush retained tiles to be added
 	var status = document.getElementById("tile"+tile_id).getAttribute("copy");	// Whether user has right clicked on it
-	if(!status)
+	if(tile_id >= 20)
 	{
-		if(tile_id >= 20)
+		// shift the tiles by 1 to make space for the new tile
+		for(var i = 4; i < 20; i++)
 		{
-			// shift the tiles by 1 to make space for the new tile
-			for(i = 4; i < 19; i++)
+			old_tile = document.getElementById("tile"+(i+1));
+			console.log(old_tile.innerHTML);
+			if( i == 4) //for first content tile
+				new_tile = document.getElementById("tile"+i);
+			else
+				new_tile = temp;
+			console.log(new_tile.innerHTML);
+			//swap the id's before replacing
+			t = old_tile.id;
+			old_tile.id = new_tile.id;
+			new_tile.id = t;
+			
+			
+			tilediv.replaceChild(new_tile,old_tile);
+			if( i == 4)
 			{
-				old_tile = document.getElementById("tile"+(i+1));
-				if( i == 4) //for first content tile
-					new_tile = document.getElementById("tile"+i);
-				else
-					new_tile = temp;
-				//swap the id's before replacing
-				t = old_tile.id;
-				old_tile.id = new_tile.id;
-				new_tile.id = t;
-				//put the new id's in the span
-				old_tile.childNodes[0].innerHTML = old_tile.id;
-				new_tile.childNodes[0].innerHTML = new_tile.id;
-				
-				tilediv.replaceChild(new_tile,old_tile);
-				temp = old_tile;
+				new_tile.innerHTML = "helllo";
+				new_tile.id = "tile4";
+				tilediv.insertBefore(old_tile,new_tile);
 			}
-			// replace the old tile4 with the newly added tile
-			old_tile = document.getElementById("tile4");
-			new_tile = document.getElementById("tile"+tile_id);
-			//swap the id's before replacing
-			t = old_tile.id;
-			old_tile.id = new_tile.id;
-			new_tile.id = t;
-			//put the new id's in the span
-			old_tile.childNodes[0].innerHTML = old_tile.id;
-			new_tile.childNodes[0].innerHTML = new_tile.id;
-			
-
-			tilediv.replaceChild(new_tile,old_tile);
+			temp = old_tile;
 		}
-		else
-		{
-			//if already 11 tiles are replaced, start from first
-			if(replace_count > 11)
-				replace_count = 4;
-			
-			old_tile = document.getElementById("tile"+replace_count);
-			new_tile = document.getElementById("tile"+tile_id);
-			//swap the id's before replacing
-			t = old_tile.id;
-			old_tile.id = new_tile.id;
-			new_tile.id = t;
-			//put the new id's in the span
-			old_tile.childNodes[0].innerHTML = old_tile.id;
-			new_tile.childNodes[0].innerHTML = new_tile.id;
-			
+		// replace the old tile4 with the newly added tile
+		old_tile = document.getElementById("tile4");
+		new_tile = document.getElementById("tile"+tile_id);
+		//swap the id's before replacing
+		t = old_tile.id;
+		old_tile.id = new_tile.id;
+		new_tile.id = t;
+		
+		
 
-			tilediv.replaceChild(new_tile,old_tile);
-			tilediv.appendChild(old_tile);
-			replace_count++;
-		}
+		tilediv.replaceChild(new_tile,old_tile);
 	}
 	else
 	{
-		replace_count = tile_id + 1; //try replacing the next tile after that
+		//if already 11 tiles are replaced, start from first
+		if(replace_count > 11)
+			replace_count = 4;
+		
+		old_tile = document.getElementById("tile"+replace_count);
+		new_tile = document.getElementById("tile"+tile_id);
+		//swap the id's before replacing
+		t = old_tile.id;
+		old_tile.id = new_tile.id;
+		new_tile.id = t;
+		
+		
+
+		tilediv.replaceChild(new_tile,old_tile);
+		tilediv.appendChild(old_tile);
+		replace_count++;
 	}
 }
 
@@ -225,7 +229,7 @@ function getTitle()
       	editor.insertTitle(pos,result.toUpperCase());
 
 			$.ajax({
-		url:"http://localhost:8088/Article-Writer/server/searchServer.php?search_text="+result,
+		url:"http://localhost/Article-Writer/server/searchServer.php?search_text="+result,
 		type:"GET",
 		success:function(data)
 		{
@@ -282,7 +286,7 @@ function restoreTiles()
 {
 	// GET CALL TO GET THE JSON
 	$.ajax({
-    url: 'http://localhost:8088/Article-Writer/server/SaveTiles.php',
+    url: 'http://localhost/Article-Writer/server/SaveTiles.php',
     type: 'GET',
     success: function(msg) {
         var json = JSON.parse(msg);

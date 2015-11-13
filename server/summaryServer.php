@@ -7,7 +7,9 @@
 	$response = $alchemyapi->text('url', $url, null);
 
 	if ($response['status'] == 'OK') {
-	echo $response['text'];
+		$content = explode(".",$response['text'],5);
+		$retstr = implode(".",$content);
+		echo $retstr;
 	} 
 	else {
 	echo 'Error in the text extraction call: ', $response['statusInfo'];
