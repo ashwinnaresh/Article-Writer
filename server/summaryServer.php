@@ -7,7 +7,7 @@
 	$response = $alchemyapi->text('url', $url, null);
 
 	if ($response['status'] == 'OK') {
-		$content = explode(".",$response['text'],5);
+		$content = explode(".",$response['text'],1);
 		$retstr = implode(".",$content);
 		echo $retstr;
 	} 

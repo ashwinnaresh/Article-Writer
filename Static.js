@@ -191,8 +191,11 @@ function manageTile(tile_id)
 		if(replace_count > 11)
 			replace_count = 4;
 		
+
 		old_tile = document.getElementById("tile"+replace_count);
+		alert(old_tile.id);
 		new_tile = document.getElementById("tile"+tile_id);
+		alert(new_tile.id);
 		//swap the id's before replacing
 		t = old_tile.id;
 		old_tile.id = new_tile.id;

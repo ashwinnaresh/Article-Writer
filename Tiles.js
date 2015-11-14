@@ -197,7 +197,7 @@ function updateImages(tile_id,urls,src_urls)
 
 function updateTiles(i,content_array,url_array,tile_topic)
 {
-	if(i<=11)
+	if(i<11)
 	{
 		div = document.getElementById("tile"+i);
 		div.setAttribute("data-toggle","tooltip");
@@ -211,6 +211,8 @@ function updateTiles(i,content_array,url_array,tile_topic)
 			// 	type:"GET",
 			// 	success:function(data)
 			// 	{
+			// 		data = data.split(".").slice(0,5);
+			// 		data = data.join(".");
 			// 		cdiv.innerHTML = data;
 			// 	}
 			// });

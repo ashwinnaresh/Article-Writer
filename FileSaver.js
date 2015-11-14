@@ -93,7 +93,7 @@ function saveTiles()
 
 	// POST CALL TO SAVE TO SERVER
 	$.ajax({
-    url: 'http://localhost:8088/Article-Writer/server/SaveTiles.php',
+    url: 'http://localhost/Article-Writer/server/SaveTiles.php',
     type: 'POST',
     data: JSON.stringify(tiles_obj),
     contentType: 'application/json; charset=utf-8',
