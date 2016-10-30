@@ -1,2 +1,2 @@
 # Article-Writer
-A smart text editor which helps you write your articles
+An intelligent document editor which provides web-based content (textual and media) suggestions based on the current document context.
